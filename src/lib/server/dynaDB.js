@@ -20,7 +20,6 @@ export async function dynaScanTable(client, table, filter) {
     return { response }
   } catch(error) {
     console.log("scan", {error})
-    return error
   }
 }
 
