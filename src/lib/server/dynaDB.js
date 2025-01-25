@@ -1,9 +1,4 @@
-import {
-  ListTablesCommand,
-  DynamoDBClient,
-  ScanCommand,
-} from "@aws-sdk/client-dynamodb";
-
+import { ScanCommand } from "@aws-sdk/client-dynamodb";
 import { DeleteCommand, PutCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 
 export async function dynaScanTable(client, table, filter) {

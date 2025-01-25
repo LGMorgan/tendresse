@@ -12,6 +12,7 @@
 
 <main>
 
+  {JSON.stringify(data)}
   <section id="introduction">
     <h2 class="header2">Évènements autour de l'exploration de la tendresse, du jeu et du consentement à la Réunion</h2>
     <enhanced:img class="enhanced-img" src="/src/lib/img/statues.png" alt="Décoration statues" />

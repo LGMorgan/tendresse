@@ -6,10 +6,10 @@ export const load = async (event) => {
   const client = new DynamoDBClient({ region: "ap-southeast-1" })
 
   const scan = await dynaScanTable(client, "Tendresse_Dates")
-  const workshops = sortWorkshopAndDates(scan?.response.Items)
+  //const workshops = sortWorkshopAndDates(scan?.response.Items)
   
   const tmp = await dynaScanTable(client, "Tendresse_Testimonies")
-  const testimonies = cleanTestimonies(tmp?.response.Items)
+  //const testimonies = cleanTestimonies(tmp?.response.Items)
   //shuffle(testimonies)
 
   console.log("SERVER LOAD", {
@@ -17,7 +17,7 @@ export const load = async (event) => {
     tmp
   })
   return {
-    workshops,
-    testimonies
+    workshops: scan?.response.Items,
+    testimonies: tmp?.response.Items
   }
 }
