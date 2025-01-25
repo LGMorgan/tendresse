@@ -17,7 +17,7 @@ export const load = async (event) => {
     tmp
   })
   return {
-    workshops: scan?.response.Items,
-    testimonies: tmp?.response.Items
+    workshops: scan,
+
   }
 }
