@@ -1,22 +1,11 @@
-<script>
 
-  import Line from "$lib/components/lineSeparator.svelte"
-  import MailInput from "$lib/components/mailInput.svelte"
-  import NextDate from "$lib/components/nextDate.svelte"
-  import Link from "$lib/components/link.svelte";
-  import ButtonAlt from  '$lib/components/buttonAlt.svelte'
-
-  let { data } = $props();
-
-  console.log({data})
-</script>
 
 <main>
 
   <section id="introduction">
     <h2 class="header2">Évènements autour de l'exploration de la tendresse, du jeu et du consentement à la Réunion</h2>
-    <enhanced:img class="enhanced-img" src="/src/lib/img/statues.png" alt="Décoration statues" />
-    <Line />
+
+
   </section>
   
   <section id="ateliers">
@@ -26,33 +15,18 @@
   
     <div id="atelier-grid">
       <div class="flex-item wrks-img">
-        <a href="/tendresse" aria-label="Lien pour la page tendresse-consentie">
-          <enhanced:img class="enhanced-img wrks-img" src="/src/lib/img/tendresse-consentie.png" alt="Atelier Tendresse Consentie" />
-        </a>
-        <Link href="/tendresse" aria-label="Boutton pour la page tendresse-consentie">
-          Découvrir la Tendresse Consentie
-        </Link>
-        <NextDate dates={data.workshops?.Tendresse}/>
+   
+
       </div>
   
       <div class="flex-item wrks-img">
-        <a href="/adoration" aria-label="Boutton pour la page tendresse-consentie">
-          <enhanced:img class="enhanced-img wrks-img" src="/src/lib/img/adoration.png" alt="Atelier Adoration"/>
-        </a>
-        <Link href="/adoration" aria-label="Boutton pour la page l'adoration">
-          Découvrir l'Adoration
-        </Link>
-        <NextDate dates={data.workshops?.Adoration}/>
+    
+
       </div>
   
       <div class="flex-item wrks-img">
-        <a href="/playfight" aria-label="Boutton pour la page tendresse-consentie">
-          <enhanced:img class="enhanced-img wrks-img" src="/src/lib/img/playfight.png" alt="Atelier Playfight"/>
-        </a>
-        <Link href="/playfight" aria-label="Boutton pour la page playfight">
-          Découvrir le Playfight
-        </Link>
-        <NextDate dates={data.workshops?.Playfight}/>
+    
+
       </div>
     </div>
   </section>
@@ -63,11 +37,11 @@
       Tendresse c'est une étape vers mon utopie : Vivre dans un monde où les relations sont authentiques, bienveillantes, inclusives et tendres.
     </p>
     <a href="/projet" aria-label="Boutton pour la page projet">
-      <ButtonAlt on:click={() => {}} text="En savoir plus" />
+
     </a>
   </section>
   
-  <MailInput />
+
 </main>
 
 <style>
