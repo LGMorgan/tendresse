@@ -89,8 +89,9 @@ export const load = async ({locals, depends}) => {
     session
   })
 
-  if (session?.user?.name != "Morgan Le Guen" || "laurette.deloison@gmail.com") {
-    return redirect(307, "http://localhost:5173/")
+
+  if (session?.user?.email != "mo.leguen.42@gmail.com" || "laurette.deloison@gmail.com") {
+    return redirect(307, "https://tendresse.vercel.app")
   }
 
   //const client = new DynamoDBClient({ region: "ap-southeast-1" });
