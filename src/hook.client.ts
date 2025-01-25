@@ -1,5 +1,6 @@
 
 export function sortWorkshopAndDates(dynamoDBResponse) {
+  console.log("sort", {dynamoDBResponse})
   if(dynamoDBResponse == null)
     return []
   const workshops = {Adoration: [], Playfight: [], Tendresse: []}
@@ -26,6 +27,7 @@ export function sortDates(obj) {
 }
 
 export function cleanTestimonies(dynamoDBResponse) {
+  console.log("sort", {dynamoDBResponse})
   const testimonies: workshopsT = {Adoration: [], Playfight: [], Tendresse: []}
   for(const item of dynamoDBResponse) {
     testimonies[item.workshop.S].push(item)
