@@ -4,11 +4,17 @@
   import NextDate from "$lib/components/nextDate.svelte"
   import Link from "$lib/components/link.svelte";
   import ButtonAlt from  '$lib/components/buttonAlt.svelte'
+  import { SignIn, SignOut } from "@auth/sveltekit/components"
 
   let { data } = $props();
 </script>
 
 <main>
+  <div>
+    <SignIn provider="Google" signInPage="signin" />
+  
+    <SignOut signOutPage="signout" />
+  </div> 
   <section id="introduction">
     <h2 class="header2">Évènements autour de l'exploration de la tendresse, du jeu et du consentement à la Réunion</h2>
     <enhanced:img class="enhanced-img" src="/src/lib/img/statues.png" alt="Décoration statues" />
