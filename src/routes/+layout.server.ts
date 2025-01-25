@@ -18,8 +18,14 @@ export const load = async (event) => {
     scan,
     tmp
   })
+  if(scan?.response && !! tmp?.response) {
+    return {
+      workshops,
+      testimonies
+    }
+  }
   return {
-    workshops,
-    testimonies
+    scan,
+    tmp
   }
 }
