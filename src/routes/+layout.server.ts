@@ -2,8 +2,10 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { dynaScanTable } from "$lib/server/dynaDB";
 import { sortWorkshopAndDates, cleanTestimonies, shuffle } from "../hook.client.js";
 
+import { AWS_REGION } from "$env/static/private";
+
 export const load = async (event) => {
-  const client = new DynamoDBClient({ region: "ap-southeast-1" })
+  const client = new DynamoDBClient({ region: AWS_REGION })
 
   const scan = await dynaScanTable(client, "Tendresse_Dates")
   const workshops = sortWorkshopAndDates(scan?.response.Items)
