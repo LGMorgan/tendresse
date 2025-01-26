@@ -1,12 +1,12 @@
 <script>
-  import ButtonAlt from "$lib/components/buttonAlt.svelte";
+  import { Button } from "flowbite-svelte"
 </script>
 
 <section id="newsletter">
   <h3 class="header3">Newsletter</h3>
   <form method="POST">
     <input name="email" type="email" aria-label="email" placeholder="Renseignes ton courriel içi">
-    <ButtonAlt text="Valider" />
+    <Button class="w-1/2 m-auto" type="submit">Valider</Button>
   </form>
 </section>
 

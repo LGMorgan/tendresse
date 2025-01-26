@@ -1,7 +1,6 @@
 <script>
   let { dates } = $props();
   let dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  console.log(dates)
   const next = dates?.find(date => date.isFull.BOOL == false)
 </script>
 

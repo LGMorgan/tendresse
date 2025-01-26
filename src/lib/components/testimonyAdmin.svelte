@@ -6,8 +6,10 @@
   const { testimony, signature, uuid, workshop } = $props()
 </script>
 
-<li in:fly={{ y: 20 }} out:slide >
-  <TestimonyItem testimony={testimony} signature={signature} />
+<li class=" rounded-lg p-4 m-auto" in:fly={{ y: 20 }} out:slide >
+  <div class="bg-blue-100 rounded-lg">
+    <TestimonyItem testimony={testimony} signature={signature} />
+  </div>
   <form method="POST" action="?/deleteTestimony" use:enhance={() => async ({ update }) => await update()} >
     <input type="hidden" name="uuid" value={uuid.S} />
     <input type="hidden" name="workshop" value={workshop.S} />
@@ -19,5 +21,4 @@
   form {
     padding-bottom: 80px;
   }
-  li { margin: auto }
 </style>

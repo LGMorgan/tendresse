@@ -3,10 +3,23 @@
   import MailInput from "$lib/components/mailInput.svelte"
   import NextDate from "$lib/components/nextDate.svelte"
   import Link from "$lib/components/link.svelte";
-  import ButtonAlt from  '$lib/components/buttonAlt.svelte'
-  import { SignIn, SignOut } from "@auth/sveltekit/components"
+  import { SignIn } from "@auth/sveltekit/components";
+  import { page } from "$app/stores"
 
   let { data } = $props();
+  /*
+
+    <SignIn
+      options={{
+        redirect: true,
+        redirectTo: `/admin`,
+      }}
+      signInPage="signin">
+        <span slot="submitButton">connexion<input type="hidden" name="redirectTo" value={"/admin"} /></span>
+        
+    </SignIn>
+
+  */
 </script>
 
 <main>
@@ -59,9 +72,9 @@
     <p class="p projet">
       Tendresse c'est une étape vers mon utopie : Vivre dans un monde où les relations sont authentiques, bienveillantes, inclusives et tendres.
     </p>
-    <a href="/projet" aria-label="Boutton pour la page projet">
-      <ButtonAlt on:click={() => {}} text="En savoir plus" />
-    </a>
+    <Link href="/projet" aria-label="Boutton pour la page projet">
+      En savoir plus
+    </Link>
   </section>
   
   <MailInput />

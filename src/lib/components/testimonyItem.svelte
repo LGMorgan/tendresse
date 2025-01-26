@@ -2,7 +2,7 @@
   const { testimony, signature } = $props()
 </script>
 
-<div>
+<div class="flex flex-col align-middle justify-center text-justify  p-4 rounded-lg">
   <span>"</span>
     <p class="text-repink-500">{testimony.S}</p>
     <span>"</span>
@@ -10,13 +10,7 @@
 </div>
 
 <style>
-  div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-  }
+
   span {
     position: relative;
     height: 20px;

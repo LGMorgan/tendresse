@@ -2,6 +2,7 @@
   import { Button, Datepicker, Textarea, Label, Input, Dropdown, DropdownItem, Tabs, TabItem  } from 'flowbite-svelte';
   import { ChevronDownOutline} from 'flowbite-svelte-icons';
   import { enhance } from '$app/forms';
+  import { SignOut } from "@auth/sveltekit/components";
 	import DateList from '$lib/components/dateList.svelte';
   import TestimonyList from '$lib/components/testimonyList.svelte';
 
@@ -33,19 +34,30 @@
 </script>
 
 <main>
+  <div class="m-auto flex justify-center mb-7 mt-0 ">
+    <SignOut
+      options={{
+        redirectTo: `/`,
+      }}
+      signOutPage="signout">
+      <span class="bg-red-500 m-auto text-white p-2 wx-10 rounded-md justify-end" slot="submitButton">Déconnexion</span>
+    </SignOut>
+  </div>
+
   <Tabs
     tabStyle="full"
-    defaultClass="flex m-auto justify-center rounded-lg divide-x rtl:divide-x-reverse divide-gray-200 shadow dark:divide-gray-700">
+    defaultClass="flex m-auto justify-center rounded-lg divide-x rtl:divide-x-reverse divide-gray-200 shadow dark:divide-gray-700"
+    contentClass="m-auto p-4 bg-gray-50 rounded-lg dark:bg-gray-800 mt-4 md:w-2/3 lg:w-1/2">
     <TabItem
       open
       title="Ateliers"
-      activeClasses="p-4 w-full group-first:rounded-s-lg group-last:rounded-e-lg text-gray-900 bg-gray-100 dark:bg-gray-700 dark:text-white">
+      activeClasses="p-4 w-full md:w-20 bg-transaprent group-first:rounded-s-lg group-last:rounded-e-lg text-gray-900 bg-gray-100 dark:bg-gray-700 dark:text-white">
       <form method="POST" action="?/putDate" use:enhance={handleEnhance} class="flex justify-end flex-col w-8">
     
         <h2 class="header3 mt-0 p-0">Ajout d'atelier</h2>
         
         <input type="hidden" name="workshop" value={workshop} required />
-        <Button class="w-full mb-4 text-white bg-repink-400">{workshop ? workshop : "Atelier"}<ChevronDownOutline class="w-6 h-6 ms-2 text-white dark:text-white" /></Button>
+        <Button class="w-full mb-4 text-white bg-red-500">{workshop ? workshop : "Atelier"}<ChevronDownOutline class="w-6 h-6 ms-2 text-white dark:text-white" /></Button>
         <Dropdown bind:open={dropdownOpen}>
           <DropdownItem onclick={handleClick}>Tendresse</DropdownItem>
           <DropdownItem onclick={handleClick}>Playfight</DropdownItem>
@@ -54,7 +66,7 @@
     
         <Label  class="space-y-2 mb-6 w-full">
           <input type="hidden" name="date" value={date} required />
-          <Datepicker inline locale="fr-FR" required color="red" bind:value={date} placeholder="Sélectionner une date"/>
+          <Datepicker inline locale="fr-FR" required bind:value={date} placeholder="Sélectionner une date"/>
         </Label>
     
         <Label  class="space-y-2 mb-4 w-full">
@@ -86,7 +98,7 @@
         <h2 class="header3 mt-0 p-0">Ajout de témoignage</h2>
         
         <input type="hidden" name="workshop" value={workshop} />
-        <Button class="w-full mb-4 text-white bg-repink-400">{workshop ? workshop : "Atelier"}<ChevronDownOutline class="w-6 h-6 ms-2 text-white dark:text-white" /></Button>
+        <Button class="w-full mb-4 text-white  bg-red-500">{workshop ? workshop : "Atelier"}<ChevronDownOutline class="w-6 h-6 ms-2 text-white dark:text-white" /></Button>
         <Dropdown bind:open={dropdownOpen}>
           <DropdownItem on:click={handleClick}>Tendresse</DropdownItem>
           <DropdownItem on:click={handleClick}>Playfight</DropdownItem>

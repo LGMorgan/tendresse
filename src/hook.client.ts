@@ -17,8 +17,6 @@ export function sortWorkshopAndDates(dynamoDBResponse) {
 
 export function sortDates(obj) {
   let workshops: [] = []
-
-
     workshops = obj.sort(function(a,b){
       return new Date(a.date.S) - new Date(b.date.S);
     });

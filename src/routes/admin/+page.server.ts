@@ -88,26 +88,18 @@ export const load = async ({locals, depends}) => {
   console.log("PAGE LOAD", {
     session
   })
-
-
-  if (session?.user?.email != "mo.leguen.42@gmail.com" || "laurette.deloison@gmail.com") {
-    return redirect(307, "https://tendresse.vercel.app")
+  if(!session.user) {
+    return redirect(307, "http://localhost:5173/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A5173%2Fadmin")
   }
 
-  //const client = new DynamoDBClient({ region: "ap-southeast-1" });
-  const scan = await dynaScanTable(client, "Tendresse_Dates")
-  const workshops = sortWorkshopAndDates(scan?.response.Items)
+  if (!["mo.leguen.42@gmail.com", "laurette.deloison@gmail.com"].includes(session?.user?.email)) {
+    return redirect(307, "http://localhost:5173/")
+  }
 
-  const tmp = await dynaScanTable(client, "Tendresse_Testimonies")
-  const testimonies = cleanTestimonies(tmp?.response.Items)
- 
   console.log("PAGE LOAD", {
     session
   })
-  console.log("WT", workshops.Tendresse)
   return {
-    session,
-    workshops,
-    testimonies
+    session
   }
 }

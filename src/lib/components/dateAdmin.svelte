@@ -5,7 +5,7 @@
   const { date, isFull } = $props();
 </script>
 
-<li in:fly={{ y: 20 }} out:slide id="container">
+<li class="bg-blue-100 rounded-lg" in:fly={{ y: 20 }} out:slide id="container">
   <div>
     <DateItem date={new Date(date.S)} isFull={isFull.BOOL}/>
   </div>
@@ -13,7 +13,7 @@
     <form method="POST" action="?/changeComplet" use:enhance={() => async ({ update }) => await update()} >
       <input type="hidden" name="isFull" value={isFull.BOOL} />
       <input type="hidden" name="date" value={date.S} />
-      <button class="border-2 border-black" type="submit">{"Atelier complet"}</button>
+      <button class="border-2 border-gray-700 text-gray-700" type="submit">{"Atelier complet"}</button>
     </form>
     <form method="POST" action="?/deleteDate" use:enhance={() => async ({ update }) => await update()} >
       <input type="hidden" name="date" value={date.S} />
@@ -27,18 +27,16 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border: 1px solid red
+    padding: 10px;
   }
   div:first-of-type {
     display: flex;
     flex: 1;
     align-content: center;
     justify-content: center;
-    border: 2px solid blue;
   }
   #container {
     margin: auto;
-    border-radius: 3px;
     margin-bottom: 20px;
   }
   #buttons {
@@ -46,7 +44,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
   }
   button {
     display: block;
