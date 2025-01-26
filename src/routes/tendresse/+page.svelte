@@ -3,6 +3,7 @@
   import GridDate from '$lib/components/gridDate.svelte'
   import ButtonAlt from '$lib/components/buttonAlt.svelte';
   import Testimony from "$lib/components/testimony.svelte";
+  import { Button } from 'flowbite-svelte';
 
   const { data } = $props();
 </script>
@@ -44,7 +45,10 @@
       <li>Les rires, larmes et toutes autres formes d'expressions émotionnelles sont bienvenues</li>
     </ul>
     
-    <ButtonAlt text="Des questions ?" />
+    <Button class="m-auto flex justify-center mb-7 mt-0 ">
+      Des questions ?
+    </Button>
+
   </section>
   
   <GridDate dates={data?.workshops?.Tendresse}/>

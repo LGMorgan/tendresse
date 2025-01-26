@@ -89,11 +89,12 @@ export const load = async ({locals, depends}) => {
     session
   })
   if(!session?.user) {
-    return redirect(307, "https://tendresse.vercel.app/auth/signin?callbackUrl=https%3A%2F%2Ftendresse%2Evercel%2Eapp%2Fadmin")
+    // "https://tendresse.vercel.app/auth/signin?callbackUrl=https%3A%2F%2Ftendresse%2Evercel%2Eapp%2Fadmin"
+    return redirect(307, "http://localhost:5173/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A5173%2Fadmin")
   }
-
+  
   if (!["mo.leguen.42@gmail.com", "laurette.deloison@gmail.com"].includes(session?.user?.email)) {
-    return redirect(307, "https://tendresse.vercel.app")
+    return redirect(307, "http://localhost:5173/")
   }
 
   console.log("PAGE LOAD", {
