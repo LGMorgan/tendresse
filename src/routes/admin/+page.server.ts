@@ -1,6 +1,6 @@
 import { redirect } from "@sveltejs/kit"
 
-import { AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION } from "$env/static/private";
+import { AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, PAGE_ADMIN, PAGE_HOME } from "$env/static/private";
 import { dynaDelete, dynaPut, dynaUpdate } from "$lib/server/dynaDB";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
@@ -89,11 +89,11 @@ export const load = async ({locals, depends}) => {
     session
   })
   if(!session?.user) {
-    return redirect(307, "http://localhost:5173/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A5173%2Fadmin")
+    return redirect(307, PAGE_ADMIN)
   }
 
   if (!["mo.leguen.42@gmail.com", "laurette.deloison@gmail.com"].includes(session?.user?.email)) {
-    return redirect(307, "http://localhost:5173/")
+    return redirect(307, PAGE_HOME)
   }
 
   console.log("PAGE LOAD", {
