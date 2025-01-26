@@ -3,23 +3,8 @@
   import MailInput from "$lib/components/mailInput.svelte"
   import NextDate from "$lib/components/nextDate.svelte"
   import Link from "$lib/components/link.svelte";
-  import { SignIn } from "@auth/sveltekit/components";
-  import { page } from "$app/stores"
 
   let { data } = $props();
-  /*
-
-    <SignIn
-      options={{
-        redirect: true,
-        redirectTo: `/admin`,
-      }}
-      signInPage="signin">
-        <span slot="submitButton">connexion<input type="hidden" name="redirectTo" value={"/admin"} /></span>
-        
-    </SignIn>
-
-  */
 </script>
 
 <main>
