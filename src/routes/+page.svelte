@@ -14,7 +14,7 @@
     <Line />
   </section>
   
-  <section id="ateliers">
+  <div id="ateliers">
     <h3 class="header3">Les ateliers</h3>
     <p class="p">Les ateliers ouvrent un espace de connexion, de partage et de jeu.</p>
     <p class="p">Une exploration du rapport au corps, au moyen d’outils de consentement, de tendresse et de joie.</p>
@@ -50,7 +50,7 @@
         <NextDate dates={data.workshops?.Playfight}/>
       </div>
     </div>
-  </section>
+  </div>
 
   <section id="projet-section">
     <h3 class="header3">Le projet</h3>
@@ -127,6 +127,17 @@
       max-width: 300px;
     }
   }
+  @media only screen and (min-width: 1000px) {
+    #atelier-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .flex-item {
+      max-width: 300px;
+    }
+    #ateliers {
+      margin: 20px 7vw;
+    }
+  }
   @media only screen and (min-width: 1280px) {
     .header3 {
       margin: 50px 20px 10px 20px;
@@ -134,6 +145,9 @@
     #atelier-grid {
       grid-template-columns: repeat(3, 1fr);
       width: 100%;
+    }
+    #ateliers {
+      margin: 20px 50px;
     }
   }
 </style>
