@@ -103,7 +103,6 @@ main {
   animation-duration: 0.5s;
   animation-fill-mode: backwards;
   text-shadow: 1px 1px 2px #fd6155;
-  letter-spacing: 2px;
 }
 .header3 {
   font-family: 'noot';
@@ -147,7 +146,6 @@ main {
   animation-delay: 650ms;
   animation-fill-mode: backwards;
   text-shadow: 1px 1px 2px #fd6155;
-  letter-spacing: 2px;
 }
 .navUl {
   font-family: 'bukhari';
@@ -162,7 +160,6 @@ main {
   animation-delay: 650ms;
   animation-fill-mode: backwards;
   text-shadow: 1px 1px 1px #fd6155;
-  letter-spacing: 0px;
   width: 100%;
 }
 .enhanced-img {

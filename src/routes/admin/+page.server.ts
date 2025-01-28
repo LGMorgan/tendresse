@@ -1,10 +1,21 @@
 import { redirect } from "@sveltejs/kit"
-
 import { AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_REGION, HOME_URL, LOGIN_URL } from "$env/static/private";
 import { dynaDelete, dynaPut, dynaUpdate } from "$lib/server/dynaDB";
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
-
 import { v4 as uuidv4 } from 'uuid';
+import type { RequestEvent } from "@sveltejs/kit";
+
+
+interface FormData {
+  get(name: string): FormDataEntryValue | null;
+}
+
+interface WorkshopObject {
+  date: FormDataEntryValue | null;
+  workshop?: FormDataEntryValue | null;
+  location?: FormDataEntryValue | null;
+  isFull: boolean;
+}
 
 const client = new DynamoDBClient({
   region: AWS_REGION,
@@ -15,30 +26,29 @@ const client = new DynamoDBClient({
 });
 
 export const actions = {
-  putDate: async ({ cookies, request }) => {
-    console.log("action create")
-    const data = await request.formData();
+  putDate: async ({ cookies, request }: RequestEvent) => {
+    console.log("action create");
+    const data: FormData = await request.formData();
     for (const entry of data.entries()) {
-      console.log(entry)
+      console.log(entry);
     }
-    let obj = {
+    const obj: WorkshopObject = {
       date: data.get("date"),
       workshop: data.get("workshop"),
       location: data.get("location"),
       isFull: false
-    }
-    const create = await dynaPut(client, "Tendresse_Dates", obj)
-    console.log("putdata", create?.response)
+    };
+    const create = await dynaPut(client, "Tendresse_Dates", obj);
   },
-  changeComplet: async ({ cookies, request }) => {
+  changeComplet: async ({ cookies, request }): RequestEvent => {
     console.log('action change complet status')
     const data = await request.formData();
     for (const entry of data.entries()) {
       console.log(entry)
     }
     const val = data.get("isFull") === "true" ? false : true
-    const obj = {
-      date: data.get("date").toString(),
+    const obj: WorkshopObject = {
+      date: data.get("date")?.toString() || '',
       isFull: val,
     }
     const create = await dynaUpdate(client, obj)

@@ -7,16 +7,19 @@
   import TestimonyList from '$lib/components/testimonyList.svelte';
 
   let { data } = $props();
+  const now = new Date();
   
-  let date = $state(null);
+  let date = $state(new Date());
   let workshop = $state(null);
   let location = $state("");
   let dropdownOpen = $state(false);
   let testimony = $state(null);
   let signature = $state(null);
   let creating = $state(false);
-  let allowAddDate = $derived(!!date && !!workshop && !!location.length)
+  let errorMessage = $state('');
+  let allowAddDate = $derived(!!date && date > now && !!workshop && !!location.length)
   let allowAddTestimony = $derived(!!workshop && !!testimony && !!signature)
+
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -24,12 +27,24 @@
     dropdownOpen = false
   };
 
+  function validateForm() {
+    if (!date || !workshop || !location) {
+      errorMessage = 'Tous les champs doivent être remplis.';
+      return false;
+    }
+    errorMessage = '';
+    return true;
+  }
+
   const handleEnhance = () => {
-    creating = true;
-    return async ({ update }) => {
-      await update()
-      creating = false;
-    };
+    if (validateForm()) {
+      creating = true;
+      return async ({ update }) => {
+        await update()
+        creating = false;
+      };
+    }
+    
   }
 </script>
 
@@ -72,6 +87,10 @@
         <Label  class="space-y-2 mb-4 w-full">
           <Input class="text-gray-500" name="location" bind:value={location} required/>
         </Label>
+
+        {#if errorMessage}
+          <p class="error">{errorMessage}</p>
+        {/if}
 
         <div>
           <Button disabled={!allowAddDate || creating} class="float-right mt-6 text-white bg-green-500" type="submit">{creating ? "Sauvegarde" : "Enregistrer"}</Button>

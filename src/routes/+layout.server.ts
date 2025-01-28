@@ -1,31 +1,51 @@
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
-import { dynaScanTable } from "$lib/server/dynaDB";
-import { sortWorkshopAndDates, cleanTestimonies, shuffle } from "../hook.client.js";
-
+import { dynaScanTable, dynaDelete } from "$lib/server/dynaDB";
 import { AWS_REGION } from "$env/static/private";
 
-export const load = async (event) => {
+function sortWorkshopAndDates(dynamoDBResponse) {
+  const now = new Date();
+
+  if(dynamoDBResponse == null)
+    return []
+  const workshops = {Adoration: [], Playfight: [], Tendresse: [], PastDates: []}
+  for(const item of dynamoDBResponse) {
+    if(new Date(item.date.S) < now)
+      workshops.PastDates.push(item)
+    else
+      workshops[item.workshop.S].push(item)
+  }
+  for (const [key, values] of Object.entries(workshops)) {
+    workshops[key] = values.sort(function(a,b){
+      return new Date(a.date.S) - new Date(b.date.S);
+    });
+  }
+  return workshops
+}
+
+function cleanTestimonies(dynamoDBResponse) {
+  const testimonies: WorkshopObject = {Adoration: [], Playfight: [], Tendresse: []}
+  for(const item of dynamoDBResponse) {
+    testimonies[item.workshop.S].push(item)
+  }
+
+  return testimonies
+}
+
+
+export const load = async () => {
   const client = new DynamoDBClient({ region: AWS_REGION })
 
   const scan = await dynaScanTable(client, "Tendresse_Dates")
-  const workshops = scan?.response ? sortWorkshopAndDates(scan?.response.Items) : undefined
-  
-  const tmp = await dynaScanTable(client, "Tendresse_Testimonies")
-  const testimonies = tmp?.response ? cleanTestimonies(tmp?.response.Items) : undefined
-  //shuffle(testimonies)
+  const workshops = scan?.response ? sortWorkshopAndDates(scan.response.Items) : undefined
 
-  console.log("SERVER LOAD", {
-    scan,
-    tmp
-  })
-  if(scan?.response && !! tmp?.response) {
-    return {
-      workshops,
-      testimonies
+  if(!!workshops.PastDates.length) {
+    for(const item of workshops.PastDates) {
+      await dynaDelete(client, "Tendresse_Dates", item.date.S)
     }
   }
-  return {
-    scan,
-    tmp
-  }
+  
+  const tmp = await dynaScanTable(client, "Tendresse_Testimonies")
+  const testimonies = tmp?.response ? cleanTestimonies(tmp.response.Items) : undefined
+
+  return { workshops, testimonies }
 }
