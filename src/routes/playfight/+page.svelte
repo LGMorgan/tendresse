@@ -20,8 +20,8 @@
     </h3>
     <ul class="unol">
       <li>Jeux de consentement</li>
-      <li>Effauchement au moyen de jeux d'oppositions</li>
-      <li>Présentation du cadre et des rêgles</li>
+      <li>Echauchement au moyen de jeux d'oppositions</li>
+      <li>Présentation du cadre et des règles</li>
       <li>Cercle de Playfight</li>
       <li>Retours et temps de parole</li>
     </ul>

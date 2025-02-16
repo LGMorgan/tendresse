@@ -4,9 +4,9 @@
 
 <div class="flex flex-col align-middle justify-center text-justify  p-4 rounded-lg">
   <span>"</span>
-    <p class="text-repink-500">{testimony.S}</p>
+    <p class="p">{testimony.S}</p>
     <span>"</span>
-  <p class="text-repink-500">{signature.S}</p>
+  <p class="p">{signature.S}</p>
 </div>
 
 <style>

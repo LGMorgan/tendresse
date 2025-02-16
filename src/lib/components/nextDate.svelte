@@ -17,7 +17,7 @@
 {:else}
 <div>
   <span>(</span>
-    <a href="#newsletter">Rejoins la newsletter pour être informé•e de la prochaine date</a>
+    <a href="#newsletter">Rejoins la newsletter pour être informé •e de la prochaine date</a>
   <span>)</span>
 </div>
 {/if}

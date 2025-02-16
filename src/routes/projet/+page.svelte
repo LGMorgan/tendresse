@@ -49,7 +49,7 @@
 <style>
   div {
     width: 50vw;
-    height: 50vh;
+    height: 50vw;
     margin: 20px auto;
     display: flex;
     overflow: hidden;
