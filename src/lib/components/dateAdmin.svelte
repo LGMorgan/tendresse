@@ -20,7 +20,6 @@
       <button class="text-red-500 border-2 border-red-500" type="submit">Supprimer</button>
     </form>
   </div>
-  <a href={link} target="_blank" >{link}</a>
 </li>
 
 <style>
