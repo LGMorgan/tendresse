@@ -23,7 +23,6 @@
 <HeaderTitle/>
 <NavBar />
 
-
 {@render children()}
 
 <Socials />

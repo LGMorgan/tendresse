@@ -159,7 +159,7 @@ main {
   animation-duration: 0.5s;
   animation-delay: 650ms;
   animation-fill-mode: backwards;
-  text-shadow: 1px 1px 1px #fd6155;
+  text-shadow: 1px 1px 1px #fd6155; /* #dd00ae */
   width: 100%;
 }
 .enhanced-img {
@@ -194,6 +194,7 @@ section > h2 {
   justify-content: center;
   flex-direction: column;
   padding: 0px 20px;
+  font-size: 1.2em;
 }
 
 @media only screen and (min-width: 480px) {
@@ -208,7 +209,7 @@ section > h2 {
   }
 
   .unol {
-    width: 80%;
+    max-width: 80%;
   }
   .enhanced-img {
     max-width: 70%;
@@ -222,10 +223,24 @@ section > h2 {
   .enhanced-img {
     max-width: 60%;
   }
+  .unol {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  section {
+    width: 65vw;
+  }
+  .unol {
+    max-width: 70%;
+  }
 }
 @media only screen and (min-width: 1024px) {
   section {
     width: 65vw;
+  }
+  .unol {
+    max-width: 60%;
   }
 }
 @media only screen and (min-width: 1280px) {

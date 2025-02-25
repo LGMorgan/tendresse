@@ -11,10 +11,11 @@ interface FormData {
 }
 
 interface WorkshopObject {
-  date: FormDataEntryValue | null;
-  workshop?: FormDataEntryValue | null;
-  location?: FormDataEntryValue | null;
+  date: FormDataEntryValue;
+  workshop: FormDataEntryValue;
+  location: FormDataEntryValue;
   isFull: boolean;
+  link: string;
 }
 
 const client = new DynamoDBClient({
@@ -36,7 +37,8 @@ export const actions = {
       date: data.get("date"),
       workshop: data.get("workshop"),
       location: data.get("location"),
-      isFull: false
+      isFull: false,
+      link: data.get("link")
     };
     const create = await dynaPut(client, "Tendresse_Dates", obj);
   },

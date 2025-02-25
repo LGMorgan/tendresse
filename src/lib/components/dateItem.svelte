@@ -1,6 +1,6 @@
 <script>
   import { fly, slide } from 'svelte/transition';
-  const { date = new Date(), isFull = false } = $props();
+  const { date = new Date(), isFull = false, link } = $props();
 
   const dayOptions = { weekday: 'long' };
   const dateOptions = { day: 'numeric' };
@@ -13,6 +13,7 @@
 </script>
 
 <div id="outer">
+  <a href={link} target="_blank">
   <div id="line-div">
     <div class="line"></div>
     <div class="line"></div>
@@ -23,6 +24,7 @@
   {#if isFull}
     <span in:fly={{ y: 20 }} out:fly={{ y: -20 }}>Complet</span>
   {/if}
+  </a>
 </div>
 
 <style>

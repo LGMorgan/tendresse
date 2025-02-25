@@ -11,7 +11,8 @@
   
   let date = $state(new Date());
   let workshop = $state(null);
-  let location = $state("");
+  let location = $state(null);
+  let link = $state(null)
   let dropdownOpen = $state(false);
   let testimony = $state(null);
   let signature = $state(null);
@@ -81,11 +82,15 @@
     
         <Label  class="space-y-2 mb-6 w-full">
           <input type="hidden" name="date" value={date} required />
-          <Datepicker inline locale="fr-FR" required bind:value={date} placeholder="Sélectionner une date"/>
+          <Datepicker inline locale="fr-FR" bind:value={date} placeholder="Sélectionner une date" required/>
         </Label>
     
         <Label  class="space-y-2 mb-4 w-full">
-          <Input class="text-gray-500" name="location" bind:value={location} required/>
+          <Input class="text-gray-500" name="location" bind:value={location} placeholder="Lieu" required/>
+        </Label>
+
+        <Label  class="space-y-2 mb-4 w-full">
+          <Input class="text-gray-500" name="location" bind:value={link} placeholder="Lien pour le post facebook" required/>
         </Label>
 
         {#if errorMessage}

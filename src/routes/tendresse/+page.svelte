@@ -59,14 +59,6 @@
 </main>
 
 <style>
-  #introduction {
-    animation-delay: 400ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 20px;
-  }
   h3 {
     animation-delay: 550ms;
     margin-top: 20px;

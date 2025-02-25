@@ -7,16 +7,16 @@
   //       <NavLi class="text-lg" href="/cadre">Le cadre</NavLi>
 </script>
 
-<Navbar fluid={true} class="bg-transparent md:m-5">
-  <div>
+<Navbar fluid={true} class="bg-transparent mt-6 md:my-6">
+  <div class="flex flex-col m-auto">
     <NavHamburger
       color={"pink"}
       class="m-auto flex"
       onclick={() => navHidden = !navHidden}/>
     <NavUl
       {activeUrl}
-      class="unol navUl dzad text-pink-400 text-lg w-60"
-      classUl="text-lg"
+      class="m-auto navUl text-pink-400 text-lg w-full"
+      classUl="text-lg flex flex-col align-center"
       hidden={navHidden}
       slideParams={{delay: 100, duration: 250}}
       activeClass="text-[#dd00ae]"
@@ -31,15 +31,5 @@
 </Navbar>
 
 <style>
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-  }
-  .tc {
-    color: #dd00ae;
-  }
+
 </style>

@@ -2,12 +2,12 @@
   import DateItem from './dateItem.svelte';
   import { fly, slide } from 'svelte/transition';
   import { enhance } from '$app/forms';
-  const { date, isFull } = $props();
+  const { date, isFull, link } = $props();
 </script>
 
 <li class="bg-blue-100 rounded-lg" in:fly={{ y: 20 }} out:slide id="container">
   <div>
-    <DateItem date={new Date(date.S)} isFull={isFull.BOOL}/>
+    <DateItem date={new Date(date.S)} isFull={isFull.BOOL} link={link.S}/>
   </div>
   <div id="buttons">
     <form method="POST" action="?/changeComplet" use:enhance={() => async ({ update }) => await update()} >
@@ -20,6 +20,7 @@
       <button class="text-red-500 border-2 border-red-500" type="submit">Supprimer</button>
     </form>
   </div>
+  <a href={link} target="_blank" >{link}</a>
 </li>
 
 <style>

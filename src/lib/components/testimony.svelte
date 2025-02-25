@@ -16,7 +16,7 @@ console.log({testimonies})
 
 {#if !!testimonies.length}
   <section id="témoignages">
-    <h3 class="header3">Témoignages</h3>
+    <h3 class="header3">Temoignages</h3>
     {#if browser}
       <Carousel bind:this={carousel} infinite={false}>
         {#each testimonies as t}
