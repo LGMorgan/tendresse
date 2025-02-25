@@ -9,6 +9,7 @@ function sortWorkshopAndDates(dynamoDBResponse) {
     return []
   const workshops = {Adoration: [], Playfight: [], Tendresse: [], PastDates: []}
   for(const item of dynamoDBResponse) {
+    console.log({item})
     if(new Date(item.date.S) < now)
       workshops.PastDates.push(item)
     else

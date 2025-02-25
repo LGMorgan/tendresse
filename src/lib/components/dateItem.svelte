@@ -10,6 +10,7 @@
   const numberedDate = date.toLocaleDateString("fr-FR", dateOptions)
   
   const month = date.toLocaleDateString("fr-FR", monthOptions)
+  console.log({link})
 </script>
 
 <div id="outer">

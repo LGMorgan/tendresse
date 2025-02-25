@@ -1,7 +1,6 @@
 <script>
   import MailInput from "$lib/components/mailInput.svelte"
   import GridDate from '$lib/components/gridDate.svelte'
-  import ButtonAlt from '$lib/components/buttonAlt.svelte';
   import Testimony from "$lib/components/testimony.svelte";
   import { Button } from 'flowbite-svelte';
 

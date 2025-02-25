@@ -8,7 +8,7 @@
   {#if !!dates.length}
     <div id="wrapper">
       {#each dates as d}
-        <DateItem date={new Date(d.date.S)} isFull={d.isFull.BOOL}/>
+        <DateItem date={new Date(d.date.S)} isFull={d.isFull.BOOL} link={d.link.S} />
       {/each}
     </div>
   {:else}

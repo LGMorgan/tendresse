@@ -90,7 +90,7 @@
         </Label>
 
         <Label  class="space-y-2 mb-4 w-full">
-          <Input class="text-gray-500" name="location" bind:value={link} placeholder="Lien pour le post facebook" required/>
+          <Input class="text-gray-500" name="link" bind:value={link} placeholder="Lien pour le post facebook" required/>
         </Label>
 
         {#if errorMessage}
