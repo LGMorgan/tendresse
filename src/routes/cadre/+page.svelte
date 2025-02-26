@@ -6,6 +6,7 @@
   <section>
     <h3 class="header3">Le cadre</h3>
     <p class="p">Les ateliers Tendresse sont des espaces d’exploration et d’expérimentation de la Tendresse avec le principe de consentement au cœur de chaque jeux.</p>
+    <br/> 
     <TitledP title="Intentions :">Que tu ressortes avec des outils pour prendre davantage soin de ton consentement, de celui des autres et de tes limites et envies. <br/> <br/> Que ce soit plus facile dans la vraie vie.</TitledP>
     <TitledP title="Invitation :" >Rien n’est obligatoire, tout est invitation. Tu peux à tout moment partir, te mettre de côté, rester et juste observer. C’est tout comme tu veux !</TitledP>
     <TitledP title="Le consentement est :" >Enthousiaste : Si tu penses “ peut-être”, alors c’est un “non”. Essaye de dire “oui” seulement si tu ressens “bien sûr que oui”.</TitledP>

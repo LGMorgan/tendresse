@@ -1,10 +1,11 @@
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { dynaScanTable, dynaDelete } from "$lib/server/dynaDB";
-import { AWS_REGION } from "$env/static/private";
+import { AWS_REGION, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY } from "$env/static/private";
+
 
 function sortWorkshopAndDates(dynamoDBResponse) {
   const now = new Date();
-
+  
   if(dynamoDBResponse == null)
     return []
   const workshops = {Adoration: [], Playfight: [], Tendresse: [], PastDates: []}
@@ -34,7 +35,14 @@ function cleanTestimonies(dynamoDBResponse) {
 
 
 export const load = async () => {
-  const client = new DynamoDBClient({ region: AWS_REGION })
+  const client = new DynamoDBClient({
+    region: AWS_REGION,
+    credentials: {
+      accessKeyId: AWS_ACCESS_KEY_ID, 
+      secretAccessKey: AWS_SECRET_ACCESS_KEY, 
+    }
+  }
+)
 
   const scan = await dynaScanTable(client, "Tendresse_Dates")
   const workshops = scan?.response ? sortWorkshopAndDates(scan.response.Items) : undefined
