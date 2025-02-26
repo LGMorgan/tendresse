@@ -1,13 +1,13 @@
 <script lang="ts">
   import { Navbar, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
   import {page} from '$app/state';
+
   let activeUrl = $derived(page.url.pathname);
   let navHidden = $state(true)
 
-  //       <NavLi class="text-lg" href="/cadre">Le cadre</NavLi>
 </script>
 
-<Navbar fluid={true} class="bg-transparent mt-6 md:my-6">
+<Navbar fluid={true} class="bg-transparent mt-6 md:my-6" let:toggle>
   <div class="flex flex-col m-auto">
     <NavHamburger
       color={"pink"}
@@ -20,13 +20,14 @@
       hidden={navHidden}
       slideParams={{delay: 100, duration: 250}}
       activeClass="text-[#dd00ae]"
-      nonActiveClass="hover:text-[#dd00ae]"> 
-      <NavLi class="text-lg" href="/">Accueil</NavLi>
-      <NavLi class="text-lg " href="/tendresse">La Tendresse Consentie</NavLi>
-      <NavLi class="text-lg" href="/playfight">La Playfight</NavLi>
-      <NavLi class="text-lg" href="/adoration">L' Adoration</NavLi>
-      <NavLi class="text-lg" href="/cadre">Le Cadre</NavLi>
-      <NavLi class="text-lg" href="/projet">Le Projet</NavLi>
+      nonActiveClass="hover:text-[#dd00ae]"
+      on:click={() => onNavLinkClick(toggle)}> 
+      <NavLi class="text-lg" href="/" onclick={() => navHidden = !navHidden}>Accueil</NavLi>
+      <NavLi class="text-lg " href="/tendresse" onclick={() => navHidden = !navHidden}>La Tendresse Consentie</NavLi>
+      <NavLi class="text-lg" href="/playfight" onclick={() => navHidden = !navHidden}>La Playfight</NavLi>
+      <NavLi class="text-lg" href="/adoration" onclick={() => navHidden = !navHidden}>L' Adoration</NavLi>
+      <NavLi class="text-lg" href="/cadre" onclick={() => navHidden = !navHidden}>Le Cadre</NavLi>
+      <NavLi class="text-lg" href="/projet" onclick={() => navHidden = !navHidden}>Le Projet</NavLi>
     </NavUl>
   </div>
 </Navbar>
