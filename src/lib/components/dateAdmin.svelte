@@ -3,14 +3,21 @@
   import { fly, slide } from 'svelte/transition';
   import { enhance } from '$app/forms';
   const { date, isFull, link } = $props();
+
+  let optimisticFull = $state(isFull.BOOL)
+
 </script>
 
 <li class="bg-blue-100 rounded-lg" in:fly={{ y: 20 }} out:slide id="container">
   <div>
-    <DateItem date={new Date(date.S)} isFull={isFull.BOOL} link={link.S}/>
+    <DateItem date={new Date(date.S)} isFull={optimisticFull} link={link.S}/>
   </div>
   <div id="buttons">
-    <form method="POST" action="?/changeComplet" use:enhance={() => async ({ update }) => await update()} >
+    <form method="POST" action="?/changeComplet" use:enhance={() => async ({ update }) => {
+      optimisticFull = !optimisticFull
+      await update();
+      optimisticFull = isFull.BOOL
+    }} >
       <input type="hidden" name="isFull" value={isFull.BOOL} />
       <input type="hidden" name="date" value={date.S} />
       <button class="border-2 border-gray-700 text-gray-700" type="submit">{"Atelier complet"}</button>

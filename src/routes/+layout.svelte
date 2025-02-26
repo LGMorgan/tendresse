@@ -35,16 +35,6 @@
   div {
     overflow: hidden;
   }
-  @media only screen and (min-width: 480px) {
-
-  }
-
-  @media only screen and (min-width: 768px) {
-
-  }
-  @media only screen and (min-width: 900px) {
-
-  }
   @media only screen and (min-width: 1280px) {
     div {
       margin-top: -150px;

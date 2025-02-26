@@ -85,10 +85,12 @@ main {
   font-size: 3em;
   text-shadow: #fff469 1px 0 10px;
   margin-bottom: 10px;
+  /*
   animation-name: blurFade;
   animation-duration: 0.5s;
   animation-fill-mode: backwards;
   animation-delay: 250ms;
+  */
 }
 .header2 {
   font-family: 'bukhari';
@@ -99,21 +101,25 @@ main {
   padding: 0px;
   transform: rotateZ(-5deg);
   font-style: italic;
+  /*
   animation-name: blurFade;
   animation-duration: 0.5s;
   animation-fill-mode: backwards;
   text-shadow: 1px 1px 2px #fd6155;
+  */
 }
 .header3 {
   font-family: 'noot';
   font-size: 2em;
   padding: 20px 0px;
   font-weight: 900;
+  color: #dd00ae;
+  /*
   animation-name: blurFade;
   animation-duration: 0.5s;
   animation-fill-mode: backwards;
-  color: #dd00ae;
   text-shadow: 3px 3px 2px #ffffff;
+  */
 }
 .unol {
   padding: 20px;
@@ -124,14 +130,16 @@ main {
   font-family: "bukhari";
   color: #f6f3e4;
   text-shadow: 1px 1px 2px #fd6155;
-  animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-fill-mode: backwards;
-  animation-delay: 650ms;
   list-style: inside;
   list-style-position: outside;
   margin: 0px 10px 10px 10px;
   font-size: 1.2em;
+  /*
+  animation-name: blurFade;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+  animation-delay: 650ms;
+  */
 }
 .p {
   font-family: 'bukhari';
@@ -140,12 +148,13 @@ main {
   font-size: 1.2em;
   font-weight: 100;
   padding: 0px 20px;
-
+  text-shadow: 1px 1px 2px #fd6155;
+  /*
   animation-name: blurFade;
   animation-duration: 0.5s;
   animation-delay: 650ms;
   animation-fill-mode: backwards;
-  text-shadow: 1px 1px 2px #fd6155;
+  */
 }
 .navUl {
   font-family: 'bukhari';
@@ -155,23 +164,23 @@ main {
   font-weight: 100;
   padding: 0px 20px;
   margin: auto;
-  animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-delay: 650ms;
-  animation-fill-mode: backwards;
   text-shadow: 1px 1px 1px #fd6155; /* #dd00ae */
   width: 100%;
+  /* animation-name: blurFade;
+  animation-duration: 0.5s;
+  animation-delay: 650ms;
+  animation-fill-mode: backwards; */
 }
 .enhanced-img {
   width: 100%;
   height: auto;
   margin: auto;
   padding: 0px;
-  animation-name: blurFade;
+  z-index: -1000;
+    /* animation-name: blurFade;
   animation-duration: 0.5s;
   animation-delay: 750ms;
-  animation-fill-mode: backwards;
-  z-index: -1000;
+  animation-fill-mode: backwards; */
 }
 h2, p {
   margin: auto;

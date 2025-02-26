@@ -88,6 +88,9 @@
     margin: 20px 0px;
     width: 100%;
   }
+  #projet-section {
+    margin-bottom: 50px;
+  }
   .flex-item {
     display: flex;
     flex-direction: column;
