@@ -25,6 +25,7 @@
       <NavLi class="text-lg " href="/tendresse">La Tendresse Consentie</NavLi>
       <NavLi class="text-lg" href="/playfight">La Playfight</NavLi>
       <NavLi class="text-lg" href="/adoration">L' Adoration</NavLi>
+      <NavLi class="text-lg" href="/cadre">Le Cadre</NavLi>
       <NavLi class="text-lg" href="/projet">Le Projet</NavLi>
     </NavUl>
   </div>
