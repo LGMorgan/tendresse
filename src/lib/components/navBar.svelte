@@ -4,7 +4,7 @@
 
   let activeUrl = $derived(page.url.pathname);
   let navHidden = $state(true)
-
+  console.log("//")
 </script>
 
 <Navbar fluid={true} class="bg-transparent mt-6 md:my-6" let:toggle>
