@@ -2,6 +2,7 @@ import { ScanCommand } from "@aws-sdk/client-dynamodb";
 import { DeleteCommand, PutCommand, UpdateCommand } from "@aws-sdk/lib-dynamodb";
 
 export async function dynaScanTable(client, table, filter) {
+  console.log({table, filter})
   try {
     let cmd = {}
     if(filter != undefined) {
@@ -15,11 +16,13 @@ export async function dynaScanTable(client, table, filter) {
     else {
       cmd = {TableName: table}
     }
+    console.log("cmd :", {cmd})
     const command = new ScanCommand(cmd)
     const response = await client.send(command);
+    console.log("Scan response :", {response})
     return { response }
   } catch(error) {
-    console.log("scan", {error})
+    console.log("DynaScanTable error :", {error})
   }
 }
 

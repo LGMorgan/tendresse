@@ -4,7 +4,12 @@
 
   let activeUrl = $derived(page.url.pathname);
   let navHidden = $state(true)
-  console.log("//")
+
+  let toggleMenu = () => {
+    console.log("toggleMenu called")
+    navHidden = !navHidden;
+  };
+  
 </script>
 
 <Navbar fluid={true} class="bg-transparent mt-6 md:my-6" let:toggle>
@@ -12,26 +17,22 @@
     <NavHamburger
       color={"pink"}
       class="m-auto flex"
-      onclick={() => navHidden = !navHidden}/>
+      onclick={toggleMenu}/>
     <NavUl
       {activeUrl}
-      class="m-auto navUl text-pink-400 text-lg w-full"
-      classUl="text-lg flex flex-col align-center"
+      class="bg-transparent m-auto navUl text-pink-400 text-lg w-full"
+      classUl="bg-transparent border-none text-lg flex flex-col align-center"
       hidden={navHidden}
       slideParams={{delay: 100, duration: 250}}
       activeClass="text-[#dd00ae]"
       nonActiveClass="hover:text-[#dd00ae]"
-      on:click={() => onNavLinkClick(toggle)}> 
-      <NavLi class="text-lg" href="/" onclick={() => navHidden = !navHidden}>Accueil</NavLi>
-      <NavLi class="text-lg " href="/tendresse" onclick={() => navHidden = !navHidden}>La Tendresse Consentie</NavLi>
-      <NavLi class="text-lg" href="/playfight" onclick={() => navHidden = !navHidden}>La Playfight</NavLi>
-      <NavLi class="text-lg" href="/adoration" onclick={() => navHidden = !navHidden}>L' Adoration</NavLi>
-      <NavLi class="text-lg" href="/cadre" onclick={() => navHidden = !navHidden}>Le Cadre</NavLi>
-      <NavLi class="text-lg" href="/projet" onclick={() => navHidden = !navHidden}>Le Projet</NavLi>
+      on:click={() => toggleMenu()}> 
+      <NavLi class="text-lg" href="/">Accueil</NavLi>
+      <NavLi class="text-lg " href="/tendresse">La Tendresse Consentie</NavLi>
+      <NavLi class="text-lg" href="/playfight">La Playfight</NavLi>
+      <NavLi class="text-lg" href="/adoration">L' Adoration</NavLi>
+      <NavLi class="text-lg" href="/cadre">Le Cadre</NavLi>
+      <NavLi class="text-lg" href="/projet">Le Projet</NavLi>
     </NavUl>
   </div>
 </Navbar>
-
-<style>
-
-</style>
