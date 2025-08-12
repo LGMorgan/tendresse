@@ -15,11 +15,11 @@
     <span>)</span>
   </div>
 {:else}
-<div>
-  <span>(</span>
-    <a href="#newsletter">Rejoins la newsletter pour être informé •e de la prochaine date</a>
-  <span>)</span>
-</div>
+  <div>
+    <span>(</span>
+      <a href="#newsletter">Rejoins la newsletter pour être informé •e de la prochaine date</a>
+    <span>)</span>
+  </div>
 {/if}
 
 <style>
@@ -34,7 +34,7 @@
   span {
     color: #fff469;
     font-size: 2.5em;
-    font-family: "noot";
+    font-family: "akzidenz";
     margin: 0px 8px;
   }
   span:first-child {

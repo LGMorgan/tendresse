@@ -5,7 +5,7 @@
 
 <section id="prochains-ateliers">
   <h3 class="header3">Prochaines dates</h3>
-  {#if !!dates.length}
+  {#if !!dates?.length}
     <div id="wrapper">
       {#each dates as d}
         <DateItem date={new Date(d.date.S)} isFull={d.isFull.BOOL} link={d.link.S} />

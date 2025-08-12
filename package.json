@@ -40,9 +40,10 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
-		"web-vitals": "^4.2.4",
-    "@auth/sveltekit": "^1.7.4",
-    "@aws-sdk/client-dynamodb": "^3.712.0",
-		"@aws-sdk/lib-dynamodb": "^3.714.0"
+		"@auth/sveltekit": "^1.7.4",
+		"@aws-sdk/client-dynamodb": "^3.712.0",
+		"@aws-sdk/lib-dynamodb": "^3.714.0",
+		"runed": "^0.31.1",
+		"web-vitals": "^4.2.4"
 	}
 }

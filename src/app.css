@@ -2,35 +2,32 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@font-face {
-  font-family: 'noot';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/noot.ttf') format('truetype');
+:root {
+  --color-yellow: #fce977;
+  --color-violet: #ba49ff;
+  --color-pink: #f797fc;
+  --color-blue: #6fded7;
 }
+
 @font-face {
   font-family: 'big-shoulders';
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/big-shoulders.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'bukhari';
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/bukhari-script.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: 'bukhari alt';
+  font-family: 'akzidenz';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/bukhari-alt.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'eczar';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/fonts/Eczar.ttf') format('truetype');
+  src: url('/fonts/Akzidenz.ttf') format('truetype');
 }
 
 @keyframes blurFade {
@@ -47,211 +44,112 @@
 html {
 	scroll-behavior: smooth;
 }
+
 body {
   min-height: 100vh;
-  background: rgb(70, 244, 255);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(70, 244, 255, 1) 30%,
-    rgba(143, 255, 130, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(70, 244, 255, 1) 30%,
-    rgba(143, 255, 130, 1) 100%
-  );
-  background: linear-gradient(180deg, rgba(70, 244, 255, 1) 30%, rgba(143, 255, 130, 1) 100%);
-  background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#46f4ff",endColorstr="#8fff82",GradientType=1);
-  border: 10px solid #fff469;
-  border-radius: 3px;
-}
-main {
-  width: 100%;
-  margin: auto;
-}
-.header1,
-.header2,
-.header3 {
-  text-align: center;
-}
-.header2,
-.header3 {
-  color: #f6f3e4;
-}
-.header1 {
-  font-family: 'big-shoulders';
-  color: #c8fbe9;
-  font-size: 3em;
-  text-shadow: #fff469 1px 0 10px;
-  margin-bottom: 10px;
-  /*
-  animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-fill-mode: backwards;
-  animation-delay: 250ms;
-  */
-}
-.header2 {
-  font-family: 'bukhari';
-  font-size: 1.6em;
-  margin: 20px;
-  text-align: center;
-  font-weight: 100;
-  padding: 0px;
-  transform: rotateZ(-5deg);
-  font-style: italic;
-  /*
-  animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-fill-mode: backwards;
-  text-shadow: 1px 1px 2px #fd6155;
-  */
-}
-.header3 {
-  font-family: 'noot';
-  font-size: 2em;
-  padding: 20px 0px;
-  font-weight: 900;
-  color: #dd00ae;
-  /*
-  animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-fill-mode: backwards;
-  text-shadow: 3px 3px 2px #ffffff;
-  */
-}
-.unol {
-  padding: 20px;
-  margin: auto;
+  transition: background-color 0.5s ease;
+  font-family: "akzidenz", sans-serif;
+  background-color: var(--color-yellow);
 }
 
-.unol > li  {
-  font-family: "bukhari";
-  color: #f6f3e4;
-  text-shadow: 1px 1px 2px #fd6155;
-  list-style: inside;
-  list-style-position: outside;
-  margin: 0px 10px 10px 10px;
-  font-size: 1.2em;
-  /*
-  animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-fill-mode: backwards;
-  animation-delay: 650ms;
-  */
-}
-.p {
-  font-family: 'bukhari';
-  text-align: center;
-  color: #f6f3e4;
-  font-size: 1.2em;
-  font-weight: 100;
-  padding: 0px 20px;
-  text-shadow: 1px 1px 2px #fd6155;
-  /*
-  animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-delay: 650ms;
-  animation-fill-mode: backwards;
-  */
-}
-.navUl {
-  font-family: 'bukhari';
-  text-align: center;
-  color: #f6f3e4;
-  font-size: 1.2em;
-  font-weight: 100;
-  padding: 0px 20px;
-  margin: auto;
-  text-shadow: 1px 1px 1px #fd6155; /* #dd00ae */
-  width: 100%;
-  /* animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-delay: 650ms;
-  animation-fill-mode: backwards; */
-}
-.enhanced-img {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding: 0px;
-  z-index: -1000;
-    /* animation-name: blurFade;
-  animation-duration: 0.5s;
-  animation-delay: 750ms;
-  animation-fill-mode: backwards; */
-}
-h2, p {
-  margin: auto;
+main {
+  padding: 1em 2em;
+  background-color: var(--color-violet);
+  color: var(--color-yellow);
 }
 
 section {
-  width: 100%;
-  margin: auto;
-  padding: 0px;
+  padding-bottom: 0.5em;
 }
 
 section > h2 {
   margin: 10px 20px 20px 20px;
 }
 
-#introduction {
-  animation-delay: 400ms;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0px 20px;
-  font-size: 1.2em;
+h1 {
+  font-family: "big-shoulders";
+  font-size: 4.5em;
+  line-height: normal;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
 }
 
-@media only screen and (min-width: 480px) {
-  .header1 {
+h2 {
+  font-size: 3em;
+  text-align: center;
+  font-weight: 900;
+  margin: auto;
+}
+
+h3 {
+  font-size: 2em;
+  padding: 20px 0px;
+  font-weight: 900;
+}
+
+p {
+  font-family: "akzidenz", sans-serif;
+  font-size: 1.4em;
+}
+
+ul {
+  margin: auto;
+}
+
+.unol > li  {
+  font-size: 1.4em;
+  gap: 0.3em;
+  display: flex;
+  margin-bottom: 0.5em;
+
+}
+
+.navUl {
+  font-family: 'bukhari';
+  text-align: center;
+  color: #ba49ff;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding: 0px 20px;
+  margin: auto;
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: 640px) {
+  h1 {
     font-size: 4.5em;
   }
-  .header2 {
-    font-size: 1.8em;
-  }
-  .header3 {
+  h2 {
     font-size: 2.5em;
   }
 
-  .unol {
+  ul {
     max-width: 80%;
   }
-  .enhanced-img {
-    max-width: 70%;
-  }
-  section {
-    width: 85vw;
-  }
+
 }
 
 @media only screen and (min-width: 768px) {
-  .enhanced-img {
-    max-width: 60%;
+
+  section > p {
+    margin: 0em 1em;
   }
-  .unol {
-    max-width: 70%;
-  }
-}
-@media only screen and (min-width: 900px) {
-  section {
-    width: 65vw;
-  }
-  .unol {
-    max-width: 70%;
+  h3 {
+    font-size: 1.8em;
   }
 }
 @media only screen and (min-width: 1024px) {
-  section {
-    width: 65vw;
-  }
-  .unol {
-    max-width: 60%;
+  main {
+    padding: 2em 10em;
   }
 }
 @media only screen and (min-width: 1280px) {
+
+}
+@media only screen and (min-width: 1536px) {
 
 }

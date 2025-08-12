@@ -98,22 +98,30 @@
         {/if}
 
         <div>
-          <Button disabled={!allowAddDate || creating} class="float-right mt-6 text-white bg-green-500" type="submit">{creating ? "Sauvegarde" : "Enregistrer"}</Button>
+          <Button  class="float-right mt-6 text-white bg-green-500" type="submit">{creating ? "Sauvegarde" : "Enregistrer"}</Button>
         </div>
       </form>
     
       <h3 class="header3">Tendresse</h3>
-      {#key data.workshops.Tendresse.length}
-        <DateList dates={data.workshops.Tendresse} />
-      {/key}
+      {#if !!data.workshops.Tendresse}
+        {#key data.workshops.Tendresse.length}
+          <DateList dates={data.workshops.Tendresse} />
+        {/key}
+      {/if}
+
       <h3 class="header3">Playfight</h3>
-      {#key data.workshops.Playfight.length}
-        <DateList dates={data.workshops.Playfight} />
-      {/key}
+      {#if !!data.workshops.Playfight}
+        {#key data.workshops.Playfight.length}
+          <DateList dates={data.workshops.Playfight} />
+        {/key}
+      {/if}
+
       <h3 class="header3">Adoration</h3>
-      {#key data.workshops.Adoration.length}
-        <DateList dates={data.workshops.Adoration} />
-      {/key}
+      {#if !!data.workshops.Adoration}
+        {#key data.workshops.Adoration.length}
+          <DateList dates={data.workshops.Adoration} />
+        {/key}
+      {/if}
     </TabItem>
 
     <TabItem title="Témoignage" activeClasses="p-4 w-full group-first:rounded-s-lg group-last:rounded-e-lg text-gray-900 bg-gray-100 dark:bg-gray-700 dark:text-white">

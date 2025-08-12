@@ -1,3 +1,8 @@
+<script>
+	import { goto } from '$app/navigation';
+  import Button from '$lib/components/button.svelte'
+
+  /*
 <main>
   <section id="introduction">
     <p class="p projet">
@@ -46,43 +51,75 @@
   </section>
 </main>
 
-<style>
-  div {
-    width: 50vw;
-    height: 50vw;
-    margin: 20px auto;
-    display: flex;
-    overflow: hidden;
-    border-radius: 50vw;
-    border: 2px solid #fdf4be;
-  }
-  #profil-pic {
-    transform: translateY(-35px);
-  }
-  .projet {
-    text-align: left;
-  }
-  p, li {
-    font-family: "eczar";
-  }
-  .enhanced-img {
-    max-width: none;
-  }
 
+  <div class="circle">
+    <enhanced:img class="enhanced-img" src="/src/lib/img/frog.png" alt="Atelier Tendresse Consentie" />
+  </div>
+  */
+</script>
+
+<main>
+  <section>
+    <h3>
+      Aujourd’hui, on entend toutes et tous parler de consentement.
+    </h3>
+    <p>
+      Si les chiffres des violences sexistes et sexuelles rappellent l'urgence d'en faire un sujet de premier plan, il sont aussi l'occasion d'aller questionner jusqu'à nos actes relationnels les plus familiers.
+    </p>
+  </section>
+
+  <section>
+    <h3>
+      Ne nous est-il jamais arrivé d'accepter des gestes sans vraiment en avoir envie ?
+    </h3>
+    <p>
+      N'avons-nous jamais craint qu'un·e proche adhère à quelque chose juste pour nous faire plaisir ?
+    </p>
+    <p>
+      Sommes nous conscient·es des biais de pouvoir, de relation et de domination pouvant influencer nos relations et comment essayer qu'ils n'entravent pas l'expression des besoins et des désirs de chacun ?
+    </p>
+    <p>
+      Comment écouter et respecter les limites de notre entourage, de quelle manière pouvons-nous poser clairement nos limites ?
+    </p>
+  </section>
+
+  <section>
+    <h3>
+      Des outils existent.
+    </h3>
+    <p>
+      Les Ateliers Tendresse sont des espaces pour les découvrir et les pratiquer. Des espaces où tu peux explorer ton rapport au consentement et à la connexion aux autres et à toi-même, au travers de jeux, d'explorations sensorielles et relationnelles.
+    </p>
+
+    <p>
+      L'accès à certains ateliers ont pour prérequis le besoin d'avoir participé à l'atelier "Tendresse Consentie". Celui-ci pose le cadre nécessaire afin d'assurer une expérience sécurisante pour chacun·e des participant·es et me permet une première rencontre avec les participant.es.
+    </p>
+    <div class="m-auto w-full pt-5">
+      <enhanced:img class="enhanced-img m-auto" src="/src/lib/img/fist.png" alt="Poing militant" height="400"/>
+    </div>
+  </section>
+
+    <div class="flex">
+      <Button onClick={() => goto('/les-ateliers')}>Découvrir les Ateliers</Button>
+    </div>
+
+</main>
+
+<style>
   @media only screen and (min-width: 768px) {
-    div {
+    .circle {
       width: 55vw;
       height: 55vw;
     }
   }
   @media only screen and (min-width: 1024px) {
-    div {
+    .circle {
       width: 45vw;
       height: 45vw;
     }
   }
   @media only screen and (min-width: 1280px) {
-    div {
+    .circle {
       width: 35vw;
       height: 35vw;
     }

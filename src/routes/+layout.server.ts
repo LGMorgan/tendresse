@@ -2,19 +2,37 @@ import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 import { dynaScanTable, dynaDelete } from "$lib/server/dynaDB";
 import { AWS_REGION, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY } from "$env/static/private";
 
+interface IWorkshop {
+  workshop: string | { S: string },
+  date: string | { S: string },
+  location: string | { S: string },
+  link: string | { S: string }
+  isFull: boolean | { BOOL: boolean },
+}
 
-function sortWorkshopAndDates(dynamoDBResponse) {
+interface IWorkshopsObject {
+  Adoration?: IWorkshop[],
+  Playfight?: IWorkshop[],
+  Tendresse?: IWorkshop[],
+  PastDates: IWorkshop[]
+}
+
+function sortWorkshopAndDates(dynamoDBResponse: IWorkshop[] | null): IWorkshopsObject | [] {
   const now = new Date();
   
   if(dynamoDBResponse == null)
     return []
-  const workshops = {Adoration: [], Playfight: [], Tendresse: [], PastDates: []}
+
+  const workshops: IWorkshopsObject = {PastDates: []}
   for(const item of dynamoDBResponse) {
     console.log({item})
     if(new Date(item.date.S) < now)
       workshops.PastDates.push(item)
-    else
+    else {
+      if(!workshops[item.workshop.S])
+        workshops[item.workshop.S] = []
       workshops[item.workshop.S].push(item)
+    }
   }
   for (const [key, values] of Object.entries(workshops)) {
     workshops[key] = values.sort(function(a,b){
@@ -25,7 +43,7 @@ function sortWorkshopAndDates(dynamoDBResponse) {
 }
 
 function cleanTestimonies(dynamoDBResponse) {
-  const testimonies: WorkshopObject = {Adoration: [], Playfight: [], Tendresse: []}
+  const testimonies: IWorkshopsObject = {Adoration: [], Playfight: [], Tendresse: []}
   for(const item of dynamoDBResponse) {
     testimonies[item.workshop.S].push(item)
   }

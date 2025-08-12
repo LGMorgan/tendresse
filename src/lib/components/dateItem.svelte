@@ -69,7 +69,7 @@
   }
   h2 {
     transform: translateY(7px);
-    font-family: "noot";
+    font-family: "akzidenz";
   }
   h3 {
     transform: translateY(10px);
@@ -82,7 +82,7 @@
     z-index: 100;
     transform: translateX(30px) rotateZ(-20deg) translateY(0px);
     text-align: center;
-    font-family: "noot";
+    font-family: "akzidenz";
     font-size: 1.8em;
     text-shadow: red 1px 0 1px;
     color: red;

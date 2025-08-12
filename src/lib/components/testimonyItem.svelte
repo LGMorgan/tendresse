@@ -17,7 +17,7 @@
     z-index: 10000;
     color: #fff469;
     font-size: 2.5em;
-    font-family: "noot";
+    font-family: "akzidenz";
     margin: 0px 8px;
   }
   span:first-child {
@@ -39,7 +39,7 @@
   p:nth-child(4) {
     margin-right: 20px;
     font-size: 1.5em;
-    font-family: "noot";
+    font-family: "akzidenz";
     align-self: flex-end;
     text-align: right;
   }

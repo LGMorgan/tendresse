@@ -3,7 +3,7 @@
   const { dates } = $props();
 </script>
 
-{#if !dates.length}
+{#if !!dates && !dates.length}
   <p>Aucune date prévue</p>
 {:else}
   <ul>

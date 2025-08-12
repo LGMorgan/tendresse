@@ -4,7 +4,10 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [
-    enhancedImages(),
-    sveltekit()
-  ]
+		enhancedImages(),
+		sveltekit()
+	],
+	server: {
+		host: '0.0.0.0'
+	}
 });

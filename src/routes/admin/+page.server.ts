@@ -104,7 +104,7 @@ export const load = async ({locals, depends}) => {
     return redirect(307, LOGIN_URL)
   }
   
-  if (!["mo.leguen.42@gmail.com", "laurette.deloison@gmail.com"].includes(session?.user?.email)) {
+  if (!["mo.leguen.42@gmail.com", "laurette.deloison@gmail.com", "les.ateliers.tendresse@gmail.com"].includes(session?.user?.email)) {
     return redirect(307, HOME_URL)
   }
 

@@ -1,41 +1,98 @@
 <script>
-  import MailInput from "$lib/components/mailInput.svelte"
-  import GridDate from '$lib/components/gridDate.svelte'
-  import Testimony from "$lib/components/testimony.svelte";
-  import { Button } from 'flowbite-svelte';
+
+  import Button from '$lib/components/button.svelte';
 
   const { data } = $props();
+
+  /**
+   *   <GridDate dates={data?.workshops?.Tendresse}/>
+  
+  <Testimony  testimonies={data.testimonies.Tendresse}/>
+  */
 </script>
 
 <main>
-  <section id="introduction">
-    <p class="p">
-      C'est un atelier pour apprendre des outils de consentement verbal, tactile et les expérimenter grâce à des jeux sensoriels
+  <section>
+    <h3>Un espace pour vivre les notions de consentement dans le corps.</h3>
+    <p>
+      Via des outils de communication, des explorations en binôme autour du non et du oui "enthousiaste", l'atelier <b>Tendresse Consentie</b> facilite l'expression du consentement.
+    </p>
+    <p>
+      L'idée c'est que tu sortes de l'atelier plus outillé.es pour identifier les situations problématiques et vivre des interactions aux maximum consenties.
+    </p>
+    <p>
+      C’est aussi un atelier pour échanger, se connecter, se rencontrer différemment.
     </p>
   </section>
  
   <section id="présentation-tendresse">
-    <h3 class="header3">
-      Les objectifs
-    </h3>
+    <h3>A quoi s'attendre ?</h3>
+    <p>
+      Pour beaucoup, "Tendresse" et "Consentement" sont des mots qui font peur alors un peu de clarté :
+    </p>
     <ul class="unol">
-      <li>Identifier et apprendre poser ses limites</li>
-      <li>Exprimer ses besoins</li>
-      <li>Rendre simple et ludique le partage de la tendresse</li>
-    </ul>
-    <p class="mt-5 p">(Il n'y a ni nudité ni sexualité dans ces espaces)</p>
-    <h3 class="header3">
-      Programme
-    </h3>
-    <ul class="unol">
-      <li>Présentation du cadre</li>
-      <li>Cercle d'ouverture</li>
-      <li>Application d'outils concrets</li>
-      <li>Explorations sensorielles</li>
-      <li>Retours et temps de parole</li>
+      <li><span>⭐</span>Est-ce qu'il y a de la nudité ? : Non.</li>
+      <li><span>⭐</span>Est-ce qu'il y a de la se-xualité ? : Non. </li>
+      <li><span>⭐</span>Est-ce qu'on est obligé d'être touché/de toucher les autres ? : Non.</li>
     </ul>
     
-    <h3 class="header3">
+    <h3>
+      Le Programme
+    </h3>
+    <ul class="unol">
+      <li><span>⭐</span>Pose du cadre</li>
+      <li><span>⭐</span>Rencontre du groupe</li>
+      <li><span>⭐</span>Réflexions et théorie autour du Consentement</li>
+      <li><span>⭐</span>Expérimentation d'outils concrets et jeux de Consentement</li>
+      <li><span>⭐</span>Expériences sensorielles</li>
+      <li><span>⭐</span>Cercle de clôture</li>
+    </ul>
+    
+    <p>
+      Je vous proposerais une guidance pour faciliter les connexions, se donner des codes communs. 
+    </p>
+    <p>
+      <strong>Le groupe est mixte</strong> (quel que soit ton genre, ton âge, tes particularités, tu es bienvenue !). Il y aura entre 6 et 16 personnes.
+    </p>
+    <p>
+      <strong>Les jeux sont progressifs</strong>, il y aura des temps de partage et des propositions incluant du contact physique. <strong>Tu peux totalement ne pas y participer.</strong> Tu seras invité à changer de partenaire. (Si tu veux venir en duo et explorer seulement avec ce duo ça ne pose aucun soucis !)
+    </p>
+    <p>
+      ✊ Les objectifs étant de <strong>comprendre tes propres besoins et limites, d'apprendre à les exprimer, de prendre soin de ceux des autres</strong> et si tu le souhaites, de partager de la Tendresse. 
+    </p>
+    <p>
+      Ce premier atelier vous permet d'accéder aux Ateliers suivants de niveau 2.
+    </p>
+    <h3>Le Cadre :</h3>
+    <ul class="unol">
+      <li><span>⭐</span><span><strong>Rien n’est obligatoire !</strong> Il n'y a aucune attente. Au cours de l'atelier, tu peux à tout moment te retirer d’une proposition, observer, rester sans rien faire, et/ou partir quand tu le souhaites.</span></li>
+      <li><span>⭐</span><span><strong>Tout est révocable</strong>, sans justification.</span></li>
+      <li><span>⭐</span><span><strong>Ce n'est pas un espace de séduction.</strong> L’envie de séduire peut te couper de l’expérience et nuire à l’ambiance collective.</span></li>
+      <li><span>⭐</span><span>Le consentement peut parfois être l’inverse de l’inclusivité. <strong>C’est ok de ne pas avoir envie de jouer avec tout le monde.</strong> Il y a donc des moments où vous allez peut-être vivre du rejet, être sans binôme, recevoir un non. Ça fait partie de l’expérience.</span></li>
+      <li><span>⭐</span><span>Il y a une personne en soutien émotionnel disponible tout au long de l'atelier.</span></li>
+    </ul>
+  <section id="tarifs">
+    <p>Pour 3h d'ateliers, je te propose trois tarifs selon tes moyens financiers :</p>
+    <ul class="unol">
+      <li>Tarif standard : 25€</li>
+      <li>Tarif solidaire : 15€</li>
+      <li>Tarif soutiens : 35€</li>
+    </ul>
+    <p>Si tu es intéressé·e par un atelier mais que tu ne peux pas payer le prix solidaire. <strong>Un prix libre est possible sur demande</strong>, sans justification <span><span>⭐</span></span></p>
+  </section>
+  <section id="inscription">
+    <p>Il est nécessaire de t’inscrire pour pouvoir participer. Pour t’inscrire ou découvrir les prochains Ateliers c’est ici: </p>
+    <div class="flex flex-col items-center my-5">
+      <Button>
+        <a href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank" >
+          infos et inscriptions
+        </a>
+      </Button>
+    </div>
+  </section>
+
+
+    <h3>
       Dans cet Espace
     </h3>
     <ul class="unol">
@@ -49,26 +106,8 @@
     </Button>
 
   </section>
-  
-  <GridDate dates={data?.workshops?.Tendresse}/>
-  
-  <Testimony  testimonies={data.testimonies.Tendresse}/>
-  
-  <MailInput />
 </main>
 
 <style>
-  h3 {
-    animation-delay: 550ms;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-  }
-  p {
-    animation-delay: 750ms;
-  }
-  .p {
-    font-size: 1.2em;
-  }
-</style>
 
+</style>
