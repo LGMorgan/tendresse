@@ -10,6 +10,8 @@
   let { data } = $props();
 
   let tab = $state("Ateliers");
+
+  let numb;
   
   let date = $state(new Date());
   let workshop = $state(null);
