@@ -45,15 +45,11 @@
   }
 
   @media only screen and (min-width: 480px) {
-    div {
-      width: 100%;
-    }
+
   }
 
   @media only screen and (min-width: 768px) {
-    div {
-      max-width: 800px;
-    }
+
   }
   @media only screen and (min-width: 1024px) {
 

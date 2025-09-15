@@ -1,6 +1,6 @@
 <script>
   import TestimonyAdmin from "./testimonyAdmin.svelte";
-  const { list } = $props();
+  const { list, adminView } = $props();
 </script>
 
 {#if !list.length}
@@ -8,7 +8,7 @@
 {:else}
   <ul>
     {#each list as li}
-      <TestimonyAdmin {...li} />
+      <TestimonyAdmin {...li} {adminView} />
     {/each}
   </ul>
 {/if}

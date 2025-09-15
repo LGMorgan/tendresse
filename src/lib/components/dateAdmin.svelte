@@ -8,70 +8,33 @@
 
 </script>
 
-<li class="bg-blue-100 rounded-lg" in:fly={{ y: 20 }} out:slide id="container">
-  <div>
-    <DateItem date={new Date(date.S)} isFull={optimisticFull} link={link.S}/>
-  </div>
-  <div id="buttons">
-    <form method="POST" action="?/changeComplet" use:enhance={() => async ({ update }) => {
+<li class="flex flex-col mb-5 shadow-xl rounded-xl transition-transform duration-100 hover:scale-[102%]" in:fly={{ y: 20 }} out:slide id="container">
+
+  <DateItem date={new Date(date.S)} isFull={optimisticFull} link={link.S}/>
+
+  <div class="flex w-full gap-2">
+    <form class="flex-1" method="POST" action="?/changeComplet" use:enhance={() => async ({ update }) => {
       optimisticFull = !optimisticFull
       await update();
-      optimisticFull = isFull.BOOL
+      optimisticFull =isFull.BOOL
     }} >
       <input type="hidden" name="isFull" value={isFull.BOOL} />
       <input type="hidden" name="date" value={date.S} />
-      <button class="border-2 border-gray-700 text-gray-700" type="submit">{"Atelier complet"}</button>
+      <button class="transition-all duration-100 hover:text-white flex-1 p-1 w-full border-t-2 text-gray-700 hover:bg-[var(--color-violet)] rounded-md  border-[var(--color-violet)]" type="submit">{"Atelier complet"}</button>
     </form>
+
     <form method="POST" action="?/deleteDate" use:enhance={() => async ({ update }) => await update()} >
       <input type="hidden" name="date" value={date.S} />
-      <button class="text-red-500 border-2 border-red-500" type="submit">Supprimer</button>
+      <button class="transition-all duration-100 hover:text-white w-7 p-1 text-red-500 border-t-2 border-red-500 hover:bg-red-500 rounded-md" type="submit">X</button>
     </form>
   </div>
 </li>
 
 <style>
-  li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 10px;
-  }
-  div:first-of-type {
-    display: flex;
-    flex: 1;
-    align-content: center;
-    justify-content: center;
-  }
-  #container {
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  #buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  button {
-    display: block;
-    margin: 10px auto;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    font-weight: bolder;
-    border-radius: 3px;
-    max-width: 200px;
-  }
+  
 
   @media only screen and (min-width: 480px) {
-    li {
-      flex-direction: row;
-      gap: 20px;
-      max-width: 400px;
-    }
-    #buttons {
-      align-items: flex-end;
-    }
+
   }
 
   @media only screen and (min-width: 768px) {

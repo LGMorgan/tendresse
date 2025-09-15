@@ -1,3 +1,13 @@
+<script>
+  import NavBar from '$lib/components/navBar.svelte';
+  import HeaderTitle from '$lib/components/headerTitle.svelte';
+</script>
+
+<div>
+  <HeaderTitle title={"Les Ateliers Tendresse"} />
+  <NavBar />
+</div>
+
 <main>
   <section>
     <h3>Des espaces d’expérimentation du Consentement, du jeu et de la Tendresse à la Réunion.</h3>
