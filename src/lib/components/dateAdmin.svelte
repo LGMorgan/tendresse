@@ -13,10 +13,12 @@
   <DateItem date={new Date(date.S)} isFull={optimisticFull} link={link.S}/>
 
   <div class="flex w-full gap-2">
-    <form class="flex-1" method="POST" action="?/changeComplet" use:enhance={() => async ({ update }) => {
+    <form class="flex-1" method="POST" action="?/changeComplet" use:enhance={() => {
       optimisticFull = !optimisticFull
+      async ({ update }) => {
       await update();
-      optimisticFull =isFull.BOOL
+      optimisticFull = isFull.BOOL
+    }
     }} >
       <input type="hidden" name="isFull" value={isFull.BOOL} />
       <input type="hidden" name="date" value={date.S} />

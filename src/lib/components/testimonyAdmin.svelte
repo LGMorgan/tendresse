@@ -5,7 +5,7 @@
   const { testimony, signature, uuid, workshop, adminView } = $props()
 </script>
 
-<li class="flex flex-col pb-4 shadow-xl rounded-xl transition-transform duration-100 hover:scale-[102%] p-2" in:fly={{ y: 20 }} out:slide id="container" >
+<li class="flex flex-col pb-4 shadow-xl rounded-xl transition-transform duration-100 hover:scale-[101%] p-2 w-full" in:fly={{ y: 20 }} out:slide id="container" >
   <div class="rounded-lg text-xs">
     {#if adminView}
       <p class=" text-gray-500 p-2">{testimony.S}</p>

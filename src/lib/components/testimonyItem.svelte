@@ -2,7 +2,7 @@
   const { testimony, signature } = $props()
 </script>
 
-<div class="flex flex-col align-middle justify-center text-justify  p-4 rounded-lg">
+<div class="flex flex-col align-middle justify-center text-justify  p-4 rounded-lg w-full">
   <span>"</span>
     <p class="p">{testimony.S}</p>
     <span>"</span>

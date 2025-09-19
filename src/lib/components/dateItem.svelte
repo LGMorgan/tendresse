@@ -1,5 +1,5 @@
 <script>
-  import { fly, slide } from 'svelte/transition';
+  import { fly } from 'svelte/transition';
   const { date = new Date(), isFull = false, link } = $props();
 
   const dayOptions = { weekday: 'long' };
@@ -10,10 +10,9 @@
   const numberedDate = date.toLocaleDateString("fr-FR", dateOptions)
   
   const month = date.toLocaleDateString("fr-FR", monthOptions)
-  console.log({link})
 </script>
 
-<div class="m-4">
+<div class="m-3 h-8 flex flex-col text-center">
   <a href={link} target="_blank">
     <p>{String(day).charAt(0).toUpperCase() + String(day).slice(1)} {numberedDate} {month}</p>
     {#if isFull}

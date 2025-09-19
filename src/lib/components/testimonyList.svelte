@@ -6,7 +6,7 @@
 {#if !list.length}
   <p>Pas de témoignage</p>
 {:else}
-  <ul class="flex flex-wrap justify-evenly gap-10">
+  <ul class="flex flex-wrap justify-evenly gap-10 w-full">
     {#each list as li}
       <TestimonyAdmin {...li} {adminView} />
     {/each}
