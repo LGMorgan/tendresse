@@ -84,10 +84,10 @@
   </div>
             
   {#if tab === "Ateliers"}
-    <div class="flex items-start self-start customWrap justify-center gap-12 m-auto  border-l-4 border-[var(--color-yellow)] rounded-md">
+    <div class="flex items-start self-start customWrap justify-center gap-12 m-auto">
       <form method="POST" action="?/putDate"
         use:enhance={handleEnhance}
-        class="flex flex-col gap-4 bg-white shadow-xl p-4 rounded text-[var(--color-violet)] min-w-[320px]">
+        class="flex flex-col gap-4 bg-white shadow-xl p-4 rounded text-[var(--color-violet)] min-w-[320px]  border-l-4 border-[var(--color-yellow)] rounded-md">
     
         <p class="font-bold mt-0 p-0 pb-6 underline">Ajout d'atelier</p>
 
