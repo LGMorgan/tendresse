@@ -2,9 +2,6 @@
   import GridDate from '$lib/components/gridDate.svelte';
   import Testimony from "$lib/components/testimony.svelte";
 	import AskMe from "$lib/components/askMe.svelte";
-  import { Button } from '$lib/components/button.svelte';
-  import { Dropdown, DropdownItem } from 'flowbite-svelte';
-  import {blur} from 'svelte/transition';
 
   const { data } = $props();
 </script>
