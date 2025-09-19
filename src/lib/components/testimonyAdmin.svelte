@@ -1,17 +1,16 @@
 <script>
   import { enhance } from "$app/forms";
   import { fly, slide } from 'svelte/transition';
-  import { Button } from "flowbite-svelte"
   import TestimonyItem from "./testimonyItem.svelte";
   const { testimony, signature, uuid, workshop, adminView } = $props()
 </script>
 
-<li class=" rounded-lg p-4 m-auto max-w-[260px]" in:fly={{ y: 20 }} out:slide >
-  <div class="bg-blue-100 rounded-lg">
+<li class="flex flex-col pb-4 shadow-xl rounded-xl transition-transform duration-100 hover:scale-[102%] p-2" in:fly={{ y: 20 }} out:slide id="container" >
+  <div class="rounded-lg text-xs">
     {#if adminView}
-      <p class="text-sm text-gray-500 p-2 m-0">{testimony.S}</p>
-      <p class="text-sm text-gray-500 p-2 m-0">de</p>
-      <p class="text-sm text-gray-500 p-2 m-0">{signature.S}</p>
+      <p class=" text-gray-500 p-2">{testimony.S}</p>
+      <p class=" text-gray-500 p-2 text-right">Témoignage de</p>
+      <p class=" text-gray-500 p-2 text-right">{signature.S}</p>
     {:else}
       <TestimonyItem testimony={testimony} signature={signature} />
     {/if}
@@ -20,12 +19,9 @@
   <form method="POST" action="?/deleteTestimony" use:enhance={() => async ({ update }) => await update()} >
     <input type="hidden" name="uuid" value={uuid.S} />
     <input type="hidden" name="workshop" value={workshop.S} />
-    <Button  class="float-right mt-6 text-white bg-red-500" type="submit">Effacer</Button>
+    <button class="transition-all duration-100 hover:text-white px-3 py-1 w-full max-w-24 float-right text-red-500 border-b-2 border-red-500 hover:bg-red-500 rounded-md" type="submit">Effacer</button>
   </form>
 </li>
 
 <style>
-  form {
-    padding-bottom: 80px;
-  }
 </style>

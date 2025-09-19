@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Accordion, AccordionItem } from 'flowbite-svelte';
+  import * as Accordion from "$lib/components/ui/accordion/index.js";
   import { ChevronUpOutline, ChevronDownOutline } from "flowbite-svelte-icons";
 
 	import Socials from '$lib/components/socials.svelte';
@@ -81,42 +81,17 @@
     }
   ];
 </script>
-  
-  {#snippet entry(question: string, answer: string, index: number)}
-    <div id={String(index)} bind:this={questionRefs[index]} on:click={() => handleAccordionClick(index)}>
-      <AccordionItem
-        borderClass=""
-        borderOpenClass="border-s border-e rounded-b-md"
-        borderBottomClass='border-b'
-        borderSharedClass=''
-        defaultClass="flex items-center justify-between w-full font-medium text-left text-inerit "
-      >
-        {#snippet header()}<h3>{question}</h3>{/snippet}
-
-        {#snippet arrowup()}
-          <ChevronUpOutline class="-me-0.5 h-6 w-6" />
-        {/snippet}
-
-        {#snippet arrowdown()}
-          <ChevronDownOutline class="-me-0.5 h-6 w-6" />
-        {/snippet}
-
-        <p>{@html answer}</p>
-
-      </AccordionItem>
-    </div>
-  {/snippet}
 
 <main>
   <section>
-    <Accordion
-      activeClass="dark:bg-gray-800 focus:ring-2 focus:ring-gray-200 focus:rounded dark:focus:ring-gray-800"
-      defaultClass="text-inerite"
-      inactiveClass="">
+    <Accordion.Root type="single">
         {#each questions as {question, answer}, index}
-            {@render entry(question, answer, index)}
+          <Accordion.Item id={String(index)}>
+            <Accordion.Trigger><h3>{question}</h3></Accordion.Trigger>
+            <Accordion.Content class="text-[1.2em] mb-5">{@html answer}</Accordion.Content>
+          </Accordion.Item>
         {/each}
-    </Accordion>
+    </Accordion.Root>
   </section>
   <section id="contact">
     <p class="p-5">
@@ -128,7 +103,7 @@
 
 <style>
   h3 {
-      margin: 0 0 0.5rem;
+
       font-size: 1.3rem;
   }
 </style>

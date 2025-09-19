@@ -8,7 +8,7 @@
 
 </script>
 
-<li class="flex flex-col mb-5 shadow-xl rounded-xl transition-transform duration-100 hover:scale-[102%]" in:fly={{ y: 20 }} out:slide id="container">
+<li class="flex flex-col shadow-xl rounded-xl transition-transform duration-100 hover:scale-[102%]" in:fly={{ y: 20 }} out:slide id="container">
 
   <DateItem date={new Date(date.S)} isFull={optimisticFull} link={link.S}/>
 
@@ -20,12 +20,12 @@
     }} >
       <input type="hidden" name="isFull" value={isFull.BOOL} />
       <input type="hidden" name="date" value={date.S} />
-      <button class="transition-all duration-100 hover:text-white flex-1 p-1 w-full border-t-2 text-gray-700 hover:bg-[var(--color-violet)] rounded-md  border-[var(--color-violet)]" type="submit">{"Atelier complet"}</button>
+      <button class="transition-all duration-100 hover:text-white flex-1 p-1 w-full border-b-2 text-gray-700 hover:bg-[var(--color-violet)] rounded-md  border-[var(--color-violet)]" type="submit">{"Atelier complet"}</button>
     </form>
 
     <form method="POST" action="?/deleteDate" use:enhance={() => async ({ update }) => await update()} >
       <input type="hidden" name="date" value={date.S} />
-      <button class="transition-all duration-100 hover:text-white w-7 p-1 text-red-500 border-t-2 border-red-500 hover:bg-red-500 rounded-md" type="submit">X</button>
+      <button class="transition-all duration-100 hover:text-white w-7 p-1 text-red-500 border-b-2 border-red-500 hover:bg-red-500 rounded-md" type="submit">X</button>
     </form>
   </div>
 </li>

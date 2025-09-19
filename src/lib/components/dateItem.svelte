@@ -13,7 +13,7 @@
   console.log({link})
 </script>
 
-<div class="bg-linear-to-r from-cyan-500 to-blue-500 m-4">
+<div class="m-4">
   <a href={link} target="_blank">
     <p>{String(day).charAt(0).toUpperCase() + String(day).slice(1)} {numberedDate} {month}</p>
     {#if isFull}

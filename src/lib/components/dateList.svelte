@@ -6,7 +6,7 @@
 {#if !!dates && !dates.length}
   <p>Aucune date prévue</p>
 {:else}
-  <ul class="m-auto">
+  <ul class="m-auto mb-5">
     {#each dates as w}
       <DateAdmin {...w} />
     {/each}
