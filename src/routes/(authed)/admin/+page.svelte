@@ -86,7 +86,7 @@
   </SignOut>
 </header>
 
-<main class="text-[var(--color-violet)]">
+<main class="text-[var(--color-violet)] h-screen">
   {#if tab === "Ateliers"}
     <WorkshopsTab {data} />
   {:else}

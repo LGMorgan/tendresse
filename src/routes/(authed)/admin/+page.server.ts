@@ -41,6 +41,7 @@ export const actions = {
       link: data.get("link")
     };
     const create = await dynaPut(client, "Tendresse_Dates", obj);
+    console.log({create})
   },
   changeComplet: async ({ cookies, request }): RequestEvent => {
     console.log('action change complet status')
@@ -51,6 +52,7 @@ export const actions = {
     const val = data.get("isFull") === "true" ? false : true
     const obj: WorkshopObject = {
       date: data.get("date")?.toString() || '',
+      workshop: data.get("workshop"),
       isFull: val,
     }
     const create = await dynaUpdate(client, obj)
@@ -62,7 +64,7 @@ export const actions = {
     for (const entry of data.entries()) {
       console.log(entry)
     }
-    const del = await dynaDelete(client, "Tendresse_Dates", data.get("date"))
+    const del = await dynaDelete(client, "Tendresse_Dates", {date: data.get("date"), workshop: data.get("workshop")})
     console.log({del})
   },
   putTestimony: async ({ cookies, request }) => {

@@ -1,18 +1,20 @@
 <script>
-  import TestimonyAdmin from "./testimonyAdmin.svelte";
-  const { list, adminView } = $props();
+	import TestimonyAdmin from './testimonyAdmin.svelte';
+	const { list, adminView } = $props();
 </script>
 
 {#if !list.length}
-  <p>Pas de témoignage</p>
+	<p>Pas de témoignage</p>
 {:else}
-  <ul class="flex flex-wrap justify-evenly gap-10 w-full">
-    {#each list as li}
-      <TestimonyAdmin {...li} {adminView} />
-    {/each}
-  </ul>
+	<ul class="flex w-full flex-wrap justify-evenly gap-10">
+		{#each list as li}
+			<TestimonyAdmin {...li} {adminView} />
+		{/each}
+	</ul>
 {/if}
 
 <style>
-  p { text-align: center }
+	p {
+		text-align: center;
+	}
 </style>
