@@ -2,13 +2,14 @@
   import DateItem from './dateItem.svelte';
   import { fly, slide } from 'svelte/transition';
   import { enhance } from '$app/forms';
+  
   const { date, isFull, link } = $props();
 
   let optimisticFull = $state(isFull.BOOL)
 
 </script>
 
-<li class="flex flex-col shadow-xl rounded-xl transition-transform duration-100 hover:scale-[102%]" in:fly={{ y: 20 }} out:slide id="container">
+<li class="flex flex-col shadow-xl rounded-xl transition-transform duration-100 hover:scale-[102%] bg-white" in:fly={{ y: 20 }} out:slide id="container">
 
   <DateItem date={new Date(date.S)} isFull={optimisticFull} link={link.S}/>
 
