@@ -1,15 +1,40 @@
-<script>
+<script lang="ts">
+	import { enhance } from '$app/forms';
 	import { Button } from '$lib/components/ui/button/index.js';
+
+	export let form;
+
+	function validateForm() {
+		return true;
+	}
+
+	const handleEnhance = () => {
+		if (validateForm()) {
+			return async ({ update }) => {
+				await update();
+			};
+		}
+	};
+
+	console.log({ form });
 </script>
 
 <section id="newsletter">
 	<h2>Newsletter</h2>
-	<p class="text-center">Inscris-toi à la newsletter pour être informé·e des prochains ateliers.</p>
-	<br />
-	<form method="POST">
-		<input name="email" type="email" aria-label="email" placeholder="Ton mail" />
-		<Button class="m-auto w-1/2 bg-[var(--color-blue)] text-xl" type="submit">Valider</Button>
-	</form>
+	{#if form?.success}
+		<p class="text-center">Merci pour ton inscription !</p>
+	{:else if form?.error}
+		<p class="text-center">Une erreur est survenue, merci de réessayer.</p>
+	{:else}
+		<p class="text-center">
+			Inscris-toi à la newsletter pour être informé·e des prochains ateliers.
+		</p>
+		<br />
+		<form method="POST" on:submit|preventDefault action="?/sendToBrevo" use:enhance={handleEnhance}>
+			<input name="email" type="email" aria-label="email" placeholder="Ton mail" />
+			<Button class="m-auto w-1/2 bg-[var(--color-blue)] text-xl" type="submit">Valider</Button>
+		</form>
+	{/if}
 </section>
 
 <style>

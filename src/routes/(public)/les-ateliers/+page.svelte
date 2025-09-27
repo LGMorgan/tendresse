@@ -8,44 +8,48 @@
 			Des espaces de connexion, de partage et de jeu avec le consentement au cœur de chaque
 			proposition.
 		</h3>
-		<p>
-			Rien n’est obligatoire, tout est révocable et c’est ok de ne pas avoir envie de jouer avec
-			tout le monde !
-		</p>
 	</section>
 
 	<section id="présentation">
-		<h3>
-			Les ateliers ouverts à toutes et à tous sont la <a href="/tendresse" target="_blank"
-				>Tendresse Consentie</a
-			>
-			et <a href="/playfight" target="_blank">la Playfight</a>.
-		</h3>
+		<p>Il y a deux niveaux d'ateliers. Les ateliers de niveaux 1 ne nécessitent aucun prérequis.</p>
+		<h3>Ateliers de niveau 1 :</h3>
+		<ul class="unol">
+			<li><span>⭐ </span>La Tendresse Consentie</li>
+			<li><span>⭐ </span>La Playfight</li>
+			<li><span>⭐ </span>Les Cercles de parole</li>
+			<li><span>⭐ </span>... Et d'autres plus occasionnels à découvrir.</li>
+		</ul>
+		<h3>Ateliers de niveau 2 :</h3>
 		<p>
-			Effectuer une Tendresse Consentie en respectant le cadre posé permet l'accès aux <b
-				>ateliers de niveau 2 :</b
-			>
+			Effectuer un atelier "Tendresse Consentie" en respectant le cadre posé permet l'accès aux
+			ateliers suivant :
 		</p>
 		<br />
 		<ul class="unol">
 			<li><span>⭐ </span>Soirée câlin</li>
 			<li><span>⭐ </span>Adoration</li>
 			<li><span>⭐ </span>Journée Tendresse</li>
-			<li><span>⭐ </span>Tendresse Collective</li>
-			<li><span>⭐ </span>Et d'autres encore à venir...</li>
+			<li><span>⭐ </span>... Et d'autres plus occasionnels à découvrir.</li>
 		</ul>
 		<br />
 		<p>Tu les retrouveras sur les réseaux, la newsletter ou sur billetweb !</p>
 		<br />
+		<h3>A quoi ressemble un atelier ?</h3>
 		<p>
 			Les Ateliers durent <b>3 heures</b>. Il y a entre <b>6 et 16 personnes</b>. La moyenne d’âge
-			est <b>entre 25 et 45 ans</b>. Proportionnellement, il y a un peu plus de femmes/personnes non
+			est <b>entre 25 et 45 ans</b>. Proportionnellement, il y a plus de femmes/personnes non
 			binaires que d’hommes. Certaines personnes viennent en duo mais la plupart viennent seules.
+		</p>
+		<br />
+		<p>
+			Vous pouvez totalement venir en duo et ne jouer qu’ensemble si l'interaction avec des inconnus
+			est inconfortable. A chaque pose de cadre, je demande s’il y a des personnes venues en duo
+			pour que tout le groupe soit au courant.
 		</p>
 
 		<h3>
-			Pour beaucoup, "Tendresse" et "Consentement" sont des mots qui font peur alors un peu de
-			clarté :
+			Pour beaucoup encore, "Tendresse" et "Consentement" sont des mots qui peuvent faire peur alors
+			un peu de clarté :
 		</h3>
 		<ul class="unol">
 			<li><span>⭐ </span>Est-ce qu'il y a de la nudité ? <br /> Non.</li>
@@ -62,8 +66,12 @@
 			<li><span>⭐ </span>Atelier en lui-même</li>
 			<li><span>⭐ </span>Cercle de clôture</li>
 		</ul>
-
-		<ul>
+		<h3>Le cadre :</h3>
+		<ul class="unol">
+			<li>
+				<span>⭐ </span>Rien n'est obligatoire, tout est révocable et c'est ok de ne pas avoir envie
+				de jouer avec tout le monde.
+			</li>
 			<li>
 				<span>⭐ </span>Il n'y a aucune attente. Au cours de l'atelier, tu peux à tout moment te
 				retirer d’une proposition, observer, rester sans rien faire, et/ou partir quand tu le
@@ -76,11 +84,16 @@
 			<li>
 				<span>⭐ </span>Le consentement peut parfois être l’inverse de l’inclusivité. Il y a donc
 				des moments où vous allez peut-être vivre du rejet, être sans binôme, recevoir un non. Ça
-				fait partie de l’expérience.
+				fait partie de l’expérience. Toutes les émotions et expressions émotionnelles sont les
+				bienvenues.
 			</li>
 			<li>
 				<span>⭐ </span>Il y a toujours une personne en soutien émotionnel disponible tout au long
 				de l'atelier si besoin.
+			</li>
+			<li>
+				<span>⭐ </span>Ce sont des espaces politiquement positionnés, prenant en compte les
+				rapports de pouvoir et privilèges.
 			</li>
 		</ul>
 		<h3>Les déroulés d’Ateliers sont progressifs.</h3>
@@ -113,21 +126,26 @@
 	</section>
 
 	<section id="inscription">
-		<p><strong>Il est nécessaire de t’inscrire pour pouvoir participer.</strong></p>
+		<p class="text-center">
+			<strong>Il est nécessaire de t’inscrire pour pouvoir participer.</strong>
+		</p>
 		<div class="flex flex-col items-center p-5">
-			<Button>
+			<Button
+				class="bg-[var(--color-pink)] text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)]"
+				size="lg"
+			>
 				<a href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank">
-					infos et inscriptions
+					Infos et inscriptions
 				</a>
 			</Button>
 		</div>
 	</section>
 
 	<section id="contact">
-		<p>
-			Tu peux me contacter pour toute question, réflexion, proposition ou juste pour discuter de ce
-			projet !
-		</p>
-		<p>Laurette</p>
+		<p class="text-center">Tu peux me contacter pour toute question, réflexion ou proposition !</p>
+		<br />
+		<div class=" flex">
+			<a class="m-auto text-center text-[1.2em] font-bold" href="/qui-suis-je">Laurette</a>
+		</div>
 	</section>
 </main>

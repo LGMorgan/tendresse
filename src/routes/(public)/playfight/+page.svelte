@@ -3,6 +3,12 @@
 	import Testimony from '$lib/components/testimony.svelte';
 	import AskMe from '$lib/components/askMe.svelte';
 
+    /**
+     * 	<GridDate dates={data?.workshops?.Playfight} />
+
+	<Testimony testimonies={data.testimonies.Playfight} />
+     */
+
 	const { data } = $props();
 </script>
 
@@ -81,9 +87,7 @@
 
 	<AskMe />
 
-	<GridDate dates={data?.workshops?.Playfight} />
 
-	<Testimony testimonies={data.testimonies.Playfight} />
 </main>
 
 <style>

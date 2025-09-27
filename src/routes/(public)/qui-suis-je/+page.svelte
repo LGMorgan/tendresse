@@ -14,15 +14,29 @@
 		</p>
 		<br />
 		<p>
-			En dehors des Ateliers Tendresse, je fais des montages photos sur le.retro.viseur, ( Le
-			retroviseur 🦖✨ (@le.retro.viseur) • Photos et vidéos Instagram ) des portés acrobatiques, du
-			jonglage et parfois je danse !
+			En dehors des Ateliers Tendresse, je fais du cirque, de la scène, des performances en temps de
+			Draq Queen-acrobate-jongleuse. Tu peux retrouver sur
+			<a
+				class="underline"
+				href="https://www.instagram.com/lay__diego?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+				>Lay Diego</a
+			>.
 		</p>
+        <br/>
+		<p>
+			Je fais également des montages photos sur <a
+				class="underline"
+				href="https://www.instagram.com/le.retro.viseur/">le.retro.viseur</a
+			>.
+		</p>
+
 		<br />
 		<p>
-			J’anime également des cercles de paroles autour des relations alternatives avec <a
+			J’anime des cercles de paroles avec <a
+				class="underline"
 				href="https://re.linkedin.com/in/anna-doizy">Anna Doizy</a
-			>
+			>, contacte moi pour être tenu au courant ! 
+
 		</p>
 		<br />
 		<p>

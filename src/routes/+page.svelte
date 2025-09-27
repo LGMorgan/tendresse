@@ -3,6 +3,8 @@
 	import HeaderTitle from '$lib/components/headerTitle.svelte';
 	import MailInput from '$lib/components/mailInput.svelte';
 	import Socials from '$lib/components/socials.svelte';
+
+	export let form;
 </script>
 
 <div>
@@ -12,16 +14,20 @@
 
 <main>
 	<section>
-		<h3>Des espaces d’expérimentation du Consentement, du jeu et de la Tendresse à la Réunion.</h3>
-		<h3>
+		<h3 class="mr-50">
+			Des espaces d’expérimentation du Consentement, du jeu et de la Tendresse à la Réunion.
+		</h3>
+		<h3 class="ml-50 text-right">
 			Pour découvrir concrètement et corporellement le Consentement dans des espaces aussi sécurisés
 			et sécurisants que possible.
 		</h3>
-		<h3>Mettre la Joie, le Jeu et la communication au cœur de nos quotidiens.</h3>
+		<h3>
+			Mettre la Joie, le Jeu et la communication au cœur de nos quotidiens.
+		</h3>
 	</section>
 </main>
 
 <footer>
-	<MailInput />
+	<MailInput {form} />
 	<Socials />
 </footer>

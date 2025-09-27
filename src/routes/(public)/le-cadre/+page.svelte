@@ -17,8 +17,7 @@
 	<TitledP title="Consentement :"
 		>Enthousiaste : Si tu penses “ peut-être”, alors c’est un “non”. Essaye de dire “oui” seulement
 		si tu ressens “bien sûr que oui”. Tu peux changer d’avis autant de fois que tu le souhaites.
-		“Oui” peut devenir “Non” à n'importe quel moment et sans justification.<br /> <br /> Et c’est ok
-		de ne pas avoir envie de jouer avec tout le monde.</TitledP
+		“Oui” peut devenir “Non” à n'importe quel moment et sans justification.<br /></TitledP
 	>
 	<TitledP title="Sensorialité :"
 		>Les ateliers sont des espaces de Sensorialité et de Tendresse, pas de sexualité. Il peut
@@ -28,7 +27,8 @@
 	<TitledP title="Non séduction :"
 		>L’envie de séduire peut te couper de l’expérience et nuire à l’ambiance collective. Si
 		l’objectif est de paraître désirable ou de se rapprocher d'une personne en particulier, cela
-		peut gêner les autres participant.e.s et nuire à la fluidité de ton l'expérience.</TitledP
+		peut gêner les autres participant.e.s et nuire à la fluidité de ton l'expérience. Donc ne rentre
+		pas consciemment dans un jeu de séduction.</TitledP
 	>
 	<TitledP title="Responsabilité collective :"
 		>Aucun événement n’est 100% safe, mais le cadre que je pose est là pour essayer d’atteindre ceci
@@ -55,8 +55,8 @@
 		inégalités et discriminations.
 		<br />
 		Chacun.e son niveau de déconstruction et d’éducation aux questions de consentement, de féminisme,
-		de genre… Pas de stress ! Si tu as peur de faire mal, pose des questions, elles seront reçues avec
-		bienveillance.
+		de genre… Pas de stress ! Si tu as peur de faire mal, pose des questions, elles seront reçues sans
+		jugement.
 	</TitledP>
 	<TitledP title="Exclusion :"
 		>Le consentement peut parfois être l’inverse de l’inclusivité. C’est ok de ne pas avoir envie de
@@ -67,10 +67,10 @@
 		difficiles suite à ce rejet” . Ça peut remuer. D’où la présence de la personne en soutien
 		émotionnel pour accueillir ces ressentis si besoin.
 	</TitledP>
-	<TitledP title="Biais d’aura :"
+	<TitledP title="Biais de facilitatrice :"
 		>Je vous propose quelque chose mais je ne suis en aucun cas la queen du consentement
 		irréprochable, j’ai encore un grand chemin à faire. N’hésitez pas à remettre en question ce que
-		je dis, exprimer si quelque chose vous dérange dans ce que je fais. Tous les retours sont les
-		bienvenus !</TitledP
+		je dis, exprimer si quelque chose vous dérange dans ce que je fais. Tous les retours sont
+		bienvenus pour rendre les ateliers les plus pertinents et ajustés possible.</TitledP
 	>
 </main>

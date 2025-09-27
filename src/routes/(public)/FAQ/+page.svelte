@@ -37,7 +37,7 @@
 		{
 			question: 'Que se passe-t-il si je suis mal à l’aise lors de l’Atelier ?',
 			answer:
-				"Tu es libre de te retirer, de partir ou de simplement observer, sans te justifier. Rien n’est obligatoire, il n’y a aucune attente, aucune pression. D’ailleurs, si tu te retires, il y a toujours une personne en soutien émotionnel présente. Qui me permet d’avoir toujours un nombre pair de participant.es même si quelqu’un se retire d’une proposition. En gros ; tu n'empêchera personne de jouer si tu te retires."
+				"Tu es libre de te retirer, de partir ou de simplement observer, sans te justifier. Rien n’est obligatoire, il n’y a aucune attente, aucune pression. D’ailleurs, si tu te retires, il y a toujours une personne en soutien émotionnel présente pour t'écouter et prendre un temps avec toi. Cette personne est également là pour me permettre d’avoir toujours un nombre pair de participant.es même si quelqu’un se retire d’une proposition. En gros ; tu n'empêchera personne de jouer si tu te retires."
 		},
 		{
 			question: 'Où les événements ont-ils lieu?',

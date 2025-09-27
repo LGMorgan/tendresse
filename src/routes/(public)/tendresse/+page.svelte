@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	import { Button } from '$lib/components/ui/button/index.js';
 
 	const { data } = $props();
@@ -117,7 +118,9 @@
 			prochains Ateliers c’est ici:
 		</p>
 		<div class="my-5 flex flex-col items-center">
-			<Button>
+			<Button
+				class="bg-[var(--color-pink)] text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)] p-5 mt-5"
+			>
 				<a href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank">
 					infos et inscriptions
 				</a>
@@ -136,6 +139,10 @@
 			<li>Les rires, larmes et toutes autres formes d'expressions émotionnelles sont bienvenues</li>
 		</ul>
 
-		<Button class="m-auto mt-0 mb-7 flex justify-center ">Des questions ?</Button>
+		<Button
+            href="/FAQ"
+			class="max-w-44 m-auto mt-8 mb-7 p-5 flex justify-center bg-[var(--color-pink)] text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)]"
+			>Des questions ?</Button
+		>
 	</section>
 </main>

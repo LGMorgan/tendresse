@@ -54,6 +54,9 @@
 	</section>
 
 	<div class="pb-8 text-center">
-		<Button onclick={() => goto('/les-ateliers')}>Découvrir les Ateliers</Button>
+		<Button
+			class="bg-[var(--color-pink)] p-5 text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)]"
+			onclick={() => goto('/les-ateliers')}>Découvrir les Ateliers</Button
+		>
 	</div>
 </main>
