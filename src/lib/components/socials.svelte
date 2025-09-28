@@ -1,4 +1,4 @@
-<footer>
+<footer  class="bg-[var(--color-yellow)] p-5 rounded-lg">
 	<a
 		href="https://www.facebook.com/profile.php?id=61561837275486"
 		target="_blank"
