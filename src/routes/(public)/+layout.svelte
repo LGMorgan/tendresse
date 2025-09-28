@@ -5,6 +5,7 @@
 	import HeaderTitle from '$lib/components/headerTitle.svelte';
 	import MailInput from '$lib/components/mailInput.svelte';
 	import { fade } from 'svelte/transition';
+    import InscriptionBtn from '$lib/components/InscriptionBtn.svelte';
 
 	let { children } = $props();
 	let activeUrl = $derived(page.url.pathname);
@@ -55,18 +56,18 @@
 </script>
 
 {#key activeUrl}
-	<div in:fade={{ duration: 200, delay: 300 }} out:fade={{ duration: 200 }}>
+	<div class="relative" in:fade={{ duration: 200, delay: 300 }} out:fade={{ duration: 200 }}>
 		<div>
 			<HeaderTitle {title} />
+            <InscriptionBtn />
 			<NavBar />
 		</div>
 
 		{@render children()}
-
-		<MailInput />
 
 		{#if activeUrl !== '/FAQ'}
 			<Socials />
 		{/if}
 	</div>
 {/key}
+

@@ -3,12 +3,14 @@
 	import HeaderTitle from '$lib/components/headerTitle.svelte';
 	import MailInput from '$lib/components/mailInput.svelte';
 	import Socials from '$lib/components/socials.svelte';
+	import InscriptionBtn from '$lib/components/InscriptionBtn.svelte';
 
 	export let form;
 </script>
 
 <div>
 	<HeaderTitle title={'Les Ateliers Tendresse'} />
+	<InscriptionBtn />
 	<NavBar />
 </div>
 

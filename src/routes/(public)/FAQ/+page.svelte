@@ -83,7 +83,7 @@
 		{
 			question: 'Les Ateliers sont-ils adaptés à des personnes ayant un vécu traumatiques ?',
 			answer:
-				'Je tiens à ce que les Ateliers soient des lieux sûrs et respectueux pour toutes et tous. Si tu as vécu des expériences difficiles et que tu te sens préoccupé par ta participation, n’hésites pas à me contacter pour en discuter en privée avant l’atelier. Tu seras accompagné.'
+				'Je tiens à ce que les Ateliers soient des lieux sûrs et respectueux pour toutes et tous. Si tu as vécu des expériences difficiles et que tu te sens préoccupé·e par ta participation, n’hésites pas à me contacter pour en discuter en privé avant l’atelier. Tu seras accompagné.'
 		},
 		{
 			question: 'Comment je m’habille?',
@@ -91,7 +91,7 @@
 		},
 		{
 			question: 'Comment s’inscrire?',
-			answer: `Via BilletWeb, en répondant à quelques questions. Ce sera une pré-inscription. Je validerais ensuite ton inscription. Lorsque j'aurais validé ton inscription, il te sera demandé de payer par mail. Tu as 5 jours pour payer avant que la place ne soit donnée à quelqu'un.e d'autre.Ton inscription sera effective après le paiement`
+			answer: `Via BilletWeb, en répondant à quelques questions. Ce sera une pré-inscription. Je validerai ensuite ton inscription. Lorsque j'aurai validé ton inscription, il te sera demandé de payer par mail. Tu as 5 jours pour payer avant que la place ne soit donnée à quelqu'un·e d'autre. Ton inscription sera effective après le paiement`
 		}
 	];
 </script>
@@ -100,16 +100,16 @@
 	<section>
 		<Accordion.Root type="single">
 			{#each questions as { question, answer }, index}
-				<Accordion.Item id={String(index)}>
-					<Accordion.Trigger><h3>{question}</h3></Accordion.Trigger>
-					<Accordion.Content class="mb-5 text-[1.2em]">{@html answer}</Accordion.Content>
+				<Accordion.Item id={String(index)} >
+					<Accordion.Trigger ><h3>{question}</h3></Accordion.Trigger>
+					<Accordion.Content class="mb-5 text-[1.2em] ">{@html answer}</Accordion.Content>
 				</Accordion.Item>
 			{/each}
 		</Accordion.Root>
 	</section>
 	<section id="contact">
 		<p class="p-5">
-			Pour toute autre question tu peux me contacter ici en utilisant les liens çi-dessous :
+			Pour toute autre question tu peux me contacter ici en utilisant les liens ci-dessous
 		</p>
 	</section>
 	<Socials />

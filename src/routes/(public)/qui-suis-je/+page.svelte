@@ -1,3 +1,8 @@
+<script>
+	import MailInput from '$lib/components/mailInput.svelte';
+	export let form;
+</script>
+
 <main>
 	<section id="introduction">
 		<h3>Moi, c’est Laurette.</h3>
@@ -14,15 +19,15 @@
 		</p>
 		<br />
 		<p>
-			En dehors des Ateliers Tendresse, je fais du cirque, de la scène, des performances en temps de
-			Draq Queen-acrobate-jongleuse. Tu peux retrouver sur
+			En dehors des Ateliers Tendresse, je fais du cirque, de la scène, des performances en tant que
+			Drag Queen-acrobate-jongleuse. Tu peux me retrouver sur
 			<a
 				class="underline"
 				href="https://www.instagram.com/lay__diego?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
 				>Lay Diego</a
 			>.
 		</p>
-        <br/>
+		<br />
 		<p>
 			Je fais également des montages photos sur <a
 				class="underline"
@@ -35,8 +40,7 @@
 			J’anime des cercles de paroles avec <a
 				class="underline"
 				href="https://re.linkedin.com/in/anna-doizy">Anna Doizy</a
-			>, contacte moi pour être tenu au courant ! 
-
+			>, contacte moi pour être tenu·e au courant !
 		</p>
 		<br />
 		<p>
@@ -48,3 +52,5 @@
 		<br />
 	</section>
 </main>
+
+<MailInput {form} />

@@ -8,10 +8,11 @@
 		{ text: 'Accueil', link: '/' },
 		{ text: 'Le Projet', link: '/projet' },
 		{ text: 'Les Ateliers', link: '/les-ateliers' },
+        { text: 'Le Cadre', link: '/le-cadre' },
 		{ text: 'Qui suis-je ?', link: '/qui-suis-je' },
-		{ text: 'Le Cadre', link: '/le-cadre' },
-		{ text: 'FAQ', link: '/FAQ' },
-		{ text: 'Accompagnement individuel', link: '/accompagnement-individuel' }
+        { text: 'Accompagnement individuel', link: '/accompagnement-individuel' },
+        { text: 'Tarifs', link: '/tarifs' },
+        { text: 'FAQ', link: '/FAQ' },
 	];
 </script>
 

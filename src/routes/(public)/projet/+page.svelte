@@ -1,6 +1,9 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { Button } from '$lib/components/ui/button/index.js';
+    import MailInput from '$lib/components/mailInput.svelte';
+
+    export let form;
 </script>
 
 <main>
@@ -60,3 +63,5 @@
 		>
 	</div>
 </main>
+
+<MailInput {form} />

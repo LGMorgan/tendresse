@@ -1,8 +1,10 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { Button } from '$lib/components/ui/button/index.js';
+    import MailInput from '$lib/components/mailInput.svelte';
+    
 
-	const { data } = $props();
+	const { data, form } = $props();
 
 	/**
 	 * <GridDate dates={data?.workshops?.Tendresse}/>
@@ -146,3 +148,5 @@
 		>
 	</section>
 </main>
+
+<MailInput {form} />

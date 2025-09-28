@@ -2,7 +2,7 @@
 	import { enhance } from '$app/forms';
 	import { Button } from '$lib/components/ui/button/index.js';
 
-	export let form;
+	let { form } = $props();
 
 	function validateForm() {
 		return true;

@@ -1,5 +1,9 @@
 <script>
 	import { Button } from '$lib/components/ui/button/index.js';
+    import MailInput from '$lib/components/mailInput.svelte';
+    import InscriptionBtn from '$lib/components/InscriptionBtn.svelte'; 
+
+    export let form;
 </script>
 
 <main>
@@ -12,17 +16,17 @@
 
 	<section id="présentation">
 		<p>Il y a deux niveaux d'ateliers. Les ateliers de niveaux 1 ne nécessitent aucun prérequis.</p>
-		<h3>Ateliers de niveau 1 :</h3>
+		<h3>Ateliers de niveau 1</h3>
 		<ul class="unol">
 			<li><span>⭐ </span>La Tendresse Consentie</li>
 			<li><span>⭐ </span>La Playfight</li>
 			<li><span>⭐ </span>Les Cercles de parole</li>
 			<li><span>⭐ </span>... Et d'autres plus occasionnels à découvrir.</li>
 		</ul>
-		<h3>Ateliers de niveau 2 :</h3>
+		<h3>Ateliers de niveau 2</h3>
 		<p>
 			Effectuer un atelier "Tendresse Consentie" en respectant le cadre posé permet l'accès aux
-			ateliers suivant :
+			ateliers suivants :
 		</p>
 		<br />
 		<ul class="unol">
@@ -49,7 +53,7 @@
 
 		<h3>
 			Pour beaucoup encore, "Tendresse" et "Consentement" sont des mots qui peuvent faire peur alors
-			un peu de clarté :
+			un peu de clarté
 		</h3>
 		<ul class="unol">
 			<li><span>⭐ </span>Est-ce qu'il y a de la nudité ? <br /> Non.</li>
@@ -59,46 +63,17 @@
 			</li>
 		</ul>
 
-		<h3>Le programme :</h3>
+		<h3>Le programme</h3>
 		<ul class="unol">
 			<li><span>⭐ </span>Pose du cadre</li>
 			<li><span>⭐ </span>Rencontre du groupe</li>
 			<li><span>⭐ </span>Atelier en lui-même</li>
 			<li><span>⭐ </span>Cercle de clôture</li>
 		</ul>
-		<h3>Le cadre :</h3>
-		<ul class="unol">
-			<li>
-				<span>⭐ </span>Rien n'est obligatoire, tout est révocable et c'est ok de ne pas avoir envie
-				de jouer avec tout le monde.
-			</li>
-			<li>
-				<span>⭐ </span>Il n'y a aucune attente. Au cours de l'atelier, tu peux à tout moment te
-				retirer d’une proposition, observer, rester sans rien faire, et/ou partir quand tu le
-				souhaites, sans justification.
-			</li>
-			<li>
-				<span>⭐ </span>Ce n'est pas un espace de séduction/sensualité. L’envie de séduire peut te
-				couper de l’expérience et nuire à l’ambiance collective.
-			</li>
-			<li>
-				<span>⭐ </span>Le consentement peut parfois être l’inverse de l’inclusivité. Il y a donc
-				des moments où vous allez peut-être vivre du rejet, être sans binôme, recevoir un non. Ça
-				fait partie de l’expérience. Toutes les émotions et expressions émotionnelles sont les
-				bienvenues.
-			</li>
-			<li>
-				<span>⭐ </span>Il y a toujours une personne en soutien émotionnel disponible tout au long
-				de l'atelier si besoin.
-			</li>
-			<li>
-				<span>⭐ </span>Ce sont des espaces politiquement positionnés, prenant en compte les
-				rapports de pouvoir et privilèges.
-			</li>
-		</ul>
-		<h3>Les déroulés d’Ateliers sont progressifs.</h3>
+
+		<h3>Les déroulés d’Ateliers sont progressifs</h3>
 		<p>
-			Je vous propose une guidance pour faciliter les connexions et de vous donner des codes
+			Je vous propose une guidance pour faciliter les connexions et vous donner des codes
 			communs.
 		</p>
 		<p>
@@ -111,34 +86,11 @@
 		</p>
 	</section>
 
-	<section id="tarifs">
-		<h3>Tarifs</h3>
-		<p>Pour 3h d'ateliers, je te propose trois tarifs selon tes moyens financiers :</p>
-		<ul class="unol">
-			<li>Tarif standard : 25€</li>
-			<li>Tarif solidaire : 15€</li>
-			<li>Tarif soutiens : 35€</li>
-		</ul>
-		<p>
-			Si tu es intéressé·e par un atelier mais que tu ne peux pas payer le prix solidaire. Un prix
-			libre est possible sur demande, sans justification ⭐
-		</p>
-	</section>
-
 	<section id="inscription">
-		<p class="text-center">
+		<p class="text-center pb-6">
 			<strong>Il est nécessaire de t’inscrire pour pouvoir participer.</strong>
 		</p>
-		<div class="flex flex-col items-center p-5">
-			<Button
-				class="bg-[var(--color-pink)] text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)]"
-				size="lg"
-			>
-				<a href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank">
-					Infos et inscriptions
-				</a>
-			</Button>
-		</div>
+		<InscriptionBtn />
 	</section>
 
 	<section id="contact">
@@ -149,3 +101,5 @@
 		</div>
 	</section>
 </main>
+
+<MailInput {form} />

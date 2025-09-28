@@ -25,6 +25,7 @@
 			width="28px"
 		/>
 	</a>
+    <a class="text-xl text-[var(--color-violet)]" href="mailto:les.ateliers.tendresse@gmail.com"> 💌 les.ateliers.tendresse@gmail.com </a>
 </footer>
 
 <style>

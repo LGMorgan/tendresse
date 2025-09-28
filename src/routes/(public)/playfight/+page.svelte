@@ -2,6 +2,8 @@
 	import GridDate from '$lib/components/gridDate.svelte';
 	import Testimony from '$lib/components/testimony.svelte';
 	import AskMe from '$lib/components/askMe.svelte';
+    import MailInput from '$lib/components/mailInput.svelte';
+
 
     /**
      * 	<GridDate dates={data?.workshops?.Playfight} />
@@ -9,7 +11,7 @@
 	<Testimony testimonies={data.testimonies.Playfight} />
      */
 
-	const { data } = $props();
+	const { data, form } = $props();
 </script>
 
 <main>
@@ -89,6 +91,8 @@
 
 
 </main>
+
+<MailInput {form} />
 
 <style>
 	.enhanced-img {

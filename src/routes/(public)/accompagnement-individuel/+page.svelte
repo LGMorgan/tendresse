@@ -1,5 +1,8 @@
 <script>
 	import AskMe from '$lib/components/askMe.svelte';
+    import MailInput from '$lib/components/mailInput.svelte';
+
+    export let form;
 </script>
 
 <main id="Séances Individuelles">
@@ -21,7 +24,7 @@
 	<section>
 		<h3>
 			Je propose des accompagnements individuels autour des mêmes thématiques que les Ateliers
-			Tendresse :
+			Tendresse
 		</h3>
 		<p>
 			Le consentement, le rapport au corps, la communication, les limites, les envies, les peurs…
@@ -47,7 +50,7 @@
 			</li>
 			<li>
 				<span>🌿 </span> Pour les personnes qui ressentent le besoin de mieux comprendre leur place dans
-				les relations, de changer certaines dynamiques dans lesquelles ils se sentent coincés, ou simplement
+				les relations, de changer certaines dynamiques dans lesquelles elles se sentent coincées, ou simplement
 				de vivre des échanges plus justes, plus simples, plus apaisés.
 			</li>
 		</ul>
@@ -61,7 +64,7 @@
 		</p>
 	</section>
 	<section>
-		<h3>Concrètement :</h3>
+		<h3>Concrètement</h3>
 		<ul class="unol">
 			<li><span>🌀 </span> Les séances durent 1h.</li>
 			<li>
@@ -73,11 +76,10 @@
 
 		<p>
 			Il n’y a pas d’engagement, juste une première prise de contact pour voir ensemble ce qui est
-			juste. N’hésites pas à m’écrire si tu as des besoins particuliers ! Je ferais au mieux pour
+			juste. N’hésite pas à m’écrire si tu as des besoins particuliers ! Je ferai au mieux pour
 			t'accueillir et m’adapter.
 		</p>
 	</section>
-	<div class="m-3">
-		<AskMe showTitle={false} />
-	</div>
 </main>
+
+<MailInput {form} />
