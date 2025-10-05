@@ -8,11 +8,11 @@
 		{ text: 'Accueil', link: '/' },
 		{ text: 'Le Projet', link: '/projet' },
 		{ text: 'Les Ateliers', link: '/les-ateliers' },
-        { text: 'Le Cadre', link: '/le-cadre' },
+		{ text: 'Le Cadre', link: '/le-cadre' },
 		{ text: 'Qui suis-je ?', link: '/qui-suis-je' },
-        { text: 'Accompagnement individuel', link: '/accompagnement-individuel' },
-        { text: 'Tarifs', link: '/tarifs' },
-        { text: 'FAQ', link: '/FAQ' },
+		{ text: 'Accompagnement individuel', link: '/accompagnement-individuel' },
+		{ text: 'Tarifs', link: '/tarifs' },
+		{ text: 'FAQ', link: '/FAQ' }
 	];
 </script>
 
@@ -33,7 +33,7 @@
 	{/if}
 </div>
 
-<div class="hidden justify-center lg:flex">
+<div class="hidden justify-center md:pt-2 lg:flex">
 	<ul class="navUl flex justify-evenly">
 		{#each pages as page}
 			{@render navLi(page.text, page.link)}

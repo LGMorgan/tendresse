@@ -1,19 +1,3 @@
-<script>
-	import NavBar from '$lib/components/navBar.svelte';
-	import HeaderTitle from '$lib/components/headerTitle.svelte';
-	import MailInput from '$lib/components/mailInput.svelte';
-	import Socials from '$lib/components/socials.svelte';
-	import InscriptionBtn from '$lib/components/InscriptionBtn.svelte';
-
-	export let form;
-</script>
-
-<div>
-	<HeaderTitle title={'Les Ateliers Tendresse'} />
-	<InscriptionBtn />
-	<NavBar />
-</div>
-
 <main>
 	<section>
 		<h3 class="m-auto md:mr-50">
@@ -26,8 +10,3 @@
 		<h3>Mettre la Joie, le Jeu et la communication au cœur de nos quotidiens.</h3>
 	</section>
 </main>
-
-<footer>
-	<MailInput {form} />
-	<Socials />
-</footer>

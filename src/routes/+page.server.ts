@@ -3,7 +3,7 @@ import { BREVO_API_KEY } from "$env/static/private";
 import { CreateContact, ContactsApi, ContactsApiApiKeys } from "@getbrevo/brevo";
 
 export const actions = {
-    sendToBrevo: async ({ cookies, request }: RequestEvent) => {
+    sendToBrevo: async ({ request }: RequestEvent) => {
         const formData = await request.formData();
         const email = formData.get('email');
 
@@ -18,7 +18,7 @@ export const actions = {
             contact.email = email;
 
             contactAPI.createContact(contact).then((response) => {
-                console.log('Contact added successfully');
+                console.log('Contact added successfully :', response);
                 success = true;
                 return { success };
             }).catch((error) => {
@@ -35,8 +35,8 @@ export const actions = {
             error = 'Email non valide'
         }
         console.log('Email received:', email);
-        
+
         return { success, error };
     }
-    
+
 }
