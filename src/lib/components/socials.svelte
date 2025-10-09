@@ -1,4 +1,4 @@
-<footer  class="bg-[var(--color-yellow)] p-5 rounded-lg">
+<footer  class="bg-[var(--color-yellow)] p-5 rounded-lg flex items-center justify-center flex-wrap gap-5">
 	<a
 		href="https://www.facebook.com/profile.php?id=61561837275486"
 		target="_blank"
@@ -27,12 +27,3 @@
 	</a>
     <a class="text-xl text-[var(--color-violet)]" href="mailto:les.ateliers.tendresse@gmail.com"> 💌 les.ateliers.tendresse@gmail.com </a>
 </footer>
-
-<style>
-	footer {
-		display: flex;
-		justify-content: center;
-		gap: 18px;
-		margin: 20px auto 50px auto;
-	}
-</style>

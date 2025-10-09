@@ -2,15 +2,16 @@
 	<section id="introduction">
 		<h3>Moi, c’est Laurette.</h3>
 		<p>
-			J’ai crée les Ateliers Tendresse en mixant ce que je faisais en tant que Psychomotricienne en
-			psychiatrie, avec les outils que j’ai découvert dans le milieu sexpositif (Mouvement social,
-			queer, féministe qui tend détabouiser la sexualité et la rendre au maximum sécure).
+			J’ai crée les Ateliers Tendresse depuis novembre 2024, sous la forme d’une auto-entreprise en
+			mixant ce que je faisais en tant que Psychomotricienne en psychiatrie, avec les outils que
+			j’ai découvert dans le milieu sexpositif (Mouvement social, queer, féministe qui tend a
+			détabouiser la sexualité et la rendre au maximum sécure).
 		</p>
 		<br />
 		<p>
 			Tout ça mixé avec toutes mes connaissances autour des questions de genre, des violences
 			sexistes et sexuelles, mon intérêt pour les expériences sensorielles et les réflexions autour
-			des relations… Un bon gros mélange de tout ce qui me tient à coeur !
+			des relations… Un bon gros mélange de tout ce qui me tient à cœur !
 		</p>
 		<br />
 		<p>

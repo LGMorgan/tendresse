@@ -13,6 +13,3 @@
 		/>
 	</a>
 </header>
-
-<style>
-</style>

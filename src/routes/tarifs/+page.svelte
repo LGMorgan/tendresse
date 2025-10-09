@@ -39,7 +39,7 @@
 		<strong class="text-xl">Tarif soutien 35€</strong>
 		<p>
 			Le prix soutien non seulement encourage le projet mais permet à d’autres avec moins de moyens
-			de pouvoir venir/ soutien les tarifs solidaires.
+			de pouvoir venir/soutien les tarifs solidaires.
 		</p>
 	</div>
 	<p>

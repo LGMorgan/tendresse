@@ -50,6 +50,10 @@
 				document.title = 'Accompagnement Individuel';
 				title = 'Accompagnement Individuel';
 				break;
+            case '/tarifs':
+				document.title = 'Tarifs';
+				title = 'Tarifs';
+				break;
 			default:
 				document.title = 'Les Ateliers Tendresse';
 				title = 'Les Ateliers Tendresse';

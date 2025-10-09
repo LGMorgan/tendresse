@@ -5,7 +5,7 @@
 <main>
 	<section id="introduction">
 		<h3>
-			Des espaces de connexion, de partage et de jeu avec le consentement au cœur de chaque
+			Des espaces de connexion, de partage et de jeu avec le Consentement au cœur de chaque
 			proposition.
 		</h3>
 	</section>
@@ -36,19 +36,19 @@
 		<br />
 		<h3>A quoi ressemble un atelier ?</h3>
 		<p>
-			Les Ateliers durent <b>3 heures</b>. Il y a entre <b>6 et 16 personnes</b>. La moyenne d’âge
+			Les ateliers durent <b>3 heures</b>. Il y a entre <b>6 et 16 personnes</b>. La moyenne d’âge
 			est <b>entre 25 et 45 ans</b>. Proportionnellement, il y a plus de femmes/personnes non
 			binaires que d’hommes. Certaines personnes viennent en duo mais la plupart viennent seules.
 		</p>
 		<br />
 		<p>
-			Vous pouvez totalement venir en duo et ne jouer qu’ensemble si l'interaction avec des inconnus
+			Vous pouvez venir en duo et ne jouer qu’ensemble si l'interaction avec des inconnus
 			est inconfortable. A chaque pose de cadre, je demande s’il y a des personnes venues en duo
 			pour que tout le groupe soit au courant.
 		</p>
 
 		<h3>
-			Pour beaucoup encore, "Tendresse" et "Consentement" sont des mots qui peuvent faire peur alors
+			Pour beaucoup encore, "Tendresse" et "Consentement" sont des mots qui peuvent faire peur alors :
 			un peu de clarté
 		</h3>
 		<ul class="unol">
@@ -78,7 +78,7 @@
 		</p>
 		<p>
 			Tu seras invité à changer de binôme mais tu peux venir en duo et explorer seulement avec ce
-			duo ça ne pose aucun soucis !
+			duo, ça ne pose aucun soucis !
 		</p>
 	</section>
 
