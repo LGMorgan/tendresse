@@ -54,7 +54,7 @@
 		{
 			question: 'Pourquoi ces prix ?',
 			answer:
-				"Je construis les tarifs de mes Ateliers pour qu’ils soient accessibles et pour que je sois rémunérée justement pour pouvoir poursuivre le projet. Il y a trois tarifs selon tes moyens financiers pour les 3h d'ateliers : Tarif standard : 25€ (c’est le tarif qui équilibre mes frais et mon temps), Tarif solidaire : 15€ (pour les personnes pour qui 25 € c’est trop), Tarif soutien : 35€ (si tu es à l’aise, que tu veux soutenir mon travail et permettre à d’autres de venir)."
+				"Je construis les tarifs de mes Ateliers pour qu’ils soient accessibles et pour que je sois rémunérée justement pour pouvoir poursuivre le projet. Il y a trois tarifs selon tes moyens financiers pour les 3h d'ateliers : Tarif standard : 35€ (c’est le tarif qui équilibre mes frais et mon temps), Tarif solidaire : 25€ (pour les personnes pour qui 35 € c’est trop), Tarif soutien : 45€ (si tu es à l’aise, que tu veux soutenir mon travail et permettre à d’autres de venir)."
 		},
 		{
 			question: 'Qui peut participer?',

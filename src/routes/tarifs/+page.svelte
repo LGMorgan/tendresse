@@ -19,7 +19,7 @@
 	</ul>
 	<h3>Pour 3h d'ateliers ⭐</h3>
 	<div class="my-4 mb-8 rounded-lg bg-[var(--color-yellow)] p-4 text-[var(--color-violet)]">
-		<strong class="text-xl">Tarif standard 25€</strong>
+		<strong class="text-xl">Tarif standard 35€</strong>
 		<p>
 			Le prix standard permet de pérenniser mon travail dédié à diffuser les valeurs du Consentement
 			et d’une Tendresse désexualisée. Il couvre le matériel, la location des lieux et la
@@ -28,7 +28,7 @@
 	</div>
 
 	<div class="my-4 mb-8 rounded-lg bg-[var(--color-yellow)] p-4 text-[var(--color-violet)]">
-		<strong class="text-xl">Tarif solidaire 15€</strong>
+		<strong class="text-xl">Tarif solidaire 25€</strong>
 		<p>
 			Le prix solidaire permet d’inclure les personnes ayant peu de ressources financières et sera
 			compensé par le tarif Soutien.
@@ -36,7 +36,7 @@
 	</div>
 
 	<div class="my-4 mb-8 rounded-lg bg-[var(--color-yellow)] p-4 text-[var(--color-violet)]">
-		<strong class="text-xl">Tarif soutien 35€</strong>
+		<strong class="text-xl">Tarif soutien 45€</strong>
 		<p>
 			Le prix soutien non seulement encourage le projet mais permet à d’autres avec moins de moyens
 			de pouvoir venir/soutien les tarifs solidaires.

@@ -93,9 +93,9 @@
 	<section id="tarifs">
 		<p>Pour 3h d'ateliers, je te propose trois tarifs selon tes moyens financiers :</p>
 		<ul class="unol">
-			<li>Tarif standard : 25€</li>
-			<li>Tarif solidaire : 15€</li>
-			<li>Tarif soutiens : 35€</li>
+			<li>Tarif standard : 35€</li>
+			<li>Tarif solidaire : 25€</li>
+			<li>Tarif soutiens : 45€</li>
 		</ul>
 		<p>
 			Si tu es intéressé·e par un atelier mais que tu ne peux pas payer le prix solidaire. <strong

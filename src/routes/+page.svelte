@@ -1,5 +1,7 @@
 <script>
     import {Button} from '$lib/components/ui/button/index.js';
+    import { Carousel } from '$lib/components/ui/carousel/index.js';
+    import Testimonies from '$lib/components/testimonies.svelte';
 </script>
 
 <main>
@@ -15,4 +17,7 @@
         <Button class="inline my-5 bg-[var(--color-blue)] text-xl font-bold text-[var(--color-yellow)] hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)] "
         href="/projet">Le projet</Button>
 	</section>
+    <section id="Témoignages">
+        <Testimonies />
+    </section>
 </main>
