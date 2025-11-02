@@ -48,7 +48,7 @@
 		<div class="m-auto w-full pt-5">
 			<enhanced:img
 				class="enhanced-img m-auto"
-				src="/src/lib/img/fist.png"
+				src="/src/lib/img/fist.webp"
 				alt="Poing militant"
 				height="400"
 			/>

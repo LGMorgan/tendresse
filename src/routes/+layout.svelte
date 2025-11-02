@@ -5,9 +5,9 @@
 	import HeaderTitle from '$lib/components/headerTitle.svelte';
 	import MailInput from '$lib/serverComponents/mailSubscription/mailInput.svelte';
 	import { fade } from 'svelte/transition';
-    import InscriptionBtn from '$lib/components/InscriptionBtn.svelte';
+	import InscriptionBtn from '$lib/components/InscriptionBtn.svelte';
 
-    import '../app.css';
+	import '../app.css';
 
 	let { children } = $props();
 	let activeUrl = $derived(page.url.pathname);
@@ -50,7 +50,7 @@
 				document.title = 'Accompagnement Individuel';
 				title = 'Accompagnement Individuel';
 				break;
-            case '/tarifs':
+			case '/tarifs':
 				document.title = 'Tarifs';
 				title = 'Tarifs';
 				break;
@@ -65,16 +65,16 @@
 	<div class="relative" in:fade={{ duration: 200, delay: 300 }} out:fade={{ duration: 200 }}>
 		<div>
 			<HeaderTitle {title} />
-            <InscriptionBtn />
+
+			<InscriptionBtn />
 			<NavBar />
 		</div>
 
 		{@render children()}
 
 		{#if activeUrl !== '/FAQ'}
-            <MailInput />
-            <Socials />
+			<MailInput />
+			<Socials />
 		{/if}
 	</div>
 {/key}
-

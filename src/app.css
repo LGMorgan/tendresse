@@ -54,6 +54,7 @@
 @font-face {
 	font-family: 'big-shoulders';
 	font-style: normal;
+    font-display: swap;
 	font-weight: 400;
 	src: url('/fonts/big-shoulders.ttf') format('truetype');
 }
@@ -61,6 +62,7 @@
 @font-face {
 	font-family: 'bukhari';
 	font-style: normal;
+    font-display: swap;
 	font-weight: 400;
 	src: url('/fonts/bukhari-script.ttf') format('truetype');
 }
@@ -68,6 +70,7 @@
 @font-face {
 	font-family: 'akzidenz';
 	font-style: normal;
+    font-display: swap;
 	font-weight: 400;
 	src: url('/fonts/Akzidenz.ttf') format('truetype');
 }
