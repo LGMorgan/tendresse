@@ -4,7 +4,6 @@
         name="description"
         content="Tarifs accessibles et solidaires pour les ateliers — standard, solidaire et soutien."
     />
-    <link rel="canonical" href="https://lesatelierstendresse.re/tarifs" />
 </svelte:head>
 
 <main>

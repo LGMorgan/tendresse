@@ -4,7 +4,6 @@
         name="description"
         content="Explore ton rapport au consentement, à la tendresse et aux limites dans un espace intime et sécurisé avec des séances individuelles adaptées à tes besoins."
     />
-    <link rel="canonical" href="https://lesatelierstendresse.re/accompagnement-individuel" />
 </svelte:head>
 
 <main id="Séances Individuelles">

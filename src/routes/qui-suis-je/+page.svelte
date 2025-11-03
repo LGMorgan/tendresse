@@ -4,7 +4,6 @@
         name="description"
         content="Découvrez qui est Laurette, la fondatrice des Ateliers Tendresse, son parcours en psychomotricité, son engagement dans le milieu sexpositif et ses passions."
     />
-    <link rel="canonical" href="https://lesatelierstendresse.re/qui-suis-je" />
 </svelte:head>
 
 <main>

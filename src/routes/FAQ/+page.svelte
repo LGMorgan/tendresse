@@ -103,8 +103,6 @@
 		name="description"
 		content={'Questions fréquemment posées : inscriptions, déroulé, sécurité, public et informations pratiques.'}
 	/>
-
-	<link rel="canonical" href={'https://lesatelierstendresse.re/FAQ'} />
 </svelte:head>
 
 <main>

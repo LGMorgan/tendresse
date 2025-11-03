@@ -9,7 +9,6 @@
 		name="description"
 		content="Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité à La Réunion."
 	/>
-    <link rel="canonical" href="https://lesatelierstendresse.re/" />
 </svelte:head>
 
 <main>

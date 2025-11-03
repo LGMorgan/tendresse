@@ -8,7 +8,6 @@
         name="description"
         content="Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs."
     />
-    <link rel="canonical" href="https://lesatelierstendresse.re/le-cadre" />
 </svelte:head>
 
 <main>

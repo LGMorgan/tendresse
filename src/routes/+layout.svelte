@@ -53,6 +53,15 @@
 
 <svelte:head>
 	<title>{'Les Ateliers Tendresse'}</title>
+	<meta name="title" content={'Les Ateliers Tendresse'} />
+	<meta name="author" content="Laurette Deloison" />
+	<meta
+		name="keywords"
+		content="Atelier, Ateliers, Ateliers Tendresse, Consentement, Jeu, Connexion, La Réunion, Tendresse Consentie, Playfight, Cercles de Parole"
+	/>
+	<meta name="theme-color" content="#fce977" />
+	<meta name="color-scheme" content="#fce977" />
+    <meta charset="utf-8">
 	<meta
 		name="description"
 		content={'Ateliers Tendresse — explorez le consentement, le jeu et la connexion.'}

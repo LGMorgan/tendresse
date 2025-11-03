@@ -9,7 +9,6 @@
         name="description"
         content="Découvrir le projet Tendresse : objectifs, inspirations et la vision éducative autour du consentement et de la sensorialité."
     />
-    <link rel="canonical" href="https://lesatelierstendresse.re/projet" />
 </svelte:head>
 
 <main>

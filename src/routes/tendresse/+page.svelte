@@ -8,7 +8,6 @@
         name="description"
         content="Un espace pour vivre les notions de consentement dans le corps. Via des outils de communication, des explorations en binôme autour du non et du oui 'enthousiaste', l'atelier Tendresse Consentie facilite l'expression du consentement."
     />
-    <link rel="canonical" href="https://lesatelierstendresse.re/tendresse" />
 </svelte:head>
 
 <main>

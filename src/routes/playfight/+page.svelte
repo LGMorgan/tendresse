@@ -17,7 +17,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lesatelierstendresse.re/playfight" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://lesatelierstendresse.re/playfight" />
 </svelte:head>
 
 <main>

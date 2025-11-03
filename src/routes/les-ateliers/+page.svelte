@@ -8,7 +8,6 @@
         name="description"
         content="Descriptions des ateliers, formats, durées et programmes — Tendresse Consentie, Playfight, cercles de parole et plus."
     />
-    <link rel="canonical" href="https://lesatelierstendresse.re/les-ateliers" />
 </svelte:head>
 
 <main>
