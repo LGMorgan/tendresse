@@ -97,18 +97,32 @@
 	];
 </script>
 
+<svelte:head>
+	<title>{metaTitle}</title>
+	<meta
+		name="description"
+		content={'Questions fréquemment posées : inscriptions, déroulé, sécurité, public et informations pratiques.'}
+	/>
+
+	<link rel="canonical" href={'https://lesatelierstendresse.re/FAQ'} />
+</svelte:head>
+
 <main>
 	<section>
 		<Accordion.Root type="single">
 			{#each questions as { question, answer }, index}
-				<Accordion.Item id={String(index)} >
-					<Accordion.Trigger ><h3>{question}</h3></Accordion.Trigger>
+				<Accordion.Item id={String(index)}>
+					<Accordion.Trigger><h3>{question}</h3></Accordion.Trigger>
 					<Accordion.Content class="mb-5 text-[1.2em] ">{@html answer}</Accordion.Content>
 				</Accordion.Item>
 			{/each}
 		</Accordion.Root>
 	</section>
-    <Button href="/FAQ" class="float-right bg-[var(--color-blue)] text-md text-[var(--color-yellow)] hover:bg-[var(--color-yellow)] hover:text-[var(--color-blue)]" >Remonter</Button>
+	<Button
+		href="/FAQ"
+		class="text-md float-right bg-[var(--color-blue)] text-[var(--color-yellow)] hover:bg-[var(--color-yellow)] hover:text-[var(--color-blue)]"
+		>Remonter</Button
+	>
 	<section id="contact" class="mt-10">
 		<p class="p-5">
 			Pour toute autre question tu peux me contacter ici en utilisant les liens ci-dessous

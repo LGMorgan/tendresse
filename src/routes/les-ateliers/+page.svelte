@@ -2,6 +2,15 @@
     import InscriptionBtn from '$lib/components/InscriptionBtn.svelte'; 
 </script>
 
+<svelte:head>
+    <title>Les Ateliers — Les Ateliers Tendresse</title>
+    <meta
+        name="description"
+        content="Descriptions des ateliers, formats, durées et programmes — Tendresse Consentie, Playfight, cercles de parole et plus."
+    />
+    <link rel="canonical" href="https://lesatelierstendresse.re/les-ateliers" />
+</svelte:head>
+
 <main>
 	<section id="introduction">
 		<h3>

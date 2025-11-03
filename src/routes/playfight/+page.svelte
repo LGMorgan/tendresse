@@ -2,6 +2,24 @@
 	import AskMe from '$lib/components/askMe.svelte';
 </script>
 
+<svelte:head>
+    <title>Atelier Playfight — Les Ateliers Tendresse</title>
+    <meta
+        name="description"
+        content="L'atelier Playfight est un espace d'exploration du consentement et de la créativité par des jeux d'opposition. Viens te mettre en corps, en joie et en rire !"
+    />
+    <meta property="og:title" content="Atelier Playfight — Les Ateliers Tendresse" />
+    <meta
+        property="og:description"
+        content="L'atelier Playfight est un espace d'exploration du consentement et de la créativité par des jeux d'opposition. Viens te mettre en corps, en joie et en rire !"
+    />
+    <meta property="og:image" content="/src/lib/img/playfight-illustration.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lesatelierstendresse.re/playfight" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://lesatelierstendresse.re/playfight" />
+</svelte:head>
+
 <main>
 	<section>
 		<h3>

@@ -1,3 +1,12 @@
+<svelte:head>
+    <title>Qui suis-je ? - Les Ateliers Tendresse</title>
+    <meta
+        name="description"
+        content="Découvrez qui est Laurette, la fondatrice des Ateliers Tendresse, son parcours en psychomotricité, son engagement dans le milieu sexpositif et ses passions."
+    />
+    <link rel="canonical" href="https://lesatelierstendresse.re/qui-suis-je" />
+</svelte:head>
+
 <main>
 	<section id="introduction">
 		<h3>Moi, c’est Laurette.</h3>

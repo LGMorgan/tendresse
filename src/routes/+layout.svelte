@@ -17,49 +17,49 @@
 	$effect(() => {
 		switch (activeUrl) {
 			case '/tendresse':
-				document.title = 'Tendresse Consentie';
 				title = 'Tendresse Consentie';
 				break;
 			case '/playfight':
-				document.title = 'Playfight';
 				title = 'Playfight';
 				break;
 			case '/projet':
-				document.title = 'Le Projet';
 				title = 'Le Projet';
 				break;
 			case '/les-ateliers':
-				document.title = 'Les Ateliers';
 				title = 'Les Ateliers';
 				imgSize = 'contain';
 				break;
 			case '/qui-suis-je':
-				document.title = 'Qui suis-je ?';
 				title = 'Qui suis-je ?';
 				imgSize = 'cover';
 				break;
 			case '/le-cadre':
-				document.title = 'Le Cadre';
 				title = 'Le Cadre';
 				break;
 			case '/FAQ':
-				document.title = 'FAQ';
 				title = 'FAQ';
 				break;
 			case '/accompagnement-individuel':
-				document.title = 'Accompagnement Individuel';
 				title = 'Accompagnement Individuel';
 				break;
 			case '/tarifs':
-				document.title = 'Tarifs';
 				title = 'Tarifs';
 				break;
 			default:
-				document.title = 'Les Ateliers Tendresse';
 				title = 'Les Ateliers Tendresse';
 		}
 	});
 </script>
+
+<svelte:head>
+	<title>{'Les Ateliers Tendresse'}</title>
+	<meta
+		name="description"
+		content={'Ateliers Tendresse — explorez le consentement, le jeu et la connexion.'}
+	/>
+
+	<link rel="canonical" href={'https://lesatelierstendresse.re'} />
+</svelte:head>
 
 {#key activeUrl}
 	<div class="relative" in:fade={{ duration: 200, delay: 300 }} out:fade={{ duration: 200 }}>

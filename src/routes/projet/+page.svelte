@@ -3,6 +3,15 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 </script>
 
+<svelte:head>
+    <title>Le Projet - Les Ateliers Tendresse</title>
+    <meta
+        name="description"
+        content="Découvrir le projet Tendresse : objectifs, inspirations et la vision éducative autour du consentement et de la sensorialité."
+    />
+    <link rel="canonical" href="https://lesatelierstendresse.re/projet" />
+</svelte:head>
+
 <main>
 	<section>
 		<h3>Aujourd’hui, on entend toutes et tous parler de consentement</h3>

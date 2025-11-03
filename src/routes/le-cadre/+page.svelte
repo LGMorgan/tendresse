@@ -2,6 +2,15 @@
 	import TitledP from '$lib/components/titledP.svelte';
 </script>
 
+<svelte:head>
+    <title>Le Cadre — Les Ateliers Tendresse</title>
+    <meta
+        name="description"
+        content="Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs."
+    />
+    <link rel="canonical" href="https://lesatelierstendresse.re/le-cadre" />
+</svelte:head>
+
 <main>
 	<TitledP title="Mes intentions">
 		Que tu ressortes avec des outils pour prendre davantage soin de ton consentement, de celui des

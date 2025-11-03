@@ -1,8 +1,16 @@
 <script>
 	import { Button } from '$lib/components/ui/button/index.js';
-	import { Carousel } from '$lib/components/ui/carousel/index.js';
 	import Testimonies from '$lib/components/testimonies.svelte';
 </script>
+
+<svelte:head>
+	<title>Accueil - Les Ateliers Tendresse</title>
+	<meta
+		name="description"
+		content="Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité à La Réunion."
+	/>
+    <link rel="canonical" href="https://lesatelierstendresse.re/" />
+</svelte:head>
 
 <main>
 	<section class="xl:mx-52">

@@ -2,6 +2,15 @@
 	import { Button } from '$lib/components/ui/button/index.js';
 </script>
 
+<svelte:head>
+    <title>Tendresse Consentie - Les Ateliers Tendresse</title>
+    <meta
+        name="description"
+        content="Un espace pour vivre les notions de consentement dans le corps. Via des outils de communication, des explorations en binôme autour du non et du oui 'enthousiaste', l'atelier Tendresse Consentie facilite l'expression du consentement."
+    />
+    <link rel="canonical" href="https://lesatelierstendresse.re/tendresse" />
+</svelte:head>
+
 <main>
 	<section>
 		<h3>Un espace pour vivre les notions de consentement dans le corps.</h3>
