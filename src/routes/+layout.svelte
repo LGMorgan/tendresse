@@ -61,11 +61,8 @@
 	/>
 	<meta name="theme-color" content="#fce977" />
 	<meta name="color-scheme" content="#fce977" />
-    <meta charset="utf-8">
-	<meta
-		name="description"
-		content={'Ateliers Tendresse — explorez le consentement, le jeu et la connexion.'}
-	/>
+    <meta name="robots" content="index, follow" />
+    <meta charset="utf-8" content="text/html" http-equiv="Content-Type" />
 
 	<link rel="canonical" href={'https://lesatelierstendresse.re'} />
 </svelte:head>
