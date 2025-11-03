@@ -13,7 +13,7 @@
         property="og:description"
         content="L'atelier Playfight est un espace d'exploration du consentement et de la créativité par des jeux d'opposition. Viens te mettre en corps, en joie et en rire !"
     />
-    <meta property="og:image" content="/src/lib/img/playfight-illustration.png" />
+    <meta property="og:image" content="/src/lib/img/playfight-illustration.webp" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lesatelierstendresse.re/playfight" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -28,7 +28,7 @@
 		</h3>
 		<enhanced:img
 			class="enhanced-img m-auto"
-			src="/src/lib/img/playfight-illustration.png"
+			src="/src/lib/img/playfight-illustration.webp"
 			alt="Atelier Tendresse Consentie"
 			width="400"
 		/>
