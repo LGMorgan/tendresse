@@ -95,14 +95,29 @@
 			answer: `Via <a class="underline" href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank">BilletWeb</a>, en répondant à quelques questions. Ce sera une pré-inscription. Je validerai ensuite ton inscription. Lorsque j'aurai validé ton inscription, il te sera demandé de payer par mail. Tu as 5 jours pour payer avant que la place ne soit donnée à quelqu'un·e d'autre. Ton inscription sera effective après le paiement.`
 		}
 	];
+
+        // build JSON-LD FAQ structured data (strip simple HTML)
+    const faqStructured = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: questions.map((q) => ({
+            '@type': 'Question',
+            name: q.question,
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: q.answer.replace(/<\/?[^>]+(>|$)/g, '') // basic tag strip
+            }
+        }))
+    };
 </script>
 
 <svelte:head>
-	<title>{metaTitle}</title>
+	<title>FAQ - Les Ateliers Tendresse</title>
 	<meta
 		name="description"
 		content={'Questions fréquemment posées : inscriptions, déroulé, sécurité, public et informations pratiques.'}
 	/>
+    <script type="application/ld+json">{JSON.stringify(faqStructured)}</script>
 </svelte:head>
 
 <main>

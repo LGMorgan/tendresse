@@ -61,8 +61,20 @@
 	/>
 	<meta name="theme-color" content="#fce977" />
 	<meta name="color-scheme" content="#fce977" />
-    <meta name="robots" content="index, follow" />
-    <meta charset="utf-8" content="text/html" http-equiv="Content-Type" />
+	<meta name="robots" content="index, follow" />
+	<meta charset="utf-8" content="text/html" http-equiv="Content-Type" />
+
+	<meta property="og:site_name" content="Les Ateliers Tendresse" />
+	<meta property="og:title" content="Les Ateliers Tendresse" />
+	<meta
+		property="og:description"
+		content="Ateliers Tendresse — explorez le consentement, le jeu et la connexion."
+	/>
+	<meta property="og:url" content="https://lesatelierstendresse.re" />
+	<meta property="og:image" content={"/landing-frogs.webp"} />
+	<meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
 
 	<link rel="canonical" href={'https://lesatelierstendresse.re'} />
 </svelte:head>

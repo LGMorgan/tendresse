@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Accueil - Les Ateliers Tendresse</title>
+	<title>Les Ateliers Tendresse</title>
 	<meta
 		name="description"
 		content="Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité à La Réunion."
