@@ -1,7 +1,7 @@
 <footer  class="bg-[var(--color-yellow)] p-5 rounded-lg flex items-center justify-center flex-wrap gap-5">
 	<a
 		href="https://www.facebook.com/profile.php?id=61561837275486"
-		target="_blank"
+		target="_blank" rel="noopener"
 		aria-label="Facebook link"
 	>
 		<svg viewBox="0 0 36 36" fill="#2567f6" height="28" width="28">
@@ -16,7 +16,7 @@
 	</a>
 	<a
 		href="https://www.instagram.com/les_ateliers_tendresse/"
-		target="_blank"
+		target="_blank" rel="noopener"
 		aria-label="Instagram link"
 	>
 		<enhanced:img

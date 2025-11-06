@@ -71,7 +71,7 @@
 		content="Ateliers Tendresse — explorez le consentement, le jeu et la connexion."
 	/>
 	<meta property="og:url" content="https://lesatelierstendresse.re" />
-	<meta property="og:image" content={"/landing-frogs.webp"} />
+	<meta property="og:image" content={"/logo-tendresse.webp"} />
 	<meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />

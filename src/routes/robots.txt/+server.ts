@@ -1,6 +1,7 @@
 import { PUBLIC_SITE_URL } from '$env/static/public';
 import type { RequestHandler } from './$types';
 
+console.log('PUBLIC_SITE_URL:', PUBLIC_SITE_URL);
 const siteUrl = (PUBLIC_SITE_URL ?? 'https://lesatelierstendresse.re').replace(/\/$/, '');
 
 export const GET: RequestHandler = () => {

@@ -92,7 +92,7 @@
 		},
 		{
 			question: 'Comment s’inscrire?',
-			answer: `Via <a class="underline" href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank">BilletWeb</a>, en répondant à quelques questions. Ce sera une pré-inscription. Je validerai ensuite ton inscription. Lorsque j'aurai validé ton inscription, il te sera demandé de payer par mail. Tu as 5 jours pour payer avant que la place ne soit donnée à quelqu'un·e d'autre. Ton inscription sera effective après le paiement.`
+			answer: `Via <a class="underline" href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank" rel="noopener">BilletWeb</a>, en répondant à quelques questions. Ce sera une pré-inscription. Je validerai ensuite ton inscription. Lorsque j'aurai validé ton inscription, il te sera demandé de payer par mail. Tu as 5 jours pour payer avant que la place ne soit donnée à quelqu'un·e d'autre. Ton inscription sera effective après le paiement.`
 		}
 	];
 

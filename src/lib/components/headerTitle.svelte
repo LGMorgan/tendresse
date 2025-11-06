@@ -10,7 +10,7 @@
 
 		<enhanced:img
 			class="m-auto"
-			src="/src/lib/img/landing-frogs-1.webp"
+			src="/src/lib/img/logo-tendresse.webp"
 			alt="Atelier Tendresse Consentie"
 			height="200"
 		/>

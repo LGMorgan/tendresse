@@ -10,7 +10,7 @@
 		<a
 			class="flex gap-2"
 			href="https://www.instagram.com/les_ateliers_tendresse/"
-			target="_blank"
+			target="_blank" rel="noopener"
 			aria-label="Instagram link"
 		>
 			<enhanced:img
@@ -23,7 +23,7 @@
 		<a
 			class="flex gap-2"
 			href="https://www.facebook.com/profile.php?id=61561837275486"
-			target="_blank"
+			target="_blank" rel="noopener"
 			aria-label="Facebook link"
 		>
 			<svg viewBox="0 -10 46 46" fill="#2567f6" height="28" width="28">

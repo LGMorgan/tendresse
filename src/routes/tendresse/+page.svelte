@@ -121,7 +121,7 @@
 			<Button
 				class="bg-[var(--color-pink)] text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)] p-5 mt-5"
 			>
-				<a href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank">
+				<a href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank" rel="noopener">
 					infos et inscriptions
 				</a>
 			</Button>
