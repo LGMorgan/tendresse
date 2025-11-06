@@ -4,11 +4,30 @@
 </script>
 
 <svelte:head>
-	<title>Les Ateliers Tendresse</title>
+	<title>Les Ateliers Tendresse - Redécouvrir le consentement</title>
 	<meta
 		name="description"
-		content="Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité à La Réunion."
+		content="Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité sur l'île de La Réunion."
 	/>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"name": "Les Ateliers Tendresse",
+			"url": "https://lesatelierstendresse.re",
+			"description": "Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité à La Réunion.",
+			"publisher": {
+				"@type": "Person",
+				"name": "Morgan Le Guen",
+				"url": "https://lesatelierstendresse.re",
+				"logo": "https://lesatelierstendresse.re/landing-frogs.webp"
+			},
+            "author": {
+                "@type": "Person",
+                "name": "Morgan Le Guen"
+            }
+		}
+	</script>
 </svelte:head>
 
 <main>

@@ -3,11 +3,20 @@
 </script>
 
 <svelte:head>
-    <title>Le Cadre — Les Ateliers Tendresse</title>
+    <title>Le Cadre des ateliers — Les Ateliers Tendresse</title>
     <meta
         name="description"
         content="Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs."
     />
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebPage",
+            "name":"Le Cadre — Les Ateliers Tendresse",
+            "url":"https://lesatelierstendresse.re/le-cadre",
+            "description":"Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs."
+        }
+    </script>
 </svelte:head>
 
 <main>

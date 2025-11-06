@@ -8,6 +8,16 @@
         name="description"
         content="Descriptions des ateliers, formats, durées et programmes — Tendresse Consentie, Playfight, cercles de parole et plus."
     />
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebPage",
+            "name":"Les Ateliers — Les Ateliers Tendresse",
+            "url":"https://lesatelierstendresse.re/les-ateliers",
+            "description":"Descriptions des ateliers, formats, durées et programmes — Tendresse Consentie, Playfight, cercles de parole et plus.",
+            
+        }
+    </script>
 </svelte:head>
 
 <main>

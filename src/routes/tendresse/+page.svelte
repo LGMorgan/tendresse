@@ -3,11 +3,21 @@
 </script>
 
 <svelte:head>
-    <title>Tendresse Consentie - Les Ateliers Tendresse</title>
+    <title>Ateliers Tendresse Consentie - Les Ateliers Tendresse</title>
     <meta
         name="description"
         content="Un espace pour vivre les notions de consentement dans le corps. Via des outils de communication, des explorations en binôme autour du non et du oui 'enthousiaste', l'atelier Tendresse Consentie facilite l'expression du consentement."
     />
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Event",
+            "name":"Tendresse Consentie",
+            "url":"https://lesatelierstendresse.re/tendresse",
+            "description":"Un espace pour vivre les notions de consentement dans le corps — outils, jeux et explorations sensorielles.",
+            "location":{"@type":"Place","name":"Les Ateliers Tendresse"}
+        }
+    </script>
 </svelte:head>
 
 <main>

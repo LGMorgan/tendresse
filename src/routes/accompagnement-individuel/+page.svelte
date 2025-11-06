@@ -4,6 +4,20 @@
         name="description"
         content="Explore ton rapport au consentement, à la tendresse et aux limites dans un espace intime et sécurisé avec des séances individuelles adaptées à tes besoins."
     />
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Service",
+            "name":"Accompagnement individuel — Les Ateliers Tendresse",
+            "url":"https://lesatelierstendresse.re/accompagnement-individuel",
+            "description":"Séances individuelles autour du consentement et du soin corporel — accompagnement confidentiel et adapté.",
+            "provider":{
+                "@type":"Person",
+                "name":"Laurette Deloison",
+                "url":"https://lesatelierstendresse.re/qui-suis-je"
+            }
+        }
+    </script>
 </svelte:head>
 
 <main id="Séances Individuelles">

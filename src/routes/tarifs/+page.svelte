@@ -1,9 +1,18 @@
 <svelte:head>
-    <title>Tarifs - Les Ateliers Tendresse</title>
+    <title>Tarifs des ateliers - Les Ateliers Tendresse</title>
     <meta
         name="description"
         content="Tarifs accessibles et solidaires pour les ateliers — standard, solidaire et soutien."
     />
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebPage",
+            "name":"Tarifs — Les Ateliers Tendresse",
+            "url":"https://lesatelierstendresse.re/tarifs",
+            "description":"Tarifs accessibles et solidaires pour les ateliers — standard, solidaire et soutien."
+        }
+    </script>
 </svelte:head>
 
 <main>

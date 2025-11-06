@@ -4,6 +4,16 @@
         name="description"
         content="Découvrez qui est Laurette, la fondatrice des Ateliers Tendresse, son parcours en psychomotricité, son engagement dans le milieu sexpositif et ses passions."
     />
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Person",
+            "name":"Laurette Deloison",
+            "url":"https://lesatelierstendresse.re/qui-suis-je",
+            "description":"Présentation de Laurette — facilitatrice, parcours et approche des Ateliers Tendresse.",
+            "sameAs":[]
+        }
+    </script>
 </svelte:head>
 
 <main>

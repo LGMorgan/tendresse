@@ -17,6 +17,16 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lesatelierstendresse.re/playfight" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Event",
+            "name":"Playfight",
+            "url":"https://lesatelierstendresse.re/playfight",
+            "description":"L'atelier Playfight : exploration du consentement par des jeux d'opposition, créativité et mouvement.",
+            "location":{"@type":"Place","name":"Les Ateliers Tendresse"}
+        }
+    </script>
 </svelte:head>
 
 <main>
