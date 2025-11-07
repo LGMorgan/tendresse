@@ -56,7 +56,7 @@
 	font-style: normal;
     font-display: swap;
 	font-weight: 400;
-	src: url('/fonts/big-shoulders.ttf') format('truetype');
+	src: url('"https://db.onlinewebfonts.com/t/4b46dbb557f2e5941503bf626b56d349.woff2"') format('woff2');
 }
 
 @font-face {
@@ -64,7 +64,7 @@
 	font-style: normal;
     font-display: swap;
 	font-weight: 400;
-	src: url('/fonts/bukhari-script.ttf') format('truetype');
+	src: url('https://db.onlinewebfonts.com/t/447960ca03d4f49e6d74d31e946c69a1.woff2') format('woff2');
 }
 
 @font-face {
@@ -72,7 +72,7 @@
 	font-style: normal;
     font-display: swap;
 	font-weight: 400;
-	src: url('/fonts/Akzidenz.ttf') format('truetype');
+	src: url('"https://db.onlinewebfonts.com/t/be7d12601306f9f1b7aac9eca131fc8f.woff2"') format('woff2');
 }
 
 @keyframes blurFade {
