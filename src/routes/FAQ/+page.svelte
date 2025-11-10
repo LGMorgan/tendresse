@@ -114,8 +114,8 @@
 				{
 					'@type': 'ListItem',
 					"position": 1,
-					"name""": 'Accueil',
-					"item: 'https://lesatelierstendresse.re/'
+					"name": 'Accueil',
+					"item": 'https://lesatelierstendresse.re/',
 				},
 				{
 					'@type': 'ListItem',
