@@ -15,7 +15,23 @@
             "name":"Les Ateliers — Les Ateliers Tendresse",
             "url":"https://lesatelierstendresse.re/les-ateliers",
             "description":"Descriptions des ateliers, formats, durées et programmes — Tendresse Consentie, Playfight, cercles de parole et plus.",
-            
+             "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Accueil",
+                        "item": "https://lesatelierstendresse.re/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Le Cadre",
+                        "item": "https://lesatelierstendresse.re/les-ateliers"
+                    }
+                ]
+            }           
         }
     </script>
 </svelte:head>

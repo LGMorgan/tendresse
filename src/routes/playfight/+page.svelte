@@ -3,30 +3,47 @@
 </script>
 
 <svelte:head>
-    <title>Atelier Playfight — Les Ateliers Tendresse</title>
-    <meta
-        name="description"
-        content="L'atelier Playfight est un espace d'exploration du consentement et de la créativité par des jeux d'opposition. Viens te mettre en corps, en joie et en rire !"
-    />
-    <meta property="og:title" content="Atelier Playfight — Les Ateliers Tendresse" />
-    <meta
-        property="og:description"
-        content="L'atelier Playfight est un espace d'exploration du consentement et de la créativité par des jeux d'opposition. Viens te mettre en corps, en joie et en rire !"
-    />
-    <meta property="og:image" content="/src/lib/img/playfight-illustration.webp" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lesatelierstendresse.re/playfight" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json">
-        {
-            "@context":"https://schema.org",
-            "@type":"Event",
-            "name":"Playfight",
-            "url":"https://lesatelierstendresse.re/playfight",
-            "description":"L'atelier Playfight : exploration du consentement par des jeux d'opposition, créativité et mouvement.",
-            "location":{"@type":"Place","name":"Les Ateliers Tendresse"}
-        }
-    </script>
+	<title>Atelier Playfight — Les Ateliers Tendresse</title>
+	<meta
+		name="description"
+		content="L'atelier Playfight est un espace d'exploration du consentement et de la créativité par des jeux d'opposition. Viens te mettre en corps, en joie et en rire !"
+	/>
+	<meta property="og:title" content="Atelier Playfight — Les Ateliers Tendresse" />
+	<meta
+		property="og:description"
+		content="L'atelier Playfight est un espace d'exploration du consentement et de la créativité par des jeux d'opposition. Viens te mettre en corps, en joie et en rire !"
+	/>
+	<meta property="og:image" content="/src/lib/img/playfight-illustration.webp" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://lesatelierstendresse.re/playfight" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Event",
+			"name": "Playfight",
+			"url": "https://lesatelierstendresse.re/playfight",
+			"description": "L'atelier Playfight : exploration du consentement par des jeux d'opposition, créativité et mouvement.",
+			"location": { "@type": "Place", "name": "Les Ateliers Tendresse" },
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Accueil",
+						"item": "https://lesatelierstendresse.re/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Le Cadre",
+						"item": "https://lesatelierstendresse.re/playfight"
+					}
+				]
+			}
+		}
+	</script>
 </svelte:head>
 
 <main>
@@ -103,8 +120,6 @@
 	</section>
 
 	<AskMe />
-
-
 </main>
 
 <style>

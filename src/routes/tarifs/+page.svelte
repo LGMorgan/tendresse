@@ -1,18 +1,35 @@
 <svelte:head>
-    <title>Tarifs des ateliers - Les Ateliers Tendresse</title>
-    <meta
-        name="description"
-        content="Tarifs accessibles et solidaires pour les ateliers — standard, solidaire et soutien."
-    />
-    <script type="application/ld+json">
-        {
-            "@context":"https://schema.org",
-            "@type":"WebPage",
-            "name":"Tarifs — Les Ateliers Tendresse",
-            "url":"https://lesatelierstendresse.re/tarifs",
-            "description":"Tarifs accessibles et solidaires pour les ateliers — standard, solidaire et soutien."
-        }
-    </script>
+	<title>Tarifs des ateliers - Les Ateliers Tendresse</title>
+	<meta
+		name="description"
+		content="Tarifs accessibles et solidaires pour les ateliers — standard, solidaire et soutien."
+	/>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Tarifs — Les Ateliers Tendresse",
+			"url": "https://lesatelierstendresse.re/tarifs",
+			"description": "Tarifs accessibles et solidaires pour les ateliers — standard, solidaire et soutien.",
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Accueil",
+						"item": "https://lesatelierstendresse.re/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Le Cadre",
+						"item": "https://lesatelierstendresse.re/tarifs"
+					}
+				]
+			}
+		}
+	</script>
 </svelte:head>
 
 <main>

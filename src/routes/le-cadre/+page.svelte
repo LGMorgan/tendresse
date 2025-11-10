@@ -3,20 +3,58 @@
 </script>
 
 <svelte:head>
-    <title>Le Cadre des ateliers — Les Ateliers Tendresse</title>
-    <meta
-        name="description"
-        content="Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs."
-    />
-    <script type="application/ld+json">
-        {
-            "@context":"https://schema.org",
-            "@type":"WebPage",
-            "name":"Le Cadre — Les Ateliers Tendresse",
-            "url":"https://lesatelierstendresse.re/le-cadre",
-            "description":"Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs."
-        }
-    </script>
+	<title>Le Cadre des ateliers — Les Ateliers Tendresse</title>
+	<meta
+		name="description"
+		content="Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs."
+	/>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Le Cadre — Les Ateliers Tendresse",
+			"url": "https://lesatelierstendresse.re/le-cadre",
+			"description": "Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs.",
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Accueil",
+                        "item": "https://lesatelierstendresse.re/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Le Cadre",
+                        "item": "https://lesatelierstendresse.re/le-cadre"
+                    }
+                ]
+            }
+		}
+	</script>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			"itemListElement": [
+				{
+					"@type": "ListItem",
+					"position": 1,
+					"name": "Accueil",
+					"item": "https://lesatelierstendresse.re/"
+				},
+				{
+					"@type": "ListItem",
+					"position": 2,
+					"name": "Le Cadre",
+					"item": "https://lesatelierstendresse.re/le-cadre"
+				}
+			]
+		}
+	</script>
 </svelte:head>
 
 <main>
@@ -33,12 +71,13 @@
 		quand tu le souhaites, sans justification.
 	</TitledP>
 	<TitledP title="Consentement"
-		>Si tu penses <span class="italic font-bold">peut-être</span>, alors c’est un
-		<span class="italic font-bold">non</span>. Essaye de dire <span class="italic font-bold">oui</span> seulement si tu
-		ressens <span class="italic font-bold">bien sûr que oui</span>. Tu peux changer d’avis autant de fois que
-		tu le souhaites. <span class="italic font-bold">Oui</span>
-		peut devenir <span class="italic font-bold">non</span> à n'importe quel moment et sans justification.<br
-		/></TitledP
+		>Si tu penses <span class="font-bold italic">peut-être</span>, alors c’est un
+		<span class="font-bold italic">non</span>. Essaye de dire
+		<span class="font-bold italic">oui</span>
+		seulement si tu ressens <span class="font-bold italic">bien sûr que oui</span>. Tu peux changer
+		d’avis autant de fois que tu le souhaites. <span class="font-bold italic">Oui</span>
+		peut devenir <span class="font-bold italic">non</span> à n'importe quel moment et sans
+		justification.<br /></TitledP
 	>
 	<TitledP title="Sensorialité"
 		>Les ateliers sont des espaces de Sensorialité et de Tendresse, pas de sexualité. Il peut
@@ -48,14 +87,14 @@
 	<TitledP title="Non séduction"
 		>L’envie de séduire peut te couper de l’expérience et nuire à l’ambiance collective. Si
 		l’objectif est de paraître désirable ou de se rapprocher d'une personne en particulier, cela
-		peut gêner les autres participant.e.s et nuire à la fluidité de l'expérience. Donc ne rentre
-		pas consciemment dans un jeu de séduction.</TitledP
+		peut gêner les autres participant.e.s et nuire à la fluidité de l'expérience. Donc ne rentre pas
+		consciemment dans un jeu de séduction.</TitledP
 	>
 	<TitledP title="Responsabilité collective"
 		>Aucun événement n’est 100% safe, mais le cadre que je pose est là pour essayer d’atteindre ceci
 		au maximum. Néanmoins, ton implication à t'écouter et ne pas dépasser tes limites est
-		nécessaire. Si tu observes une situation qui ne te paraît pas ok n’hésites pas à le dire. Même si
-		tout va bien finalement, au moins tu auras vérifié !
+		nécessaire. Si tu observes une situation qui ne te paraît pas ok n’hésites pas à le dire. Même
+		si tout va bien finalement, au moins tu auras vérifié !
 	</TitledP>
 	<TitledP title="Émotions"
 		>Les rires, les larmes et toute autre forme d'expression de tes émotions sont bienvenues. Tu es

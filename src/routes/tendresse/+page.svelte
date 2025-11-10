@@ -3,21 +3,38 @@
 </script>
 
 <svelte:head>
-    <title>Ateliers Tendresse Consentie - Les Ateliers Tendresse</title>
-    <meta
-        name="description"
-        content="Un espace pour vivre les notions de consentement dans le corps. Via des outils de communication, des explorations en binôme autour du non et du oui 'enthousiaste', l'atelier Tendresse Consentie facilite l'expression du consentement."
-    />
-    <script type="application/ld+json">
-        {
-            "@context":"https://schema.org",
-            "@type":"Event",
-            "name":"Tendresse Consentie",
-            "url":"https://lesatelierstendresse.re/tendresse",
-            "description":"Un espace pour vivre les notions de consentement dans le corps — outils, jeux et explorations sensorielles.",
-            "location":{"@type":"Place","name":"Les Ateliers Tendresse"}
-        }
-    </script>
+	<title>Ateliers Tendresse Consentie - Les Ateliers Tendresse</title>
+	<meta
+		name="description"
+		content="Un espace pour vivre les notions de consentement dans le corps. Via des outils de communication, des explorations en binôme autour du non et du oui 'enthousiaste', l'atelier Tendresse Consentie facilite l'expression du consentement."
+	/>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Event",
+			"name": "Tendresse Consentie",
+			"url": "https://lesatelierstendresse.re/tendresse",
+			"description": "Un espace pour vivre les notions de consentement dans le corps — outils, jeux et explorations sensorielles.",
+			"location": { "@type": "Place", "name": "Les Ateliers Tendresse" },
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Accueil",
+						"item": "https://lesatelierstendresse.re/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Le Cadre",
+						"item": "https://lesatelierstendresse.re/tendresse"
+					}
+				]
+			}
+		}
+	</script>
 </svelte:head>
 
 <main>
@@ -129,9 +146,13 @@
 		</p>
 		<div class="my-5 flex flex-col items-center">
 			<Button
-				class="bg-[var(--color-pink)] text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)] p-5 mt-5"
+				class="mt-5 bg-[var(--color-pink)] p-5 text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)]"
 			>
-				<a href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank" rel="noopener">
+				<a
+					href="https://www.billetweb.fr/pro/les-ateliers-tendresse"
+					target="_blank"
+					rel="noopener"
+				>
 					infos et inscriptions
 				</a>
 			</Button>
@@ -150,10 +171,9 @@
 		</ul>
 
 		<Button
-            href="/FAQ"
-			class="max-w-44 m-auto mt-8 mb-7 p-5 flex justify-center bg-[var(--color-pink)] text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)]"
+			href="/FAQ"
+			class="m-auto mt-8 mb-7 flex max-w-44 justify-center bg-[var(--color-pink)] p-5 text-xl shadow hover:bg-[var(--color-yellow)] hover:text-[var(--color-violet)]"
 			>Des questions ?</Button
 		>
 	</section>
 </main>
-

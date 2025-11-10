@@ -1,23 +1,40 @@
 <svelte:head>
-    <title>Séances Individuelles - Les Ateliers Tendresse</title>
-    <meta
-        name="description"
-        content="Explore ton rapport au consentement, à la tendresse et aux limites dans un espace intime et sécurisé avec des séances individuelles adaptées à tes besoins."
-    />
-    <script type="application/ld+json">
-        {
-            "@context":"https://schema.org",
-            "@type":"Service",
-            "name":"Accompagnement individuel — Les Ateliers Tendresse",
-            "url":"https://lesatelierstendresse.re/accompagnement-individuel",
-            "description":"Séances individuelles autour du consentement et du soin corporel — accompagnement confidentiel et adapté.",
-            "provider":{
-                "@type":"Person",
-                "name":"Laurette Deloison",
-                "url":"https://lesatelierstendresse.re/qui-suis-je"
-            }
-        }
-    </script>
+	<title>Séances Individuelles - Les Ateliers Tendresse</title>
+	<meta
+		name="description"
+		content="Explore ton rapport au consentement, à la tendresse et aux limites dans un espace intime et sécurisé avec des séances individuelles adaptées à tes besoins."
+	/>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Service",
+			"name": "Accompagnement individuel — Les Ateliers Tendresse",
+			"url": "https://lesatelierstendresse.re/accompagnement-individuel",
+			"description": "Séances individuelles autour du consentement et du soin corporel — accompagnement confidentiel et adapté.",
+			"provider": {
+				"@type": "Person",
+				"name": "Laurette Deloison",
+				"url": "https://lesatelierstendresse.re/qui-suis-je"
+			},
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Accueil",
+						"item": "https://lesatelierstendresse.re/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Le Cadre",
+						"item": "https://lesatelierstendresse.re/accompagnement-individuel"
+					}
+				]
+			}
+		}
+	</script>
 </svelte:head>
 
 <main id="Séances Individuelles">
@@ -65,8 +82,8 @@
 			</li>
 			<li>
 				<span>🌿 </span> Pour les personnes qui ressentent le besoin de mieux comprendre leur place dans
-				les relations, de changer certaines dynamiques dans lesquelles elles se sentent coincées, ou simplement
-				de vivre des échanges plus justes, plus simples, plus apaisés.
+				les relations, de changer certaines dynamiques dans lesquelles elles se sentent coincées, ou
+				simplement de vivre des échanges plus justes, plus simples, plus apaisés.
 			</li>
 		</ul>
 		<p>

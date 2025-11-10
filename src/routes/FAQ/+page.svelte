@@ -96,19 +96,36 @@
 		}
 	];
 
-        // build JSON-LD FAQ structured data (strip simple HTML)
-    const faqStructured = {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: questions.map((q) => ({
-            '@type': 'Question',
-            name: q.question,
-            acceptedAnswer: {
-                '@type': 'Answer',
-                text: q.answer.replace(/<\/?[^>]+(>|$)/g, '') // basic tag strip
-            }
-        }))
-    };
+	// build JSON-LD FAQ structured data (strip simple HTML)
+	const faqStructured = {
+		'@context': 'https://schema.org',
+		'@type': 'FAQPage',
+		mainEntity: questions.map((q) => ({
+			'@type': 'Question',
+			name: q.question,
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: q.answer.replace(/<\/?[^>]+(>|$)/g, '') // basic tag strip
+			}
+		})),
+		"breadcrumb": {
+			'@type': 'BreadcrumbList',
+			"itemListElement": [
+				{
+					'@type': 'ListItem',
+					"position": 1,
+					"name""": 'Accueil',
+					"item: 'https://lesatelierstendresse.re/'
+				},
+				{
+					'@type': 'ListItem',
+					"position": 2,
+					"name": 'Le Cadre',
+					"item": 'https://lesatelierstendresse.re/FAQ'
+				}
+			]
+		}
+	};
 </script>
 
 <svelte:head>
@@ -117,7 +134,9 @@
 		name="description"
 		content={'Questions fréquemment posées : inscriptions, déroulé, sécurité, public et informations pratiques.'}
 	/>
-    <script type="application/ld+json">{JSON.stringify(faqStructured)}</script>
+	<script type="application/ld+json">
+{JSON.stringify(faqStructured)}
+	</script>
 </svelte:head>
 
 <main>

@@ -4,11 +4,38 @@
 </script>
 
 <svelte:head>
-    <title>Le Projet - Les Ateliers Tendresse</title>
-    <meta
-        name="description"
-        content="Découvrir le projet Tendresse : objectifs, inspirations et la vision éducative autour du consentement et de la sensorialité."
-    />
+	<title>Le Projet - Les Ateliers Tendresse</title>
+	<meta
+		name="description"
+		content="Découvrir le projet Tendresse : objectifs, inspirations et la vision éducative autour du consentement et de la sensorialité."
+	/>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Le Projet — Les Ateliers Tendresse",
+			"url": "https://lesatelierstendresse.re/projet",
+			"description": "Découvrir le projet Tendresse : objectifs, inspirations et la vision éducative autour du consentement et de la sensorialité.",
+			"mainEntityOfPage": "https://lesatelierstendresse.re/projet",
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Accueil",
+						"item": "https://lesatelierstendresse.re/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Le Cadre",
+						"item": "https://lesatelierstendresse.re/projet"
+					}
+				]
+			}
+		}
+	</script>
 </svelte:head>
 
 <main>
@@ -27,13 +54,13 @@
 			N'avons-nous jamais craint qu'un·e proche adhère à quelque chose juste pour nous faire plaisir
 			?
 		</p>
-        <br/>
+		<br />
 		<p>
 			Sommes nous conscient·es des biais de pouvoir, de relation et de domination pouvant influencer
 			nos relations ? Comment essayer qu'ils n'entravent pas l'expression des besoins et des désirs
 			de chacun ?
 		</p>
-        <br/>
+		<br />
 		<p>
 			Comment écouter et respecter les limites de notre entourage ? De quelle manière pouvons-nous
 			poser clairement nos limites ?
@@ -44,14 +71,13 @@
 		<h3>Des outils existent</h3>
 		<p>
 			Les Ateliers Tendresse sont des espaces pour les découvrir et les pratiquer. Des espaces où tu
-			peux explorer ton rapport au consentement, à la connexion aux autres et à toi-même, au
-			travers de jeux, d'explorations sensorielles et relationnelles.
+			peux explorer ton rapport au consentement, à la connexion aux autres et à toi-même, au travers
+			de jeux, d'explorations sensorielles et relationnelles.
 		</p>
 		<p>
-			L'accès à certains ateliers ont pour prérequis d'avoir participé à l'atelier
-			"Tendresse Consentie", celui-ci pose le cadre nécessaire afin d'assurer une expérience
-			sécurisante pour chacun·e des participant·es et me permet une première rencontre avec les
-			participant.es.
+			L'accès à certains ateliers ont pour prérequis d'avoir participé à l'atelier "Tendresse
+			Consentie", celui-ci pose le cadre nécessaire afin d'assurer une expérience sécurisante pour
+			chacun·e des participant·es et me permet une première rencontre avec les participant.es.
 		</p>
 		<div class="m-auto w-full pt-5">
 			<enhanced:img

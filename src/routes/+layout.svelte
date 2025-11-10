@@ -66,12 +66,16 @@
 
 	<meta property="og:site_name" content="Les Ateliers Tendresse" />
 	<meta property="og:title" content="Les Ateliers Tendresse" />
+    <meta property="og:locale" content="fr_FR" />
 	<meta
 		property="og:description"
 		content="Ateliers Tendresse — explorez le consentement, le jeu et la connexion."
 	/>
 	<meta property="og:url" content="https://lesatelierstendresse.re" />
 	<meta property="og:image" content={"$lib/img/og-logo-tendresse.webp"} />
+    <meta property="og:image:width" content="1560" />
+    <meta property="og:image:height" content="1115" />
+    <meta property="og:image:alt" content="Logo Les Ateliers Tendresse" />
 	<meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />

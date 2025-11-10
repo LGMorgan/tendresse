@@ -1,19 +1,36 @@
 <svelte:head>
-    <title>Qui suis-je ? - Les Ateliers Tendresse</title>
-    <meta
-        name="description"
-        content="Découvrez qui est Laurette, la fondatrice des Ateliers Tendresse, son parcours en psychomotricité, son engagement dans le milieu sexpositif et ses passions."
-    />
-    <script type="application/ld+json">
-        {
-            "@context":"https://schema.org",
-            "@type":"Person",
-            "name":"Laurette Deloison",
-            "url":"https://lesatelierstendresse.re/qui-suis-je",
-            "description":"Présentation de Laurette — facilitatrice, parcours et approche des Ateliers Tendresse.",
-            "sameAs":[]
-        }
-    </script>
+	<title>Qui suis-je ? - Les Ateliers Tendresse</title>
+	<meta
+		name="description"
+		content="Découvrez qui est Laurette, la fondatrice des Ateliers Tendresse, son parcours en psychomotricité, son engagement dans le milieu sexpositif et ses passions."
+	/>
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Laurette Deloison",
+			"url": "https://lesatelierstendresse.re/qui-suis-je",
+			"description": "Présentation de Laurette — facilitatrice, parcours et approche des Ateliers Tendresse.",
+			"sameAs": [],
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Accueil",
+						"item": "https://lesatelierstendresse.re/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Le Cadre",
+						"item": "https://lesatelierstendresse.re/qui-suis-je"
+					}
+				]
+			}
+		}
+	</script>
 </svelte:head>
 
 <main>

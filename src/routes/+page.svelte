@@ -20,7 +20,6 @@
 				"@type": "Person",
 				"name": "Morgan Le Guen",
 				"url": "https://lesatelierstendresse.re",
-				"logo": "https://lesatelierstendresse.re/landing-frogs.webp"
 			},
             "author": {
                 "@type": "Person",
