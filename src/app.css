@@ -64,7 +64,7 @@
 	font-style: normal;
     font-display: swap;
 	font-weight: 400;
-	src: url('/fonts/bukhari-script') format('woff2');
+	src: url('/fonts/bukhari-script.woff2') format('woff2');
 }
 
 @font-face {
@@ -72,7 +72,7 @@
 	font-style: normal;
     font-display: swap;
 	font-weight: 400;
-	src: url('/fonts/akzidenz') format('woff2');
+	src: url('/fonts/akzidenz.woff2') format('woff2');
 }
 
 @keyframes blurFade {
