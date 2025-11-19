@@ -9,24 +9,24 @@
 		name="description"
 		content="Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité sur l'île de La Réunion."
 	/>
-	<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "WebSite",
-			"name": "Les Ateliers Tendresse",
-			"url": "https://lesatelierstendresse.re",
-			"description": "Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité à La Réunion.",
-			"publisher": {
-				"@type": "Person",
-				"name": "Morgan Le Guen",
-				"url": "https://lesatelierstendresse.re",
-			},
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Les Ateliers Tendresse",
+            "url": "https://lesatelierstendresse.re",
+            "description": "Ateliers Tendresse — Des espaces pour explorer le consentement, le jeu et la connexion en toute sécurité à La Réunion.",
+            "publisher": {
+                "@type": "Person",
+                "name": "Morgan Le Guen",
+                "url": "https://lesatelierstendresse.re"
+            },
             "author": {
                 "@type": "Person",
                 "name": "Morgan Le Guen"
             }
-		}
-	</script>
+        }
+    </script>
 </svelte:head>
 
 <main>
