@@ -62,7 +62,7 @@
 	<meta name="theme-color" content="#fce977" />
 	<meta name="color-scheme" content="#fce977" />
 	<meta name="robots" content="index, follow" />
-	<meta charset="utf-8" content="text/html" http-equiv="Content-Type" />
+	<meta charset="utf-8" />
 
 	<meta property="og:site_name" content="Les Ateliers Tendresse" />
 	<meta property="og:title" content="Les Ateliers Tendresse" />
