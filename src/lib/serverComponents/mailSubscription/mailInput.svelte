@@ -22,7 +22,7 @@
 </script>
 
 <section id="newsletter">
-	<h2>Newsletter</h2>
+	<h2 class="text-center">Newsletter</h2>
 	{#if form?.success}
 		<p class="text-center">Merci pour ton inscription !</p>
 	{:else if form?.error}

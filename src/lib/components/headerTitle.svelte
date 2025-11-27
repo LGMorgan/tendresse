@@ -13,6 +13,7 @@
 			src="/src/lib/img/logo-tendresse.webp"
 			alt="Atelier Tendresse Consentie"
 			height="200"
+            width="280"
 		/>
 	</a>
 </header>

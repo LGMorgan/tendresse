@@ -31,15 +31,15 @@
 
 <main>
 	<section class="xl:mx-52">
-		<h3 class="m-auto md:mr-5">
+		<h2 class="m-auto md:mr-5">
 			Des espaces d’expérimentation du Consentement, du Jeu et de la Tendresse à la Réunion.
-		</h3>
-		<h3 class="m-auto text-right md:ml-50">
+		</h2>
+		<h2 class="m-auto text-right md:ml-50">
 			Pour découvrir concrètement et corporellement le Consentement dans des espaces aussi sécurisés
 			et sécurisants que possible.
-		</h3>
+		</h2>
 
-		<h3 class="text-left">Mettre la Joie, le Jeu et la Communication au cœur de nos quotidiens.</h3>
+		<h2 class="text-left">Mettre la Joie, le Jeu et la Communication au cœur de nos quotidiens.</h2>
 	</section>
 	<section class="text-center">
 		<Button
