@@ -15,23 +15,23 @@
 			"name": "Le Cadre — Les Ateliers Tendresse",
 			"url": "https://lesatelierstendresse.re/le-cadre",
 			"description": "Le cadre de sécurité, règles de consentement et responsabilités collectives pour des ateliers respectueux et inclusifs.",
-            "breadcrumb": {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Accueil",
-                        "item": "https://lesatelierstendresse.re/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Le Cadre",
-                        "item": "https://lesatelierstendresse.re/le-cadre"
-                    }
-                ]
-            }
+			"breadcrumb": {
+				"@type": "BreadcrumbList",
+				"itemListElement": [
+					{
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Accueil",
+						"item": "https://lesatelierstendresse.re/"
+					},
+					{
+						"@type": "ListItem",
+						"position": 2,
+						"name": "Le Cadre",
+						"item": "https://lesatelierstendresse.re/le-cadre"
+					}
+				]
+			}
 		}
 	</script>
 
@@ -70,8 +70,8 @@
 		peux à tout moment te retirer d’une proposition, observer, rester sans rien faire, et/ou partir
 		quand tu le souhaites, sans justification.
 	</TitledP>
-	<TitledP title="Consentement"
-		>Si tu penses <span class="font-bold italic">peut-être</span>, alors c’est un
+	<TitledP title="Consentement">
+		Si tu penses <span class="font-bold italic">peut-être</span>, alors c’est un
 		<span class="font-bold italic">non</span>. Essaye de dire
 		<span class="font-bold italic">oui</span>
 		seulement si tu ressens <span class="font-bold italic">bien sûr que oui</span>. Tu peux changer
@@ -105,11 +105,24 @@
 		>Si tu parles de l'événement en dehors de celui-ci (et c’est clairement bienvenue !) fais en
 		sorte d’anonymiser les participant.es</TitledP
 	>
-	<TitledP title="Positionnement politique"
-		>Une attention collective est attendue pour limiter les rapports de pouvoir induits par les
-		différences de statut ( débutants/expérimentés), d’âge, de genre, de couleur de peau, de classe,
-		de validité …qui impactent nos relations.
+	<TitledP title="Positionnement politique">
+		Ces espaces sont situés. Je suis une femme blanche, arrivée à La Réunion avec mes références,
+		mes codes et mon parcours militant en hexagone. Les ateliers Tendresse sont nés de mon histoire
+		et portent forcément ma culture politique et affective.
 		<br />
+        <br />
+		Je ne prétends pas représenter toutes les réalités, ni proposer un espace “universel”.
+		<br />
+        <br />
+		Les espaces d’ateliers sont traversés par des dynamiques de privilège et par l’histoire coloniale.
+		Si quelque chose te met mal à l’aise ou te semble excluant, ta parole est légitime et bienvenue ici.
+		<br />
+        <br/>
+		Une attention collective est attendue pour limiter les rapports de pouvoir induits par les différences
+		de statut ( débutants/expérimentés), d’âge, de genre, de couleur de peau, de classe, de validité
+		…qui impactent nos relations.
+		<br />
+        <br />
 		Ce sont des espaces politiquement positionnés, prenant en compte les rapports de pouvoir et privilèges.</TitledP
 	>
 	<TitledP title="Inclusion"

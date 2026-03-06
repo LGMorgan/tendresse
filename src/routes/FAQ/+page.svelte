@@ -30,6 +30,11 @@
 				'La moyenne d’âge est entre 25 et 45 ans. Proportionnellement, il y a un peu plus de femmes/personnes non binaires que d’hommes.'
 		},
 		{
+			question: 'Qui peut participer?',
+			answer:
+                `Les personnes curieuses d’explorer ! Quel que soit ton genre, ton âge, tes particularités, ta morphologie, ton ethnicité, ton niveau d’éducation, tes revenus… Bien sûr, ces espaces sont situés. Je ne prétends pas représenter toutes les réalités, ni proposer un espace "universel". En cas de besoin spécifique, envoie moi un message et je ferais en sorte de t'accueillir au mieux selon mes ressources !`
+			},
+		{
 			question:
 				"Pourquoi il faut passer par la Tendresse Consentie avant d'accéder à d’autres Ateliers?",
 			answer:
@@ -56,11 +61,7 @@
 			answer:
 				"Je construis les tarifs de mes Ateliers pour qu’ils soient accessibles et pour que je sois rémunérée justement pour pouvoir poursuivre le projet. Il y a trois tarifs selon tes moyens financiers pour les 3h d'ateliers : Tarif standard : 35€ (c’est le tarif qui équilibre mes frais et mon temps), Tarif solidaire : 25€ (pour les personnes pour qui 35 € c’est trop), Tarif soutien : 45€ (si tu es à l’aise, que tu veux soutenir mon travail et permettre à d’autres de venir)."
 		},
-		{
-			question: 'Qui peut participer?',
-			answer:
-				"Les personnes curieuses d’explorer ! Quel que soit ton genre, ton âge, tes particularités, ta morphologie, ton ethnicité, ton niveau d’éducation, tes revenus… En cas de besoin spécifique, envoie moi un message et je ferais en sorte de t'accueillir au mieux selon mes ressources ! J’ai encore des progrès à faire pour pouvoir comprendre le créole mais j’ai à cœur de faire tout mon possible pour que tu te sentes bien dans le groupe si tu parles uniquement créole."
-		},
+
 		{
 			question: 'Est-ce que le repas est inclus ?',
 			answer:
@@ -108,20 +109,20 @@
 				text: q.answer.replace(/<\/?[^>]+(>|$)/g, '') // basic tag strip
 			}
 		})),
-		"breadcrumb": {
+		breadcrumb: {
 			'@type': 'BreadcrumbList',
-			"itemListElement": [
+			itemListElement: [
 				{
 					'@type': 'ListItem',
-					"position": 1,
-					"name": 'Accueil',
-					"item": 'https://lesatelierstendresse.re/',
+					position: 1,
+					name: 'Accueil',
+					item: 'https://lesatelierstendresse.re/'
 				},
 				{
 					'@type': 'ListItem',
-					"position": 2,
-					"name": 'Le Cadre',
-					"item": 'https://lesatelierstendresse.re/FAQ'
+					position: 2,
+					name: 'Le Cadre',
+					item: 'https://lesatelierstendresse.re/FAQ'
 				}
 			]
 		}

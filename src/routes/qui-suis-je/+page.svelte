@@ -68,11 +68,20 @@
 
 		<br />
 		<p>
-			J’anime des cercles de paroles avec <a
-				class="underline"
-				href="https://re.linkedin.com/in/anna-doizy">Anna Doizy</a
-			>, contacte moi pour être tenu·e au courant !
+			J’ai eu la chance d’être invité en tant qu’invitée sur deux podcast autour du Consentement :
 		</p>
+        <br/>
+		<p>
+			<a style="text-decoration: underline" target="_blank" href="https://soundcloud.com/radiococo/fais-pas-ton-cine-ma-e-1"
+				>Fais pas ton cinéma - épisode 3, la culture du consentement par Radio Coco</a
+			>
+		</p>
+		<p>
+			<a style="text-decoration: underline"  target="_blank" href="https://m.soundcloud.com/radiococo/les-languettes-episode-2-le-consentement?in=radiococo%2Fsets%2Fles-languettes"
+				>LES LANGUETTES. Episode 2 : le consentement dans les languettes.</a
+			>
+		</p>
+		
 		<br />
 		<p>
 			Je viens de Lille. Je suis arrivée à la Réunion en Novembre 2024 et je vis dans l’Ouest de

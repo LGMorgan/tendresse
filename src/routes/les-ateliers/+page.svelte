@@ -47,27 +47,15 @@
 	<section id="présentation">
 		<p>Il y a deux niveaux d'ateliers. Les ateliers de niveaux 1 ne nécessitent aucun prérequis.</p>
 		<h3>Ateliers de niveau 1</h3>
-		<ul class="unol">
-			<li><span>⭐ </span>La Tendresse Consentie</li>
-			<li><span>⭐ </span>La Playfight</li>
-			<li><span>⭐ </span>Les Cercles de parole</li>
-			<li><span>⭐ </span>... Et d'autres plus occasionnels à découvrir.</li>
-		</ul>
+        <p>Des ateliers pour découvrir la culture du consentement par l'expérimentation, la découverte d'outils, la parole et le jeu.</p>
 		<h3>Ateliers de niveau 2</h3>
 		<p>
-			Effectuer un atelier "Tendresse Consentie" en respectant le cadre posé permet l'accès aux
-			ateliers suivants :
+			Effectuer un "atelier consentement" en respectant le cadre posé permet l'accès aux
+			ateliers de niveau 2, plus impliquants car plus longs ou nécessitant des codes communs.
 		</p>
-		<br />
-		<ul class="unol">
-			<li><span>⭐ </span>Soirée câlin</li>
-			<li><span>⭐ </span>Adoration</li>
-			<li><span>⭐ </span>Journée Tendresse</li>
-			<li><span>⭐ </span>... Et d'autres plus occasionnels à découvrir.</li>
-		</ul>
-		<br />
-		<p>Tu les retrouveras sur les réseaux, la newsletter ou sur billetweb !</p>
-		<br />
+        <p>Tu retrouveras les ateliers du moments sur les réseaux, la newsletter ou sur billetweb !</p>
+	
+
 		<h3>A quoi ressemble un atelier ?</h3>
 		<p>
 			Les ateliers durent <b>3 heures</b>. Il y a entre <b>6 et 16 personnes</b>. La moyenne d’âge
