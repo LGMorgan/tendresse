@@ -11,7 +11,7 @@
 		<enhanced:img
 			class="m-auto"
 			src="/src/lib/img/logo-tendresse.webp"
-			alt="Atelier Tendresse Consentie"
+			alt="Atelier Consentement"
 			height="200"
             width="280"
 		/>

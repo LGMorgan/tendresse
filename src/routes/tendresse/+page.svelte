@@ -3,16 +3,16 @@
 </script>
 
 <svelte:head>
-	<title>Ateliers Tendresse Consentie - Les Ateliers Tendresse</title>
+	<title>Ateliers Consentement - Les Ateliers Tendresse</title>
 	<meta
 		name="description"
-		content="Un espace pour vivre les notions de consentement dans le corps. Via des outils de communication, des explorations en binôme autour du non et du oui 'enthousiaste', l'atelier Tendresse Consentie facilite l'expression du consentement."
+		content="Un espace pour vivre les notions de consentement dans le corps. Via des outils de communication, des explorations en binôme autour du non et du oui 'enthousiaste', l'atelier consentement facilite l'expression du consentement."
 	/>
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
 			"@type": "Event",
-			"name": "Tendresse Consentie",
+			"name": "Atelier Consentement",
 			"url": "https://lesatelierstendresse.re/tendresse",
 			"description": "Un espace pour vivre les notions de consentement dans le corps — outils, jeux et explorations sensorielles.",
 			"location": { "@type": "Place", "name": "Les Ateliers Tendresse" },
@@ -42,7 +42,7 @@
 		<h3>Un espace pour vivre les notions de consentement dans le corps.</h3>
 		<p>
 			Via des outils de communication, des explorations en binôme autour du non et du oui
-			"enthousiaste", l'atelier <b>Tendresse Consentie</b> facilite l'expression du consentement.
+			"enthousiaste", l'atelier <b>Consentement</b> facilite l'expression du consentement.
 		</p>
 		<p>
 			L'idée c'est que tu sortes de l'atelier plus outillé.es pour identifier les situations

@@ -75,8 +75,7 @@
 			de jeux, d'explorations sensorielles et relationnelles.
 		</p>
 		<p>
-			L'accès à certains ateliers ont pour prérequis d'avoir participé à l'atelier "Tendresse
-			Consentie", celui-ci pose le cadre nécessaire afin d'assurer une expérience sécurisante pour
+			L'accès à certains ateliers ont pour prérequis d'avoir participé à l'atelier Consentement, celui-ci pose le cadre nécessaire afin d'assurer une expérience sécurisante pour
 			chacun·e des participant·es et me permet une première rencontre avec les participant.es.
 		</p>
 		<div class="m-auto w-full pt-5">
@@ -87,6 +86,7 @@
 				height="400"
 			/>
 		</div>
+
 	</section>
 
 	<div class="pb-8 text-center">

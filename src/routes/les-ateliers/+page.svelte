@@ -6,7 +6,7 @@
     <title>Les Ateliers — Les Ateliers Tendresse</title>
     <meta
         name="description"
-        content="Descriptions des ateliers, formats, durées et programmes — Tendresse Consentie, Playfight, cercles de parole et plus."
+        content="Descriptions des ateliers, formats, durées et programmes — Atelier Consentement, Playfight, cercles de parole et plus."
     />
     <script type="application/ld+json">
         {
@@ -14,7 +14,7 @@
             "@type":"WebPage",
             "name":"Les Ateliers — Les Ateliers Tendresse",
             "url":"https://lesatelierstendresse.re/les-ateliers",
-            "description":"Descriptions des ateliers, formats, durées et programmes — Tendresse Consentie, Playfight, cercles de parole et plus.",
+            "description":"Descriptions des ateliers, formats, durées et programmes — Atelier Consentement, Playfight, cercles de parole et plus.",
              "breadcrumb": {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
@@ -45,6 +45,7 @@
 	</section>
 
 	<section id="présentation">
+
 		<p>Il y a deux niveaux d'ateliers. Les ateliers de niveaux 1 ne nécessitent aucun prérequis.</p>
 		<h3>Ateliers de niveau 1</h3>
         <p>Des ateliers pour découvrir la culture du consentement par l'expérimentation, la découverte d'outils, la parole et le jeu.</p>
@@ -53,7 +54,7 @@
 			Effectuer un "atelier consentement" en respectant le cadre posé permet l'accès aux
 			ateliers de niveau 2, plus impliquants car plus longs ou nécessitant des codes communs.
 		</p>
-        <p>Tu retrouveras les ateliers du moments sur les réseaux, la newsletter ou sur billetweb !</p>
+        <p>Tu retrouveras les ateliers du moments sur les réseaux, la newsletter ou sur <a style="text-decoration: underline;" href="https://www.billetweb.fr/pro/les-ateliers-tendresse" target="_blank">la billeterie !</a></p>
 	
 
 		<h3>A quoi ressemble un atelier ?</h3>

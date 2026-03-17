@@ -17,7 +17,7 @@
 	$effect(() => {
 		switch (activeUrl) {
 			case '/tendresse':
-				title = 'Tendresse Consentie';
+				title = 'Atelier Consentement';
 				break;
 			case '/playfight':
 				title = 'Playfight';
@@ -57,7 +57,7 @@
 	<meta name="author" content="Laurette Deloison" />
 	<meta
 		name="keywords"
-		content="Atelier, Ateliers, Ateliers Tendresse, Consentement, Jeu, Connexion, La Réunion, Tendresse Consentie, Playfight, Cercles de Parole"
+		content="Atelier, Ateliers, Ateliers Tendresse, Consentement, Jeu, Connexion, La Réunion, Atelier Consentement, Playfight, Cercles de Parole"
 	/>
 	<meta name="theme-color" content="#fce977" />
 	<meta name="color-scheme" content="#fce977" />

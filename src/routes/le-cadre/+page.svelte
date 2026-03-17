@@ -80,9 +80,11 @@
 		justification.<br /></TitledP
 	>
 	<TitledP title="Sensorialité"
-		>Les ateliers sont des espaces de Sensorialité et de Tendresse, pas de sexualité. Il peut
-		arriver que tu ressentes du désir, c'est ok, ça arrive à tout le monde. Ce n’est juste pas le
-		lieu pour l’exprimer. Respire, prends une pause et passe à autre chose si ça t’arrive.</TitledP
+		>Selon les ateliers, certaines propositions peuvent inclure du contact physique, tu peux
+		totalement ne pas y participer. Dans tout les cas, les ateliers sont des espaces de
+		Sensorialité, pas de sexualité. Il peut arriver que tu ressentes du désir, c'est ok, ça arrive à
+		tout le monde. Ce n’est juste pas le lieu pour l’exprimer. Respire, prends une pause et passe à
+		autre chose si ça t’arrive.</TitledP
 	>
 	<TitledP title="Non séduction"
 		>L’envie de séduire peut te couper de l’expérience et nuire à l’ambiance collective. Si
@@ -110,19 +112,19 @@
 		mes codes et mon parcours militant en hexagone. Les ateliers Tendresse sont nés de mon histoire
 		et portent forcément ma culture politique et affective.
 		<br />
-        <br />
+		<br />
 		Je ne prétends pas représenter toutes les réalités, ni proposer un espace “universel”.
 		<br />
-        <br />
+		<br />
 		Les espaces d’ateliers sont traversés par des dynamiques de privilège et par l’histoire coloniale.
 		Si quelque chose te met mal à l’aise ou te semble excluant, ta parole est légitime et bienvenue ici.
 		<br />
-        <br/>
+		<br />
 		Une attention collective est attendue pour limiter les rapports de pouvoir induits par les différences
 		de statut ( débutants/expérimentés), d’âge, de genre, de couleur de peau, de classe, de validité
 		…qui impactent nos relations.
 		<br />
-        <br />
+		<br />
 		Ce sont des espaces politiquement positionnés, prenant en compte les rapports de pouvoir et privilèges.</TitledP
 	>
 	<TitledP title="Inclusion"

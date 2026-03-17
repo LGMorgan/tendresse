@@ -55,7 +55,7 @@
 		<enhanced:img
 			class="enhanced-img m-auto"
 			src="/src/lib/img/playfight-illustration.webp"
-			alt="Atelier Tendresse Consentie"
+			alt="Atelier Consentement"
 			width="400"
 		/>
 	</section>

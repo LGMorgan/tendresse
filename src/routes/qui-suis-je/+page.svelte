@@ -70,25 +70,29 @@
 		<p>
 			J’ai eu la chance d’être invité en tant qu’invitée sur deux podcast autour du Consentement :
 		</p>
-        <br/>
+		<br />
 		<p>
-			<a style="text-decoration: underline" target="_blank" href="https://soundcloud.com/radiococo/fais-pas-ton-cine-ma-e-1"
+			<a
+				style="text-decoration: underline"
+				target="_blank"
+				href="https://soundcloud.com/radiococo/fais-pas-ton-cine-ma-e-1"
 				>Fais pas ton cinéma - épisode 3, la culture du consentement par Radio Coco</a
 			>
 		</p>
 		<p>
-			<a style="text-decoration: underline"  target="_blank" href="https://m.soundcloud.com/radiococo/les-languettes-episode-2-le-consentement?in=radiococo%2Fsets%2Fles-languettes"
+			<a
+				style="text-decoration: underline"
+				target="_blank"
+				href="https://m.soundcloud.com/radiococo/les-languettes-episode-2-le-consentement?in=radiococo%2Fsets%2Fles-languettes"
 				>LES LANGUETTES. Episode 2 : le consentement dans les languettes.</a
 			>
 		</p>
-		
+
 		<br />
-		<p>
-			Je viens de Lille. Je suis arrivée à la Réunion en Novembre 2024 et je vis dans l’Ouest de
-			l’île !
-		</p>
+		<p>Je suis preneuse de toutes vos propositions pour mailler ensemble autour du consentement.</p>
 		<br />
 		<h3 class="text-center">Au plaisir de te rencontrer !</h3>
 		<br />
+
 	</section>
 </main>

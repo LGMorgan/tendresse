@@ -36,9 +36,9 @@
 			},
 		{
 			question:
-				"Pourquoi il faut passer par la Tendresse Consentie avant d'accéder à d’autres Ateliers?",
+				"Pourquoi il faut passer par l'atelier consentement avant d'accéder à d’autres Ateliers?",
 			answer:
-				'Car c’est ma manière de sécuriser les échanges et la dynamique de groupe. J’ai besoin de te rencontrer, de voir si tu respectes le cadre dans cet Atelier avant de te voir sur d’autres. C’est aussi important que tu puisses rencontrer mon cadre, ma manière de faciliter et de voir si cela te convient. De plus, les outils et la théorie de l’Atelier Tendresse Consentie sont des piliers pour tous les autres Ateliers.'
+				'Car c’est ma manière de sécuriser les échanges et la dynamique de groupe. J’ai besoin de te rencontrer, de voir si tu respectes le cadre dans cet Atelier avant de te voir sur d’autres. C’est aussi important que tu puisses rencontrer mon cadre, ma manière de faciliter et de voir si cela te convient. De plus, les outils et la théorie de l’Atelier Consentement sont des piliers pour tous les autres Ateliers.'
 		},
 		{
 			question: 'Que se passe-t-il si je suis mal à l’aise lors de l’Atelier ?',

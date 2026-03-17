@@ -36,7 +36,7 @@
 	<h3>Je construis les tarifs de mes ateliers</h3>
 	<ul class="unol">
 		<li>
-			🌿 Pour qu’ils soient accessibles pour tout le monde, pour diffuser la Tendresse et la Culture
+			🌿 Pour qu’ils soient accessibles pour tout le monde, pour diffuser une tendresse désexualisée et une Culture
 			du Consentement partout ! Parce que prendre davantage soin de son Consentement et de celui des
 			autres, ça ne doit pas être un luxe. C’est un besoin. Et je veux que tout le monde puisse y
 			goûter.

@@ -32,7 +32,7 @@
 <main>
 	<section class="xl:mx-52">
 		<h2 class="m-auto md:mr-5">
-			Des espaces d’expérimentation du Consentement, du Jeu et de la Tendresse à la Réunion.
+			Des espaces d’expérimentation du Consentement à la Réunion.
 		</h2>
 		<h2 class="m-auto text-right md:ml-50">
 			Pour découvrir concrètement et corporellement le Consentement dans des espaces aussi sécurisés
