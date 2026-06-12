@@ -32,7 +32,7 @@
 		{
 			question: 'Qui peut participer?',
 			answer:
-                `Les personnes curieuses d’explorer ! Quel que soit ton genre, ton âge, tes particularités, ta morphologie, ton ethnicité, ton niveau d’éducation, tes revenus… Bien sûr, ces espaces sont situés. Je ne prétends pas représenter toutes les réalités, ni proposer un espace "universel". En cas de besoin spécifique, envoie moi un message et je ferais en sorte de t'accueillir au mieux selon mes ressources !`
+                `Les personnes curieuses d’explorer ! Quel que soit ton genre, ton âge, tes particularités, ta morphologie, ton niveau d’éducation, tes revenus… Bien sûr, ces espaces sont situés. Je ne prétends pas représenter toutes les réalités, ni proposer un espace "universel". En cas de besoin spécifique, envoie moi un message et je ferais en sorte de t'accueillir au mieux selon mes ressources !`
 			},
 		{
 			question:
